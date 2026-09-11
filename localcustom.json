@@ -1,1819 +1,1886 @@
 {
   "meta": {
-    "code": "72e5eaa7-dd4d-47eb-9ebc-88777c31e3aa",
-    "name": "로컬 커스텀 모음",
-    "description": "Local",
-    "author": "lyra",
-    "language": "ko",
-    "external_link": "",
-    "banner_url": "https://raw.githubusercontent.com/lyraprivate/custompics/main/banner.png",
-    "banner_credit": "나",
-    "types": ["investigators"],
-    "status": "alpha",
-    "date_updated": "2026-09-011T11:00:00.000",
-    "generator": "",
-	"url": "https://raw.githubusercontent.com/lyraprivate/custompics/main/localcustom.json"
+   "code": "72e5eaa7-dd4d-47eb-9ebc-88777c31e3aa",
+   "name": "로컬 커스텀 모음",
+   "description": "Local",
+   "author": "lyra",
+   "language": "ko",
+   "external_link": "",
+   "banner_url": "https://raw.githubusercontent.com/lyraprivate/custompics/main/banner.png",
+   "banner_credit": "나",
+   "types": ["investigators"],
+   "status": "alpha",
+   "date_updated": "2026-09-011T11:00:00.000",
+   "generator": "",
+   "url": "https://raw.githubusercontent.com/lyraprivate/custompics/main/localcustom.json"
   },
   "data": {
-    "cards": [
-      {
-		"pack_code": "72e5eaa7-dd4d-47eb-9ebc-88777c31e3aa",
-        "position": 1,
-        "quantity": 1,
-		"deck_limit": 1,
-		"illustrator": "",
-        "is_unique": true,
-		
-		"code": "cw1_001",
-		"faction_code": "guardian",
-		"type_code": "investigator",
-        "double_sided": true,
-		
-		"image_url": "https://raw.githubusercontent.com/lyraprivate/custompics/main/cw/cw1_001a.png",
-        "thumbnail_url": "https://raw.githubusercontent.com/lyraprivate/custompics/main/cw/cw1_001a_t.png",
-        "back_image_url": "https://raw.githubusercontent.com/lyraprivate/custompics/main/cw/cw1_001b.png",
-        "back_thumbnail_url": "https://raw.githubusercontent.com/lyraprivate/custompics/main/cw/cw1_001b_t.png",
-		
-		"name": "루이스 커닝엄",
-		"subname": "심문 전문가",
-		"skill_willpower": 3,
-		"skill_intellect": 4,
-        "skill_combat": 2,
-        "skill_agility": 3,
-		
-		"traits": "Police. Criminal.",
-		"text": "[reaction] 당신이 <b>총</b> 자산으로 적을 공격할 때: 이번 공격에 당신의 [intellect]을 추가합니다. 성공하면, 그 적에게 피해를 주는 것이 아니라 그 대신, 당신이 위치한 장소에서 단서를 1개 발견합니다. 난이도를 넘어선 차이 X 이상으로 성공하면, 그 적을 자동 회피합니다. X는 그 적의 회피값입니다. (라운드당 적마다 단서 발견은 1번 한정.)\n[elder_sign] 효과: +2. 성공하면, 당신이 조종하는 <b>총</b> 자산마다 탄약을 1발씩 놓습니다.",
-		
-		"health": 6,
-        "sanity": 8,
-		"flavor": "",
-		
-        "back_flavor": "",
-        "back_name": "루이스 커닝엄",
-        "back_text": "<b>덱 크기:</b> 30장.\n<b>덱 구성 선택지:</b> 레벨 0-5 수호자([guardian]) 카드, 레벨 0-3 한 손 슬롯을 차지하는 <b>총</b> 카드, 레벨 0-5 중립 카드. 이외의 레벨 0-1 탐구자([seeker]) 그리고/또는 무법자([rogue]) 카드 최대 5장.\n<b>덱 구성 요구조건</b> (덱 크기에 포함되지 않습니다): 증거 인멸, 낡은 권총, 양심의 가책, 무작위 기본 약점 카드 1장.\n<b>추가 게임준비:</b> 당신은 매 게임마다 시작 카드에 추가로 '낡은 권총'을 가지고 시작합니다.",
-        "deck_requirements": "size:30, card:cw1_002, card:cw1_003, card:cw1_004, random:subtype:basicweakness",
-        "deck_options": [
-          {
-            "faction": ["guardian"],
-            "level": {
-              "min": 0,
-              "max": 5
-            }
-          },
-          {
-            "faction": ["neutral"],
-            "level": {
-              "min": 0,
-              "max": 5
-            }
-          },
-		  {
-            "not": true,
-            "trait": ["Firearm"],
-			"slot": ["Hand x2"],
-            "level": {
-              "min": 2,
-              "max": 5
-            }
-          },
-		  {
-            "trait": ["Firearm"],
-			"slot": ["Hand"],
-            "level": {
-              "min": 0,
-              "max": 3
-            }
-          },
-		  {
-			"faction": ["seeker", "rogue"],
-			"level": {
-			  "min": 0,
-			  "max": 1
-			},
-			"limit": 5
-		  }
-        ]
-      },
-      {
-		"pack_code": "72e5eaa7-dd4d-47eb-9ebc-88777c31e3aa",
-		"position": 2,
-        "quantity": 1,
-		
-        "code": "cw1_002",
-        "faction_code": "neutral",
-		"type_code": "asset",
-		"restrictions": "investigator:cw1_001",
-		"deck_limit": 1,
-		
-		"cost": 1,
-		"name": "증거 인멸",
-		"is_unique": false,
-        
-		"skill_intellect": 1,
-		"skill_combat": 1,
-        "skill_wild": 1,
-		"traits": "Talent. Illicit.",
-        "text": "루이스 커닝엄 덱 전용.\n[free] '증거 인멸'을 소진합니다: 당신이 위치한 장소에 있는 적 하나를 선택합니다. 그 적에게 피해를 1 줍니다. 이 기능은 이번 라운드에 '루이스 커닝엄'의 [reaction] 기능의 대상이 되었던 적을 대상으로만 격발할 수 있습니다.",
-		"flavor": "",
-        
-        "image_url": "https://raw.githubusercontent.com/lyraprivate/custompics/main/cw/cw1_002.png",
-        "thumbnail_url": "https://raw.githubusercontent.com/lyraprivate/custompics/main/cw/cw1_002_t.png",
-		"illustrator": ""
-      },
-	  {
-		"pack_code": "72e5eaa7-dd4d-47eb-9ebc-88777c31e3aa",
-		"position": 3,
-        "quantity": 1,
-		
-        "code": "cw1_003",
-        "faction_code": "neutral",
-		"type_code": "asset",
-		"restrictions": "investigator:cw1_001",
-		"deck_limit": 1,
-		
-		"cost": 1,
-		"name": "낡은 권총",
-		"is_unique": false,
-        
-		"skill_intellect": 1,
-		"skill_combat": 1,
-		"traits": "Item. Weapon. Firearm.",
-        "text": "루이스 커닝엄 덱 전용.\n신속. 사용(탄약 3발).\n'낡은 권총'은 부착물을 가질 수 없습니다.\n[action] 탄약을 1발 소비합니다: <b>전투.</b> 당신은 이번 공격에서 +2 [combat]을 얻습니다. 이번 공격은 일반 사거리보다 최대 1칸까지 더 떨어진 장소의 '<b>정예</b>가 아닌 적'을 대상으로 삼아도 되며, 그렇게 할 경우 '냉담한'과 '보복' 키워드를 무시합니다.",
-		"slot": "Hand",
-		"flavor": "",
-        
-        "image_url": "https://raw.githubusercontent.com/lyraprivate/custompics/main/cw/cw1_003.png",
-        "thumbnail_url": "https://raw.githubusercontent.com/lyraprivate/custompics/main/cw/cw1_003_t.png",
-		"illustrator": ""
-      },
-      {
-        "pack_code": "72e5eaa7-dd4d-47eb-9ebc-88777c31e3aa",
-        "position": 4,
-        "quantity": 1,
-		
-		"code": "cw1_004",
-		"faction_code": "neutral",
-		"type_code": "treachery",
-		"subtype_code": "weakness",
-		"restrictions": "investigator:cw1_001",
-        "deck_limit": 1,
-        
-		"name": "양심의 가책",
-        "is_unique": false,
-        
-        "traits": "Blunder.",
-		"text": "<b>폭로</b> - '양심의 가책'을 플레이 영역 중 당신의 위협 영역에 둡니다.\n<b>강제</b> - 당신이 적 하나를 회피한 후: 당신은 당신이 조종하는 단서 1개를 당신이 위치한 장소에 놓거나 공포를 1 받아야 합니다.\n[reaction]: '루이스 커닝엄'이 (당신이 유발한 틈새 공격을 제외하고) 적에게 공격받은 후: '양심의 가책'을 버립니다.",
-		"flavor": "",
-        
-        "image_url": "https://raw.githubusercontent.com/lyraprivate/custompics/main/cw/cw1_004.png",
-        "thumbnail_url": "https://raw.githubusercontent.com/lyraprivate/custompics/main/cw/cw1_004_t.png",
-		"illustrator": ""
-      },
-      {
-		"pack_code": "72e5eaa7-dd4d-47eb-9ebc-88777c31e3aa",
-        "position": 5,
-        "quantity": 1,
-		"deck_limit": 1,
-		"illustrator": "",
-        "is_unique": true,
-		
-		"code": "cw1_005",
-		"faction_code": "seeker",
-		"type_code": "investigator",
-        "double_sided": true,
-		
-		"image_url": "https://raw.githubusercontent.com/lyraprivate/custompics/main/cw/cw1_005a.png",
-        "thumbnail_url": "https://raw.githubusercontent.com/lyraprivate/custompics/main/cw/cw1_005a_t.png",
-        "back_image_url": "https://raw.githubusercontent.com/lyraprivate/custompics/main/cw/cw1_005b.png",
-        "back_thumbnail_url": "https://raw.githubusercontent.com/lyraprivate/custompics/main/cw/cw1_005b_t.png",
-		
-		"name": "앤 윈터스",
-		"subname": "검시관",
-		"skill_willpower": 3,
-		"skill_intellect": 4,
-        "skill_combat": 4,
-        "skill_agility": 1,
-		
-		"traits": "Police.",
-		"text": "이번 라운드에 적 하나가 쓰러졌던 장소에 한하여, 당신은 그 장소를 조사하는 동안 지정된 능력 대신 [combat]을 사용해야 합니다. 이러한 조사에서, 당신의 모든 [intellect] 보정값은 대신 당신의 [combat]을 보정합니다.\n[reaction] 당신이 위치한 장소에서 적 하나가 쓰러진 후: 조사 행동을 1번 수행합니다. (라운드당 1번 한정.)\n[elder_sign] 효과: +1. 성공하면, '검시관의 일지'에 증거를 1개 놓습니다.",
-		
-		"health": 7,
-        "sanity": 7,
-		"flavor": "",
-		
-        "back_flavor": "",
-        "back_name": "앤 윈터스",
-        "back_text": "<b>덱 크기:</b> 30장.\n<b>덱 구성 선택지:</b> 레벨 0-5 탐구자([seeker]) 카드. 레벨 0-3 수호자([guardian]) 카드. 레벨 0-5 중립 카드. \n<b>덱 구성 요구조건</b> (덱 크기에 포함되지 않습니다): 검시관의 일지, 검시 보고서, 은밀한 숭배자, 무작위 기본 약점 카드 1장.\n<b>덱 구성 제한:</b> 당신의 수호자 카드(탐구자가 포함된 다중 역할군은 제외) 레벨 합계는 15를 초과할 수 없습니다.\n<b>＊(주의) 덱 빌더의 한계로, 덱 구성 시 레벨 합계 15 제한이 정확히 체크되지 않습니다.</b>\n<b>추가 게임준비:</b> 당신은 '검시관의 일지'를 플레이 영역에 두고 게임을 시작합니다.",
-        "deck_requirements": "size:30, card:cw1_006, card:cw1_007, card:cw1_008, random:subtype:basicweakness",
-        "deck_options": [
-          {
-            "faction": ["seeker"],
-            "level": {
-              "min": 0,
-              "max": 5
-            }
-          },
-          {
-            "faction": ["neutral"],
-            "level": {
-              "min": 0,
-              "max": 5
-            }
-          },
-		  {
-			"faction": ["guardian"],
-			"level": {
-			  "min": 3,
-			  "max": 3
-			},
-			"limit": 5
-		  },
-		  {
-			"faction": ["guardian"],
-			"level": {
-			  "min": 2,
-			  "max": 2
-			},
-			"limit": 7
-		  },
-		  {
-			"faction": ["guardian"],
-			"level": {
-			  "min": 1,
-			  "max": 1
-			},
-			"limit": 15
-		  },
-		  {
-			"faction": ["guardian"],
-			"level": {
-			  "min": 0,
-			  "max": 0
-			}
-		  }
-        ]
-      },
-      {
-		"pack_code": "72e5eaa7-dd4d-47eb-9ebc-88777c31e3aa",
-		"position": 6,
-        "quantity": 1,
-		
-        "code": "cw1_006",
-        "faction_code": "neutral",
-		"type_code": "asset",
-		"restrictions": "investigator:cw1_005",
-		"deck_limit": 1,
-		
-		"cost": 2,
-		"name": "검시관의 일지",
-		"is_unique": false,
-        
-		"traits": "Item. Tome.",
-        "text": "앤 윈터스 덱 전용.\n사용(증거 2개).\n[action] '검시관의 일지'를 소진합니다: <b>조사</b>. 성공하면, 당신이 위치한 장소에서 추가로 단서를 1개 더 발견하기 위해 당신이 조종하는 <b>물품</b> 또는 <b>조력자</b> 자산 하나에서 증거를 1개 소비해도 됩니다. 이 기능은 이번 라운드에 적이 쓰러졌던 장소에서만 격발할 수 있습니다.",
-		"flavor": "",
-        
-        "image_url": "https://raw.githubusercontent.com/lyraprivate/custompics/main/cw/cw1_006.png",
-        "thumbnail_url": "https://raw.githubusercontent.com/lyraprivate/custompics/main/cw/cw1_006_t.png",
-		"illustrator": ""
-      },
-	  {
-		"pack_code": "72e5eaa7-dd4d-47eb-9ebc-88777c31e3aa",
-		"position": 7,
-        "quantity": 1,
-		
-        "code": "cw1_007",
-        "faction_code": "neutral",
-		"type_code": "event",
-		"restrictions": "investigator:cw1_005",
-		"deck_limit": 1,
-		
-		"cost": 3,
-		"name": "검시 보고서",
-		"is_unique": false,
-        
-		"skill_intellect": 1,
-		"skill_combat": 1,
-		"skill_wild": 1,
-		"traits": "Insight.",
-        "text": "앤 윈터스 덱 전용.\n신속. 당신이 '앤 윈터스'의 [reaction] 기능으로 실시한 조사 행동이 끝난 후 플레이할 수 있습니다.\n당신이 조종하는 <b>물품</b> 또는 <b>조력자</b> 자산에서 증거를 도합 5개 소비합니다. 그런 다음, '검시 보고서'를 승점 더미에 추가합니다.\n<b>승점 1점.</b>",
-		"flavor": "",
-        
-        "image_url": "https://raw.githubusercontent.com/lyraprivate/custompics/main/cw/cw1_007.png",
-        "thumbnail_url": "https://raw.githubusercontent.com/lyraprivate/custompics/main/cw/cw1_007_t.png",
-		"illustrator": ""
-      },
-      {
-        "pack_code": "72e5eaa7-dd4d-47eb-9ebc-88777c31e3aa",
-        "position": 8,
-        "quantity": 1,
-		
-		"code": "cw1_008",
-		"faction_code": "neutral",
-		"type_code": "enemy",
-		"subtype_code": "weakness",
-		"restrictions": "investigator:cw1_005",
-        "deck_limit": 1,
-        
-		"name": "은밀한 숭배자",
-		"enemy_fight": 2,
-		"health": 2,
-		"enemy_evade": 2,
-		"enemy_damage": 1,
-		"enemy_horror": 1,
-        "is_unique": false,
-        
-        "traits": "Humanoid. Cultist.",
-		"text": "사냥꾼.\n<b>먹잇감</b> - 오직 '앤 윈터스'만 쫓습니다.\n'앤 윈터스'의 손 슬롯을 차지하는 모든 카드의 인쇄된 글 상자는 (<b>특성</b>은 제외하고) 백지화됩니다.",
-		"flavor": "비밀은 비밀로 남아야만 한다.",
-        
-        "image_url": "https://raw.githubusercontent.com/lyraprivate/custompics/main/cw/cw1_008.png",
-        "thumbnail_url": "https://raw.githubusercontent.com/lyraprivate/custompics/main/cw/cw1_008_t.png",
-		"illustrator": ""
-      },
-	  {
-		"pack_code": "72e5eaa7-dd4d-47eb-9ebc-88777c31e3aa",
-        "position": 9,
-        "quantity": 1,
-		"deck_limit": 1,
-		"illustrator": "",
-        "is_unique": true,
-		
-		"code": "cw1_009",
-		"faction_code": "rogue",
-		"type_code": "investigator",
-        "double_sided": true,
-		
-		"image_url": "https://raw.githubusercontent.com/lyraprivate/custompics/main/cw/cw1_009a.png",
-        "thumbnail_url": "https://raw.githubusercontent.com/lyraprivate/custompics/main/cw/cw1_009a_t.png",
-        "back_image_url": "https://raw.githubusercontent.com/lyraprivate/custompics/main/cw/cw1_009b.png",
-        "back_thumbnail_url": "https://raw.githubusercontent.com/lyraprivate/custompics/main/cw/cw1_009b_t.png",
-		
-		"name": "채드 블랙우드",
-		"subname": "잠복 요원",
-		"skill_willpower": 2,
-		"skill_intellect": 3,
-        "skill_combat": 2,
-        "skill_agility": 5,
-		
-		"traits": "Agency. 진실의 횃대.",
-		"text": "조사 단계 동안, 당신은 적과 자동으로 교전하지 않습니다.\n[free] 당신과 교전 상태인 적이 없다면: <b>교전.</b> 이번 라운드의 다음 능력 테스트 한 번에 한해, 난이도를 2만큼 낮춥니다. (라운드당 1번 한정.)\n[elder_sign] 효과: +2. 성공하면, '즉흥적 발상' 이벤트를 찾아 ('즉흥적 발상'이 비플레이 상태더라도) 당신의 손으로 가져옵니다.",
-		
-		"health": 8,
-        "sanity": 6,
-		"flavor": "",
-		
-        "back_flavor": "",
-        "back_name": "채드 블랙우드",
-        "back_text": "<b>덱 크기:</b> 30장.\n<b>덱 구성 선택지:</b> 레벨 0-5 무법자([rogue]) 카드, 레벨 0-3 <b>전술</b> 카드, 레벨 0-3 <b>속임수</b> 카드, 레벨 0-5 중립 카드.\n<b>덱 구성 요구조건</b>(덱 크기에 포함되지 않습니다): 즉흥적 발상, 강박적인 규제, 무작위 기본 약점 카드 1장.",
-        "deck_requirements": "size:30, card:cw1_010, card:cw1_011, random:subtype:basicweakness",
-        "deck_options": [
-          {
-            "faction": ["rogue"],
-            "level": {
-              "min": 0,
-              "max": 5
-            }
-          },
-          {
-            "faction": ["neutral"],
-            "level": {
-              "min": 0,
-              "max": 5
-            }
-          },
-		  {
-            "trait": ["Tactic"],
-            "level": {
-              "min": 0,
-              "max": 3
-            }
-          },
-		  {
-            "trait": ["Trick"],
-            "level": {
-              "min": 0,
-              "max": 3
-            }
-          }
-        ]
-      },
-      {
-		"pack_code": "72e5eaa7-dd4d-47eb-9ebc-88777c31e3aa",
-		"position": 10,
-        "quantity": 1,
-		
-        "code": "cw1_010",
-        "faction_code": "neutral",
-		"type_code": "event",
-		"restrictions": "investigator:cw1_009",
-		"deck_limit": 1,
-		
-		"cost": 1,
-		"name": "즉흥적 발상",
-		"is_unique": false,
-        
-		"skill_intellect": 1,
-		"skill_agility": 1,
-        "skill_wild": 1,
-		"traits": "Tactic.",
-        "text": "채드 블랙우드 덱 전용.\n신속. 당신이 위치한 장소에 적이 있는 경우에만 플레이할 수 있습니다.\n당신의 덱 맨 위 카드 12장 중에서 <b>전술</b> 또는 <b>속임수</b> 이벤트를 하나 찾아, 비용을 2 낮춰 플레이합니다. 해당 카드를 플레이하는 동안, 능력 테스트의 난이도를 2만큼 낮춥니다.",
-		"flavor": "",
-        
-        "image_url": "https://raw.githubusercontent.com/lyraprivate/custompics/main/cw/cw1_010.png",
-        "thumbnail_url": "https://raw.githubusercontent.com/lyraprivate/custompics/main/cw/cw1_010_t.png",
-		"illustrator": ""
-      },
-      {
-        "pack_code": "72e5eaa7-dd4d-47eb-9ebc-88777c31e3aa",
-        "position": 11,
-        "quantity": 1,
-		
-		"code": "cw1_011",
-		"faction_code": "neutral",
-		"type_code": "treachery",
-		"subtype_code": "weakness",
-		"restrictions": "investigator:cw1_009",
-        "deck_limit": 1,
-        
-		"name": "강박적인 규제",
-        "is_unique": false,
-        
-        "traits": "Task. Flaw.",
-		"text": "<b>폭로</b> - '강박적인 규제'를 플레이 영역 중 당신의 위협 영역에 둡니다.\n<b>강제</b> - 당신이 이벤트를 플레이한 후: 토큰 저장소에서 자원 토큰을 1개 가져와 '강박적인 규제'에 놓습니다. 그런 다음, '강박적인 규제'에 놓인 자원 토큰이 4개 이상이라면, '강박적인 규제'를 당신의 덱에 섞어넣고 당신은 이번 라운드가 끝날 때까지 이벤트를 플레이할 수 없습니다.",
-		"flavor": "",
-        
-        "image_url": "https://raw.githubusercontent.com/lyraprivate/custompics/main/cw/cw1_011.png",
-        "thumbnail_url": "https://raw.githubusercontent.com/lyraprivate/custompics/main/cw/cw1_011_t.png",
-		"illustrator": ""
-      },
-	  {
-		"pack_code": "72e5eaa7-dd4d-47eb-9ebc-88777c31e3aa",
-        "position": 12,
-        "quantity": 1,
-		"deck_limit": 1,
-		"illustrator": "",
-        "is_unique": true,
-		
-		"code": "cw1_012",
-		"faction_code": "mystic",
-		"type_code": "investigator",
-        "double_sided": true,
-		
-		"image_url": "https://raw.githubusercontent.com/lyraprivate/custompics/main/cw/cw1_012a.png",
-        "thumbnail_url": "https://raw.githubusercontent.com/lyraprivate/custompics/main/cw/cw1_012a_t.png",
-        "back_image_url": "https://raw.githubusercontent.com/lyraprivate/custompics/main/cw/cw1_013.png",
-        "back_thumbnail_url": "https://raw.githubusercontent.com/lyraprivate/custompics/main/cw/cw1_013_t.png",
-		
-		"name": "진 스칼렛",
-		"subname": "저주를 받아들인 자",
-		"skill_willpower": 5,
-		"skill_intellect": 3,
-        "skill_combat": 2,
-        "skill_agility": 2,
-		
-		"traits": "Humanoid. Witch. Cursed.",
-		"text": "<b>강제</b> - 신화 단계 끝에: '진 스칼렛'을 뒤집습니다.\n<b>강제</b> - '진 스칼렛'을 이 면으로 뒤집은 후: 당신이 이번 라운드에 처음 플레이하는 카드의 비용을 1 낮춥니다. 당신은 교전 중인 모든 적과 교전을 풀고, 이어진 장소로 이동해도 됩니다.\n[reaction] 당신이 <b>마법</b> 이벤트를 플레이한 후: 그 이벤트를 버리는 것이 아니라, 그 대신 당신의 플레이 영역에 뒷면으로 둡니다(그 카드를 <b>마법</b> 특성을 가진 '잉걸불' 자산으로 간주합니다).\n[elder_sign] 효과: +1. 이번 테스트가 끝난 후, '진 스칼렛'을 뒤집어도 됩니다.",
-		
-		"health": 7,
-        "sanity": 7,
-		"flavor": "",
-		
-        "back_flavor": "",
-        "back_name": "진 스칼렛",
-        "back_text": "<b>덱 크기:</b> 30장.\n<b>덱 구성 선택지:</b> 레벨 0-5 <b>전투</b> 기능을 가진 이벤트 카드, 레벨 0-3 신비주의자([mystic]) 카드, 레벨 0-3 <b>비술</b> 카드, 레벨 0-5 중립 카드. 이외의 레벨 0 수호자([guardian]) 그리고/또는 생존자([survivor]) 카드 최대 5장.\n<b>덱 구성 요구조건</b> (덱 크기에 포함되지 않습니다): 저주의 잔불, 각성 의지, 혈월, 무작위 기본 약점 카드 1장.\n<b>추가 게임준비:</b> 당신은 게임을 준비할 때, 진 스칼렛 조사자 카드를 원하는 면으로 둡니다.",
-        "deck_requirements": "size:30, card:card:cw1_014, card:cw1_015, card:cw1_016, random:subtype:basicweakness",
-        "deck_options": [
-          {
-			"text_exact": ["<b>Fight.</b>"],
-			"type": ["event"],
-            "level": {
-              "min": 0,
-              "max": 5
-            }
-          },
-		  {
-            "faction": ["mystic"],
-            "level": {
-              "min": 0,
-              "max": 3
-            }
-          },
-		  {
-            "trait": ["Occult"],
-            "level": {
-              "min": 0,
-              "max": 3
-            }
-          },
-          {
-            "faction": ["neutral"],
-            "level": {
-              "min": 0,
-              "max": 5
-            }
-          },
-		  {
-			"faction": ["guardian", "survivor"],
-			"level": {
-			  "min": 0,
-			  "max": 0
-			},
-			"limit": 5
-		  }
-        ]
-      },
-	  {
-		"pack_code": "72e5eaa7-dd4d-47eb-9ebc-88777c31e3aa",
-        "position": 13,
-        "quantity": 1,
-		"deck_limit": 1,
-		"illustrator": "",
-		"is_unique": true,
-		
-		"code": "cw1_012b",
-		"faction_code": "mystic",
-		"type_code": "investigator",
-		"hidden": true,
-		
-		"image_url": "https://raw.githubusercontent.com/lyraprivate/custompics/main/cw/cw1_012b.png",
-        "thumbnail_url": "https://raw.githubusercontent.com/lyraprivate/custompics/main/cw/cw1_012b_t.png",
-		
-		"name": "진 스칼렛",
-		"bonded_to": "cw1_012",
-		
-		"subname": "저주를 받아들인 자",
-		"skill_willpower": 2,
-		"skill_intellect": 2,
-        "skill_combat": 4,
-        "skill_agility": 4,
-		
-		"traits": "Monster. Witch. Cursed.",
-		"text": "<b>강제</b> - 신화 단계 끝에: '진 스칼렛'을 뒤집습니다.\n<b>강제</b> - '진 스칼렛'을 이 면으로 뒤집은 후: 가장 가까운 적을 향해 1칸 이동해도 됩니다.\n[reaction] 당신이 기본 공격을 개시할 때, 당신의 플레이 영역에서 <b>마법</b> 자산을 X장 버립니다: 이번 공격에서 당신은 +2X 능력값을 얻고 +X 피해를 줍니다. (X는 최대 3.)\n[elder_sign] 효과: +1. 이번 테스트가 끝난 후, '진 스칼렛'을 뒤집어도 됩니다.",
-		
-		"health": 7,
-        "sanity": 7,
-		"flavor": ""
-      },
-      {
-		"pack_code": "72e5eaa7-dd4d-47eb-9ebc-88777c31e3aa",
-		"position": 14,
-        "quantity": 1,
-		
-        "code": "cw1_014",
-        "faction_code": "neutral",
-		"type_code": "asset",
-		"restrictions": "investigator:cw1_012",
-		"deck_limit": 1,
-		
-		"cost": 1,
-		"name": "저주의 잔불",
-		"is_unique": false,
-        
-		"skill_willpower": 1,
-		"skill_combat": 1,
-        "skill_wild": 1,
-		"traits": "Spell. Cursed.",
-        "text": "진 스칼렛 덱 전용.\n[reaction] '진 스칼렛'을 <b>괴물</b> 면으로 뒤집은 후: 당신이 위치한 장소에 있는 적 하나에게 피해를 1 줍니다.\n[reaction] '진 스칼렛'을 <b>인간형</b> 면으로 뒤집은 후: 당신의 버린 카드 더미에서 약점이 아닌 카드 1장을 선택하여 당신의 플레이 영역에 뒷면으로 둡니다(그 카드를 마법 특성을 가진 '잉걸불' 자산으로 간주합니다).",
-		"flavor": "",
-        
-        "image_url": "https://raw.githubusercontent.com/lyraprivate/custompics/main/cw/cw1_014.png",
-        "thumbnail_url": "https://raw.githubusercontent.com/lyraprivate/custompics/main/cw/cw1_014_t.png",
-		"illustrator": ""
-      },
-	  {
-		"pack_code": "72e5eaa7-dd4d-47eb-9ebc-88777c31e3aa",
-		"position": 15,
-        "quantity": 1,
-		
-        "code": "cw1_015",
-        "faction_code": "neutral",
-		"type_code": "skill",
-		"restrictions": "investigator:cw1_012",
-		"deck_limit": 1,
-		
-		"name": "각성 의지",
-		"is_unique": false,
-        
-		"skill_willpower": 1,
-		"skill_combat": 1,
-		"skill_wild": 1,
-		"traits": "Spirit. Spell.",
-        "text": "진 스칼렛 덱 전용. 당신이 수행하는 능력 테스트에만 소모할 수 있습니다.\n이번 능력 테스트가 끝난 후, '진 스칼렛'을 뒤집습니다. 그런 다음, '각성 의지'를 버리는 것이 아니라, 그 대신 당신의 플레이 영역에 뒷면으로 둬도 됩니다(그 카드를 <b>마법</b> 특성을 가진 '잉걸불' 자산으로 간주합니다).",
-		"flavor": "",
-        
-        "image_url": "https://raw.githubusercontent.com/lyraprivate/custompics/main/cw/cw1_015.png",
-        "thumbnail_url": "https://raw.githubusercontent.com/lyraprivate/custompics/main/cw/cw1_015_t.png",
-		"illustrator": ""
-      },
-      {
-        "pack_code": "72e5eaa7-dd4d-47eb-9ebc-88777c31e3aa",
-        "position": 16,
-        "quantity": 1,
-		
-		"code": "cw1_016",
-		"faction_code": "neutral",
-		"type_code": "treachery",
-		"subtype_code": "weakness",
-		"restrictions": "investigator:cw1_012",
-        "deck_limit": 1,
-        
-		"name": "혈월",
-        "is_unique": false,
-        
-        "traits": "Cursed.",
-		"text": "<b>폭로</b> - '진 스칼렛'을 <b>괴물</b> 면으로 뒤집습니다. '혈월'을 플레이 영역 중 당신의 위협 영역에 둡니다.\n'진 스칼렛'을 <b>인간형</b> 면으로 뒤집을 수 없습니다.\n[action][action][action]: '혈월'을 버립니다. 이 기능을 격발하기 위한 추가 비용으로, 당신의 손과 플레이 영역에서 <b>마법</b> 카드를 원하는 만큼 버려도 됩니다. 이렇게 버린 카드마다, 이 기능의 행동 비용이 1씩 줄어듭니다(최소 [action]).",
-		"flavor": "",
-        
-        "image_url": "https://raw.githubusercontent.com/lyraprivate/custompics/main/cw/cw1_016.png",
-        "thumbnail_url": "https://raw.githubusercontent.com/lyraprivate/custompics/main/cw/cw1_016_t.png",
-		"illustrator": ""
-      },
-	  {
-		"pack_code": "72e5eaa7-dd4d-47eb-9ebc-88777c31e3aa",
-        "position": 17,
-        "quantity": 1,
-		"deck_limit": 1,
-		"illustrator": "",
-        "is_unique": true,
-		
-		"code": "cw1_017",
-		"faction_code": "survivor",
-		"type_code": "investigator",
-        "double_sided": true,
-		
-		"image_url": "https://raw.githubusercontent.com/lyraprivate/custompics/main/cw/cw1_017a.png",
-        "thumbnail_url": "https://raw.githubusercontent.com/lyraprivate/custompics/main/cw/cw1_017a_t.png",
-        "back_image_url": "https://raw.githubusercontent.com/lyraprivate/custompics/main/cw/cw1_017b.png",
-        "back_thumbnail_url": "https://raw.githubusercontent.com/lyraprivate/custompics/main/cw/cw1_017b_t.png",
-		
-		"name": "올리브 스콧",
-		"subname": "핑커튼 탐정",
-		"skill_willpower": 4,
-		"skill_intellect": 2,
-        "skill_combat": 5,
-        "skill_agility": 1,
-		
-		"traits": "Chosen.",
-		"text": "테스트 동안, 당신이 공개하는 [elder_sign] 토큰을 [auto_fail] 토큰으로 취급합니다.\n[reaction] 당신이 (조사/전투/회피/조우 카드에 있는) 능력 테스트에 실패한 후: 이번 라운드에, 당신이 수행하는 그와 동일한 종류의 다음 번 능력 테스트 한 번에 한해, 혼돈 토큰을 1개 대신 2개 공개합니다. 그중 1개를 무시합니다.\n[auto_fail] 효과: 0. 난이도에 모자란 차이 0으로 자동 실패합니다. 지금이 당신의 차례라면, 당신은 이번 차례에 추가로 행동 한 번을 더 수행해도 됩니다.",
-		
-		"health": 8,
-        "sanity": 6,
-		"flavor": "",
-		
-        "back_flavor": "",
-        "back_name": "올리브 스콧",
-        "back_text": "<b>덱 크기:</b> 30장.\n<b>덱 구성 선택지:</b> 레벨 0-5 생존자([survivor]) 카드, 레벨 0-2 <b>마법</b>이 아닌 신비주의자([mystic]) 카드, 레벨 0-5 중립 카드.\n<b>덱 구성 요구조건</b>(덱 크기에 포함되지 않습니다):</b> 궂은 날도 지나가리라 사본 2장, 노덴스의 부름, 무작위 기본 약점 카드 1장.",
-        "deck_requirements": "size:30, card:cw1_018, card:cw1_019, random:subtype:basicweakness",
-        "deck_options": [
-          {
-            "faction": ["survivor"],
-            "level": {
-              "min": 0,
-              "max": 5
-            }
-          },
-          {
-            "faction": ["neutral"],
-            "level": {
-              "min": 0,
-              "max": 5
-            }
-          },
-		  {
-            "not": true,
-            "trait": ["Spell"],
-			"faction": ["mystic"],
-            "level": {
-              "min": 0,
-              "max": 2
-            }
-          },
-		  {
-            "faction": ["mystic"],
-            "level": {
-              "min": 0,
-              "max": 2
-            }
-          }
-        ]
-      },
-      {
-		"pack_code": "72e5eaa7-dd4d-47eb-9ebc-88777c31e3aa",
-		"position": 18,
-        "quantity": 2,
-		
-        "code": "cw1_018",
-        "faction_code": "neutral",
-		"type_code": "skill",
-		"restrictions": "investigator:cw1_017",
-		"deck_limit": 2,
-		
-		"cost": 1,
-		"name": "궂은 날도 지나가리라",
-		"is_unique": false,
-        
-		"skill_willpower": 1,
-		"skill_intellect": 1,
-		"skill_combat": 1,
-		"skill_agility": 1,
-        "skill_wild": 2,
-		"traits": "Innate.",
-        "text": "올리브 스콧 덱 전용. '올리브 스콧'의 차례 동안 수행되는 능력 테스트에만 소모할 수 있습니다.\n이번 능력 테스트에서는 혼돈 주머니에서 혼돈 토큰을 공개하지 않습니다. 이번 테스트에서 [auto_fail] 토큰이 공개된 것으로 간주합니다. 이번 테스트 동안, 당신은 카드를 뽑을 수도 자원을 획득할 수도 없습니다.",
-		"flavor": "",
-        
-        "image_url": "https://raw.githubusercontent.com/lyraprivate/custompics/main/cw/cw1_018.png",
-        "thumbnail_url": "https://raw.githubusercontent.com/lyraprivate/custompics/main/cw/cw1_018_t.png",
-		"illustrator": ""
-      },
-      {
-        "pack_code": "72e5eaa7-dd4d-47eb-9ebc-88777c31e3aa",
-        "position": 19,
-        "quantity": 1,
-		
-		"code": "cw1_019",
-		"faction_code": "neutral",
-		"type_code": "treachery",
-		"subtype_code": "weakness",
-		"restrictions": "investigator:cw1_017",
-        "deck_limit": 1,
-        
-		"name": "노덴스의 부름",
-        "is_unique": false,
-        
-        "traits": "Task. Pact.",
-		"text": "<b>폭로</b> - '노덴스의 부름'을 플레이 영역 중 당신의 위협 영역에 둡니다.\n<b>강제</b> - 당신이 (조사/전투/회피/조우 카드에 있는) 능력 테스트에 실패한 후: 이번 라운드에, 당신이 수행하는 그와 동일한 종류의 다음 번 능력 테스트 한 번에 한 해, -2 능력값을 얻습니다.\n[free] 당신이 수행하는 능력 테스트 동안, '올리브 스콧'의 능력값이 0이라면: '노덴스의 부름'을 버립니다.",
-		"flavor": "",
-        
-        "image_url": "https://raw.githubusercontent.com/lyraprivate/custompics/main/cw/cw1_019.png",
-        "thumbnail_url": "https://raw.githubusercontent.com/lyraprivate/custompics/main/cw/cw1_019_t.png",
-		"illustrator": ""
-      },
-	  {
-		"pack_code": "72e5eaa7-dd4d-47eb-9ebc-88777c31e3aa",
-        "position": 20,
-        "quantity": 1,
-		"deck_limit": 1,
-		"illustrator": "",
-        "is_unique": true,
-		
-		"code": "cw2_020x",
-		"faction_code": "guardian",
-		"type_code": "investigator",
-        "double_sided": true,
-		
-		"image_url": "https://raw.githubusercontent.com/lyraprivate/custompics/main/cw/cw2_020a.png",
-        "thumbnail_url": "https://raw.githubusercontent.com/lyraprivate/custompics/main/cw/cw2_020a_t.png",
-        "back_image_url": "https://raw.githubusercontent.com/lyraprivate/custompics/main/cw/cw2_020b.png",
-        "back_thumbnail_url": "https://raw.githubusercontent.com/lyraprivate/custompics/main/cw/cw2_020b_t.png",
-		
-		"name": "류드밀라 로마노바(수호자)",
-		"subname": "저격수",
-		"skill_willpower": 2,
-		"skill_intellect": 2,
-        "skill_combat": 5,
-        "skill_agility": 3,
-		
-		"traits": "Veteran. Criminal.",
-		"text": "당신에게 손 슬롯이 1칸 추가됩니다. 이 손 슬롯에는 <b>무기</b> 자산만 놓을 수 있습니다.\n[reaction] 당신이 양손 슬롯을 차지하는 <b>총</b> 자산에 있는 <b>전투</b> 행동을 개시할 때: 이 공격은 일반 사거리보다 최대 1칸까지 더 떨어진 공개된 장소에 있는 '<b>정예</b>가 아닌 적'을 대상으로 삼아도 됩니다. 이번 공격은 -1 피해를 줍니다. 이번 공격으로 어떠한 적에게도 피해를 주지 못했다면, '저격수의 자부심'을 소진하거나 공포를 1 받아야 합니다.\n[elder_sign] 효과: +1. 성공하면, '저격수의 자부심'을 뒤집거나 준비시켜도 됩니다.",
-		
-		"health": 7,
-        "sanity": 7,
-		"flavor": "",
-		
-        "back_flavor": "",
-        "back_name": "류드밀라 로마노바",
-        "back_text": "<b>덱 크기:</b> 30장.\n<b>덱 구성 선택지:</b> 레벨 0-5 수호자([guardian]) 카드. 레벨 0-1 무법자([rogue]) 카드. 레벨 0-5 중립 카드. 레벨 0-5 양손 슬롯을 차지하는 <b>총</b> 카드.\n<b>덱 구성 요구조건</b>(덱 크기에 포함되지 않습니다): 저격수의 자부심, 암시장 특별 개조(<b>불법</b>이 없는 버전), 전쟁의 허상, 무작위 기본 약점 카드 1장.\n<b>추가 게임준비:</b> 당신은 '저격수의 자부심'을 (부동 조준) 면으로 플레이 영역에 두고 게임을 시작합니다.\n<b>추가 제한조건:</b> 명칭에 산탄총이 포함된 카드 포함 불가.",
-        "deck_requirements": "size:30, card:cw2_021ax, card:cw2_021bx, card:cw2_022, card:cw2_024x, random:subtype:basicweakness",
-        "deck_options": [
-          {
-			"not": true,
-            "text_exact": ["Instead of its standard damage, this attack deals 1 damage for each point you succeed by (to a minimum of 1, to a maximum of 5). If you fail and would damage another investigator, this attack deals 1 damage for each point you fail by (to a minimum of 1, to a maximum of 5)."],
-			"faction": ["guardian"],
-            "level": {
-              "min": 4,
-              "max": 4
-            }
-          },
-		  {
-            "not": true,
-			"text_exact": ["Instead of its standard damage, this attack deals 1 damage for each point you succeed by (to a minimum of 1, to a maximum of 6). If you fail and would damage another investigator, this attack deals 1 damage for each point you fail by (to a minimum of 1, to a maximum of 6)."],
-			"faction": ["rogue"],
-            "level": {
-              "min": 5,
-              "max": 5
-            }
-          },
-		  {
-            "not": true,
-			"text_exact": ["Instead of its standard damage, this attack's damage is equal to the amount you succeed by, or fail by if you fail and would damage another investigator (to a minimum of 1, to a maximum of 3)."],
-			"faction": ["guardian"],
-            "level": {
-              "min": 2,
-              "max": 2
-            }
-          },
-		  {
-            "faction": ["guardian"],
-            "level": {
-              "min": 0,
-              "max": 5
-            }
-          },
-		  {
-            "faction": ["rogue"],
-            "level": {
-              "min": 0,
-              "max": 1
-            }
-          },
-          {
-            "faction": ["neutral"],
-            "level": {
-              "min": 0,
-              "max": 5
-            }
-          },
-		  {
-            "trait": ["Firearm"],
-			"slot": ["Hand x2"],
-            "level": {
-              "min": 0,
-              "max": 5
-            }
-          }
-        ]
-      },
-	  {
-		"pack_code": "72e5eaa7-dd4d-47eb-9ebc-88777c31e3aa",
-        "position": 20,
-        "quantity": 1,
-		"deck_limit": 1,
-		"illustrator": "",
-        "is_unique": true,
-		
-		"code": "cw2_020y",
-		"faction_code": "guardian",
-		"type_code": "investigator",
-        "double_sided": true,
-		
-		"image_url": "https://raw.githubusercontent.com/lyraprivate/custompics/main/cw/cw2_020a.png",
-        "thumbnail_url": "https://raw.githubusercontent.com/lyraprivate/custompics/main/cw/cw2_020a_t.png",
-        "back_image_url": "https://raw.githubusercontent.com/lyraprivate/custompics/main/cw/cw2_020b.png",
-        "back_thumbnail_url": "https://raw.githubusercontent.com/lyraprivate/custompics/main/cw/cw2_020b_t.png",
-		
-		"name": "류드밀라 로마노바(무법자)",
-		"subname": "저격수",
-		"skill_willpower": 2,
-		"skill_intellect": 2,
-        "skill_combat": 5,
-        "skill_agility": 3,
-		
-		"traits": "Veteran. Criminal.",
-		"text": "당신에게 손 슬롯이 1칸 추가됩니다. 이 손 슬롯에는 <b>무기</b> 자산만 놓을 수 있습니다.\n[reaction] 당신이 양손 슬롯을 차지하는 <b>총</b> 자산에 있는 <b>전투</b> 행동을 개시할 때: 이 공격은 일반 사거리보다 최대 1칸까지 더 떨어진 공개된 장소에 있는 '<b>정예</b>가 아닌 적'을 대상으로 삼아도 됩니다. 이번 공격은 -1 피해를 줍니다. 이번 공격으로 어떠한 적에게도 피해를 주지 못했다면, '저격수의 자부심'을 소진하거나 공포를 1 받아야 합니다.\n[elder_sign] 효과: +1. 성공하면, '저격수의 자부심'을 뒤집거나 준비시켜도 됩니다.",
-		
-		"health": 7,
-        "sanity": 7,
-		"flavor": "",
-		
-        "back_flavor": "",
-        "back_name": "류드밀라 로마노바",
-        "back_text": "<b>덱 크기:</b> 30장.\n<b>덱 구성 선택지:</b> 레벨 0-5 무법자([rogue]) 카드. 레벨 0-1 수호자([guardian]) 카드. 레벨 0-5 중립 카드. 레벨 0-5 양손 슬롯을 차지하는 <b>총</b> 카드.\n<b>덱 구성 요구조건</b>(덱 크기에 포함되지 않습니다): 저격수의 자부심, 암시장 특별 개조(<b>불법</b>이 있는 버전), 전쟁의 허상, 무작위 기본 약점 카드 1장.\n<b>추가 게임준비:</b> 당신은 '저격수의 자부심'을 (부동 조준) 면으로 플레이 영역에 두고 게임을 시작합니다.\n<b>추가 제한조건:</b> 명칭에 산탄총이 포함된 카드 포함 불가.",
-        "deck_requirements": "size:30, card:cw2_021ay, card:cw2_021by, card:cw2_023, card:cw2_024y, random:subtype:basicweakness",
-        "deck_options": [
-          {
-			"not": true,
-            "text_exact": ["Instead of its standard damage, this attack deals 1 damage for each point you succeed by (to a minimum of 1, to a maximum of 5). If you fail and would damage another investigator, this attack deals 1 damage for each point you fail by (to a minimum of 1, to a maximum of 5)."],
-			"faction": ["guardian"],
-            "level": {
-              "min": 4,
-              "max": 4
-            }
-          },
-		  {
-            "not": true,
-			"text_exact": ["Instead of its standard damage, this attack deals 1 damage for each point you succeed by (to a minimum of 1, to a maximum of 6). If you fail and would damage another investigator, this attack deals 1 damage for each point you fail by (to a minimum of 1, to a maximum of 6)."],
-			"faction": ["rogue"],
-            "level": {
-              "min": 5,
-              "max": 5
-            }
-          },
-		  {
-            "not": true,
-			"text_exact": ["Instead of its standard damage, this attack's damage is equal to the amount you succeed by, or fail by if you fail and would damage another investigator (to a minimum of 1, to a maximum of 3)."],
-			"faction": ["guardian"],
-            "level": {
-              "min": 2,
-              "max": 2
-            }
-          },
-		  {
-            "faction": ["rogue"],
-            "level": {
-              "min": 0,
-              "max": 5
-            }
-          },
-		  {
-            "faction": ["guardian"],
-            "level": {
-              "min": 0,
-              "max": 1
-            }
-          },
-          {
-            "faction": ["neutral"],
-            "level": {
-              "min": 0,
-              "max": 5
-            }
-          },
-		  {
-            "trait": ["Firearm"],
-			"slot": ["Hand x2"],
-            "level": {
-              "min": 0,
-              "max": 5
-            }
-          }
-        ]
-      },
-      {
-		"pack_code": "72e5eaa7-dd4d-47eb-9ebc-88777c31e3aa",
-		"position": 21,
-        "quantity": 1,
-		
-        "code": "cw2_021ax",
-        "faction_code": "neutral",
-		"type_code": "asset",
-		"restrictions": "investigator:cw2_020x",
-		"deck_limit": 1,
-		
-		"name": "저격수의 자부심",
-		"subname": "부동 조준",
-		"is_unique": false,
-		"permanent": true,
-        
-		"traits": "Talent.",
-        "text": "영속. 류드밀라 로마노바 덱 전용.\n[reaction] 당신이 '류드밀라 로마노바'의 [reaction] 기능을 격발할 때: 그 기능의 \"최대 1칸까지\"라는 문구를 \"최대 2칸까지\"로, \"-1 피해\"라는 문구를 \"-2 피해\"로 바꿉니다.\n[free] 당신이 1칸 이상 떨어진 적을 공격하는 동안, '저격수의 자부심'을 소진합니다: 이번 공격은 +1 피해를 줍니다. 이번 공격이 끝난 후, 이 카드를 뒤집습니다.",
-		"flavor": "",
-        
-        "image_url": "https://raw.githubusercontent.com/lyraprivate/custompics/main/cw/cw2_021a.png",
-        "thumbnail_url": "https://raw.githubusercontent.com/lyraprivate/custompics/main/cw/cw2_021a_t.png",
-		"illustrator": ""
-      },
-	  {
-		"pack_code": "72e5eaa7-dd4d-47eb-9ebc-88777c31e3aa",
-		"position": 21,
-        "quantity": 1,
-		
-        "code": "cw2_021ay",
-        "faction_code": "neutral",
-		"type_code": "asset",
-		"restrictions": "investigator:cw2_020y",
-		"deck_limit": 1,
-		
-		"name": "저격수의 자부심",
-		"subname": "부동 조준",
-		"is_unique": false,
-		"permanent": true,
-        
-		"traits": "Talent.",
-        "text": "영속. 류드밀라 로마노바 덱 전용.\n[reaction] 당신이 '류드밀라 로마노바'의 [reaction] 기능을 격발할 때: 그 기능의 \"최대 1칸까지\"라는 문구를 \"최대 2칸까지\"로, \"-1 피해\"라는 문구를 \"-2 피해\"로 바꿉니다.\n[free] 당신이 1칸 이상 떨어진 적을 공격하는 동안, '저격수의 자부심'을 소진합니다: 이번 공격은 +1 피해를 줍니다. 이번 공격이 끝난 후, 이 카드를 뒤집습니다.",
-		"flavor": "",
-        
-        "image_url": "https://raw.githubusercontent.com/lyraprivate/custompics/main/cw/cw2_021a.png",
-        "thumbnail_url": "https://raw.githubusercontent.com/lyraprivate/custompics/main/cw/cw2_021a_t.png",
-		"illustrator": ""
-      },
-	  {
-		"pack_code": "72e5eaa7-dd4d-47eb-9ebc-88777c31e3aa",
-		"position": 21,
-        "quantity": 1,
-		
-        "code": "cw2_021bx",
-        "faction_code": "neutral",
-		"type_code": "asset",
-		"restrictions": "investigator:cw2_020x",
-		"deck_limit": 1,
-		
-		"name": "저격수의 자부심",
-		"subname": "전술적 대비",
-		"is_unique": false,
-		"permanent": true,
-        
-		"traits": "Talent.",
-        "text": "영속. 류드밀라 로마노바 덱 전용.\n[reaction] 당신이 <b>전술/속임수/영혼</b> 이벤트를 플레이한 후: '저격수의 자부심'을 뒤집거나 준비시킵니다.\n[action]: '저격수의 자부심'을 뒤집거나 준비시킵니다.",
-		"flavor": "",
-        
-        "image_url": "https://raw.githubusercontent.com/lyraprivate/custompics/main/cw/cw2_021b.png",
-        "thumbnail_url": "https://raw.githubusercontent.com/lyraprivate/custompics/main/cw/cw2_021b_t.png",
-		"illustrator": ""
-      },
-	  {
-		"pack_code": "72e5eaa7-dd4d-47eb-9ebc-88777c31e3aa",
-		"position": 21,
-        "quantity": 1,
-		
-        "code": "cw2_021by",
-        "faction_code": "neutral",
-		"type_code": "asset",
-		"restrictions": "investigator:cw2_020y",
-		"deck_limit": 1,
-		
-		"name": "저격수의 자부심",
-		"subname": "전술적 대비",
-		"is_unique": false,
-		"permanent": true,
-        
-		"traits": "Talent.",
-        "text": "영속. 류드밀라 로마노바 덱 전용.\n[reaction] 당신이 <b>전술/속임수/영혼</b> 이벤트를 플레이한 후: '저격수의 자부심'을 뒤집거나 준비시킵니다.\n[action]: '저격수의 자부심'을 뒤집거나 준비시킵니다.",
-		"flavor": "",
-        
-        "image_url": "https://raw.githubusercontent.com/lyraprivate/custompics/main/cw/cw2_021b.png",
-        "thumbnail_url": "https://raw.githubusercontent.com/lyraprivate/custompics/main/cw/cw2_021b_t.png",
-		"illustrator": ""
-      },
-	  {
-		"pack_code": "72e5eaa7-dd4d-47eb-9ebc-88777c31e3aa",
-		"position": 22,
-        "quantity": 1,
-		
-		"cost": 2,
-        "code": "cw2_022",
-        "faction_code": "neutral",
-		"type_code": "event",
-		"restrictions": "investigator:cw2_020x",
-		"deck_limit": 1,
-		
-		"name": "암시장 특별 개조",
-		"is_unique": false,
-        
-		"skill_combat": 2,
-		"skill_wild": 1,
-		"traits": "Tactic. Upgrade.",
-        "text": "류드밀라 로마노바 덱 전용.\n당신이 조종하며 양손 슬롯을 차지하는 <b>총</b> 자산에 부착합니다.\n[free] 부착된 자산에 있는 전투 행동을 수행하는 동안, 당신이 위치한 장소에 있지 않은 적을 공격 대상으로 삼았다면, '암시장 특별 개조'를 소진합니다: 당신은 이번 공격에서 +2 [combat]을 얻거나 +1 피해를 줍니다.",
-		"flavor": "",
-        
-        "image_url": "https://raw.githubusercontent.com/lyraprivate/custompics/main/cw/cw2_022.png",
-        "thumbnail_url": "https://raw.githubusercontent.com/lyraprivate/custompics/main/cw/cw2_022_t.png",
-		"illustrator": ""
-      },
-	  {
-		"pack_code": "72e5eaa7-dd4d-47eb-9ebc-88777c31e3aa",
-		"position": 23,
-        "quantity": 1,
-		
-		"cost": 2,
-        "code": "cw2_023",
-        "faction_code": "neutral",
-		"type_code": "event",
-		"restrictions": "investigator:cw2_020y",
-		"deck_limit": 1,
-		
-		"name": "암시장 특별 개조",
-		"is_unique": false,
-        
-		"skill_combat": 2,
-		"skill_wild": 1,
-		"traits": "Tactic. Illicit. Upgrade.",
-        "text": "류드밀라 로마노바 덱 전용.\n신속. 당신이 조종하며 양손 슬롯을 차지하는 <b>총</b> 자산에 부착합니다.\n[reaction] '저격수의 자부심'을 (부동 조준) 면으로 뒤집은 후, '암시장 특별 개조'를 소진합니다: 부착된 자산에 탄약을 1발 놓습니다.\n[free]: '암시장 특별 개조'를 당신의 손으로 가져옵니다.",
-		"flavor": "",
-        
-        "image_url": "https://raw.githubusercontent.com/lyraprivate/custompics/main/cw/cw2_023.png",
-        "thumbnail_url": "https://raw.githubusercontent.com/lyraprivate/custompics/main/cw/cw2_023_t.png",
-		"illustrator": ""
-      },
-      {
-        "pack_code": "72e5eaa7-dd4d-47eb-9ebc-88777c31e3aa",
-        "position": 24,
-        "quantity": 1,
-		
-		"code": "cw2_024x",
-		"faction_code": "neutral",
-		"type_code": "enemy",
-		"subtype_code": "weakness",
-		"restrictions": "investigator:cw2_020x",
-        "deck_limit": 1,
-        
-		"name": "전쟁의 허상",
-		"enemy_fight": 4,
-		"health": 1,
-		"enemy_evade": 4,
-		"enemy_horror": 1,
-        "is_unique": false,
-        
-        "traits": "Eidolon. Terror. Madness.",
-		"text": "위험. 숨김.\n<b>폭로</b> - 이 적을 공개하지 않고 당신의 손에 듭니다.\n당신은 이 적이 자신의 손에 있는 동안, 이 적을 조사자 한 명(가능하다면 다른 조사자)과 교전한 것처럼 간주하여 이 적을 대상으로 전투를 수행해도 됩니다. 성공하면, 당신의 손에서 이 카드를 버립니다.\n<b>강제</b> - 당신의 차례 끝에, '전쟁의 허상'이 당신의 손에 있다면: 이 적이 (당신의 손에서) 당신을 공격합니다.",
-		"flavor": "비밀은 비밀로 남아야만 한다.",
-        
-        "image_url": "https://raw.githubusercontent.com/lyraprivate/custompics/main/cw/cw2_024.png",
-        "thumbnail_url": "https://raw.githubusercontent.com/lyraprivate/custompics/main/cw/cw2_024_t.png",
-		"illustrator": ""
-      },
-	  {
-        "pack_code": "72e5eaa7-dd4d-47eb-9ebc-88777c31e3aa",
-        "position": 24,
-        "quantity": 1,
-		
-		"code": "cw2_024y",
-		"faction_code": "neutral",
-		"type_code": "enemy",
-		"subtype_code": "weakness",
-		"restrictions": "investigator:cw2_020y",
-        "deck_limit": 1,
-        
-		"name": "전쟁의 허상",
-		"enemy_fight": 4,
-		"health": 1,
-		"enemy_evade": 4,
-		"enemy_horror": 1,
-        "is_unique": false,
-        
-        "traits": "Eidolon. Terror. Madness.",
-		"text": "위험. 숨김.\n<b>폭로</b> - 이 적을 공개하지 않고 당신의 손에 듭니다.\n당신은 이 적이 자신의 손에 있는 동안, 이 적을 조사자 한 명(가능하다면 다른 조사자)과 교전한 것처럼 간주하여 이 적을 대상으로 전투를 수행해도 됩니다. 성공하면, 당신의 손에서 이 카드를 버립니다.\n<b>강제</b> - 당신의 차례 끝에, '전쟁의 허상'이 당신의 손에 있다면: 이 적이 (당신의 손에서) 당신을 공격합니다.",
-        
-        "image_url": "https://raw.githubusercontent.com/lyraprivate/custompics/main/cw/cw2_024.png",
-        "thumbnail_url": "https://raw.githubusercontent.com/lyraprivate/custompics/main/cw/cw2_024_t.png",
-		"illustrator": ""
-      },
-	  {
-		"pack_code": "72e5eaa7-dd4d-47eb-9ebc-88777c31e3aa",
-        "position": 25,
-        "quantity": 1,
-		"deck_limit": 1,
-		"illustrator": "",
-        "is_unique": true,
-		
-		"code": "cw2_025",
-		"faction_code": "seeker",
-		"type_code": "investigator",
-        "double_sided": true,
-		
-		"image_url": "https://raw.githubusercontent.com/lyraprivate/custompics/main/cw/cw2_025a.png",
-        "thumbnail_url": "https://raw.githubusercontent.com/lyraprivate/custompics/main/cw/cw2_025a_t.png",
-        "back_image_url": "https://raw.githubusercontent.com/lyraprivate/custompics/main/cw/cw2_025b.png",
-        "back_thumbnail_url": "https://raw.githubusercontent.com/lyraprivate/custompics/main/cw/cw2_025b_t.png",
-		
-		"name": "대니얼 킴",
-		"subname": "고유물 연구자",
-		"skill_willpower": 3,
-		"skill_intellect": 5,
-        "skill_combat": 2,
-        "skill_agility": 2,
-		
-		"traits": "Miskatonic. Scholar.",
-		"text": "당신이 조종하는 모든 '연구됨' 카드는 어떠한 슬롯도 차지하지 않습니다.\n당신은 (정체불명) 또는 (미해석본) 별칭을 가진 카드도 '연구됨' 카드로 간주합니다.\n[reaction] 당신이 '연구됨' 자산을 플레이할 때: 그 자산의 비용을 1 낮추거나 (또는) 당신의 덱에서 그 자산과 명칭이 같은 자산을 하나 찾아서 플레이합니다. (라운드 당 1번 한정.)\n[elder_sign] 효과: +1. 당신은 자신의 덱에서 '연구됨' 카드를 1장 찾아 당신의 손으로 가져와도 됩니다.",
-		
-		"health": 8,
-        "sanity": 6,
-		"flavor": "",
-		
-        "back_flavor": "",
-        "back_name": "대니얼 킴",
-        "back_text": "<b>덱 크기:</b> 30장.\n<b>덱 구성 선택지:</b> 레벨 0-3 탐구자([seeker]) 카드. 레벨 0-5 '연구됨' 카드. 레벨 0-5 중립 카드.\n<b>덱 구성 요구조건</b>(덱 크기에 포함되지 않습니다):</b> 연구 기록, 기록 소실, 무작위 기본 약점 카드 1장.\n<b>추가 선택지:</b> 언제든 당신이 '연구됨' 카드를 향상할 때, 그 카드의 향상된 사본을 1장 추가로 경험치 비용의 지불 없이 덱에 포함해도 됩니다. 이때, 포함하려는 카드는 유효한 선택지 중에서 무작위로 선택해야 합니다(이렇게 포함한 카드는 당신의 덱 크기를 계산하거나 당신의 덱에서 카드 사본 개수를 계산할 때 포함하지 않습니다).\n<b>추가 게임준비:</b> 당신이 3레벨 이상이고 명칭이 다른 '연구됨' 카드를 도합 6장 덱에 포함한 상태라면, 당신은 '완벽한 기록'을 플레이 영역에 두고 시작합니다.",
-        "deck_requirements": "size:30, card:cw2_026, card:cw2_028, random:subtype:basicweakness",
-        "deck_options": [
-          {
-            "faction": ["seeker"],
-            "level": {
-              "min": 0,
-              "max": 3
-            }
-          },
-          {
-            "faction": ["neutral"],
-            "level": {
-              "min": 0,
-              "max": 5
-            }
-          },
-		  {
-            "text_exact": ["Researched."],
-            "level": {
-              "min": 0,
-              "max": 5
-            }
-          }
-        ]
-      },
-      {
-		"pack_code": "72e5eaa7-dd4d-47eb-9ebc-88777c31e3aa",
-		"position": 26,
-        "quantity": 1,
-		
-        "code": "cw2_026",
-        "faction_code": "neutral",
-		"type_code": "asset",
-		"restrictions": "investigator:cw2_025",
-		"deck_limit": 1,
-		
-		"name": "연구 기록",
-		"is_unique": true,
-		"permanent": true,
-        
-		"traits": "Item. Tome.",
-        "text": "영속. 대니얼 킴 덱 전용. 사용(기록 X개). X는 서로 다른 (정체불명) 또는 (미해석본) 별칭을 가진 카드의 효과로 캠페인 기록지에 기록한 항목 개수입니다.\n[free] 기록을 1개 소비합니다: 당신의 손에서 '연구됨' 카드를 1장 플레이합니다.\n[reaction] 당신이 '연구됨' 카드에 있는 [action] 기능을 해결한 후, 기록을 1개 소비합니다: 그와 명칭이 다른 '연구됨' 카드에 있는 [action] 기능을 하나 활성화합니다.",
-		"flavor": "",
-        
-        "image_url": "https://raw.githubusercontent.com/lyraprivate/custompics/main/cw/cw2_026.png",
-        "thumbnail_url": "https://raw.githubusercontent.com/lyraprivate/custompics/main/cw/cw2_026_t.png",
-		"illustrator": ""
-      },
-	  {
-		"pack_code": "72e5eaa7-dd4d-47eb-9ebc-88777c31e3aa",
-		"position": 27,
-        "quantity": 1,
-		
-		"bonded_count": 1,
-		"bonded_to": "cw2_026",
-        "code": "cw2_027",
-        "faction_code": "neutral",
-		"type_code": "asset",
-		"restrictions": "investigator:cw2_025",
-		"deck_limit": 1,
-		
-		"name": "완벽한 기록",
-		"is_unique": true,
-		"permanent": true,
-        
-		"traits": "Item. Tome.",
-        "text": "영속. 대니얼 킴 덱 전용.\n'완벽한 기록'은 플레이 영역에서 나갈 수 없습니다.\n당신의 차례 동안, 당신은 추가로 행동을 1번 더 수행해도 됩니다. 단, 이 추가 행동은 '연구됨' 카드에 있는 [action] 기능에만 사용할 수 있습니다.",
-		"flavor": "",
-        
-        "image_url": "https://raw.githubusercontent.com/lyraprivate/custompics/main/cw/cw2_027.png",
-        "thumbnail_url": "https://raw.githubusercontent.com/lyraprivate/custompics/main/cw/cw2_027_t.png",
-		"illustrator": ""
-      },
-      {
-        "pack_code": "72e5eaa7-dd4d-47eb-9ebc-88777c31e3aa",
-        "position": 28,
-        "quantity": 1,
-		
-		"code": "cw2_028",
-		"faction_code": "neutral",
-		"type_code": "treachery",
-		"subtype_code": "weakness",
-		"restrictions": "investigator:cw2_025",
-        "deck_limit": 1,
-        
-		"name": "기록 소실",
-        "is_unique": false,
-        
-        "traits": "Hazard. Blunder.",
-		"text": "<b>폭로</b> - 당신이 조종하는 '연구됨' 자산마다, 그 자산에 놓인 이용물을 1개씩 제거합니다. 이 효과로 자산에 놓인 마지막 이용물이 제거되었다면, 그 자산을 버립니다. 이 효과로 이용물이 도합 4개 이상 제거되지 않았다면, '기록 소실'을 당신의 덱에 섞어넣습니다.",
-		"flavor": "",
-        
-        "image_url": "https://raw.githubusercontent.com/lyraprivate/custompics/main/cw/cw2_028.png",
-        "thumbnail_url": "https://raw.githubusercontent.com/lyraprivate/custompics/main/cw/cw2_028_t.png",
-		"illustrator": ""
-      },
-	  {
-		"pack_code": "72e5eaa7-dd4d-47eb-9ebc-88777c31e3aa",
-        "position": 29,
-        "quantity": 1,
-		"deck_limit": 1,
-		"illustrator": "",
-        "is_unique": true,
-		
-		"code": "cw2_029",
-		"faction_code": "rogue",
-		"type_code": "investigator",
-        "double_sided": true,
-		
-		"image_url": "https://raw.githubusercontent.com/lyraprivate/custompics/main/cw/cw2_029a.png",
-        "thumbnail_url": "https://raw.githubusercontent.com/lyraprivate/custompics/main/cw/cw2_029a_t.png",
-        "back_image_url": "https://raw.githubusercontent.com/lyraprivate/custompics/main/cw/cw2_029b.png",
-        "back_thumbnail_url": "https://raw.githubusercontent.com/lyraprivate/custompics/main/cw/cw2_029b_t.png",
-		
-		"name": "존 맥나마라",
-		"subname": "하원 의원",
-		"skill_willpower": 3,
-		"skill_intellect": 3,
-        "skill_combat": 3,
-        "skill_agility": 3,
-		
-		"traits": "Socialite.",
-		"text": "'존 맥나마라'는 자신의 밑에 있는 카드에 나와 있는 능력 아이콘([wild] 아이콘 제외)마다, 그와 일치하는 능력에 +1씩을 얻습니다.\n[free] 당신의 차례 동안, 당신의 손에서 <b>조력자</b> 자산을 1장 공개합니다: 모든 비용과 조건을 무시하고 그 카드의 [free] 또는 [action] 기능 하나를 해결합니다. 그 카드를 '존 맥나마라' 밑에 놓습니다. (이미 '존 맥나마라' 밑에 카드가 있다면, 밑에 있던 카드부터 버립니다.)\n[elder_sign] 효과: +1. '존 맥나마라' 밑에 있는 카드를 당신의 손으로 가져와도 됩니다.",
-		
-		"health": 7,
-        "sanity": 7,
-		"flavor": "",
-		
-        "back_flavor": "",
-        "back_name": "존 맥나마라",
-        "back_text": "<b>덱 크기:</b> 30장.\n<b>덱 구성 선택지:</b> 레벨 0-3 무법자([rogue]) 카드. 레벨 0-5 <b>조력자</b> 카드. 레벨 0-5 중립 카드.\n<b>덱 구성 요구조건</b>(덱 크기에 포함되지 않습니다):</b> 잭 케인, 선거철, 무작위 기본 약점 카드 1장.",
-        "deck_requirements": "size:30, card:cw2_030, card:cw2_031, random:subtype:basicweakness",
-        "deck_options": [
-          {
-            "faction": ["rogue"],
-            "level": {
-              "min": 0,
-              "max": 3
-            }
-          },
-          {
-            "faction": ["neutral"],
-            "level": {
-              "min": 0,
-              "max": 5
-            }
-          },
-		  {
-            "trait": ["Ally"],
-            "level": {
-              "min": 0,
-              "max": 5
-            }
-          }
-        ]
-      },
-      {
-		"pack_code": "72e5eaa7-dd4d-47eb-9ebc-88777c31e3aa",
-		"position": 30,
-        "quantity": 1,
-		
-        "code": "cw2_030",
-        "faction_code": "neutral",
-		"type_code": "asset",
-		"restrictions": "investigator:cw2_029",
-		"deck_limit": 1,
-		
-		"cost": 1,
-		"name": "잭 케인",
-		"subname": "충직한 비서실장",
-		"is_unique": true,
-        
-		"skill_wild": 2,
-		"traits": "Ally. Assistant.",
-        "text": "존 맥나마라 덱 전용. 이 카드가 '존 맥나마라' 밑에 있는 동안, 당신은 모든 능력에 +1을 얻습니다.\n[action]: 자원을 1개 획득합니다. 이번 차례에 이 기능을 2번 이상 실시했다면, 추가로 자원을 1개 더 획득합니다.\n[reaction] 당신의 차례 끝에, 이 카드가 '존 맥나마라' 밑에 있다면: '잭 케인'을 당신의 손으로 가져옵니다.",
-		"flavor": "",
-        
-        "image_url": "https://raw.githubusercontent.com/lyraprivate/custompics/main/cw/cw2_030.png",
-        "thumbnail_url": "https://raw.githubusercontent.com/lyraprivate/custompics/main/cw/cw2_030_t.png",
-		"illustrator": ""
-      },{
-        "pack_code": "72e5eaa7-dd4d-47eb-9ebc-88777c31e3aa",
-        "position": 31,
-        "quantity": 1,
-		
-		"code": "cw2_031",
-		"faction_code": "neutral",
-		"type_code": "treachery",
-		"subtype_code": "weakness",
-		"restrictions": "investigator:cw2_029",
-        "deck_limit": 1,
-        
-		"name": "선거철",
-        "is_unique": false,
-        
-        "traits": "Task.",
-		"text": "<b>폭로</b> - '선거철'을 플레이 영역 중 당신의 위협 영역에 둡니다.\n<b>강제</b> - 당신의 차례를 시작할 때: 자원을 2개 잃거나 행동을 1번 잃어야 합니다.\n<b>강제</b> - '존 맥나마라'의 [free] 기능을 통해, 그의 밑에서 카드를 버릴 때: '선거철'에 자원을 1개 놓습니다. 그런 다음, 이 카드에 자원이 2개 이상 있다면 '선거철'을 버립니다.",
-		"flavor": "",
-        
-        "image_url": "https://raw.githubusercontent.com/lyraprivate/custompics/main/cw/cw2_031.png",
-        "thumbnail_url": "https://raw.githubusercontent.com/lyraprivate/custompics/main/cw/cw2_031_t.png",
-		"illustrator": ""
-      },
-	  {
-		"pack_code": "72e5eaa7-dd4d-47eb-9ebc-88777c31e3aa",
-        "position": 32,
-        "quantity": 1,
-		"deck_limit": 1,
-		"illustrator": "",
-        "is_unique": true,
-		
-		"code": "cw2_032",
-		"faction_code": "mystic",
-		"type_code": "investigator",
-        "double_sided": true,
-		
-		"image_url": "https://raw.githubusercontent.com/lyraprivate/custompics/main/cw/cw2_032a.png",
-        "thumbnail_url": "https://raw.githubusercontent.com/lyraprivate/custompics/main/cw/cw2_032a_t.png",
-        "back_image_url": "https://raw.githubusercontent.com/lyraprivate/custompics/main/cw/cw2_032b.png",
-        "back_thumbnail_url": "https://raw.githubusercontent.com/lyraprivate/custompics/main/cw/cw2_032b_t.png",
-		
-		"name": "제이슨 캘러핸",
-		"subname": "구도자",
-		"skill_willpower": 0,
-		"skill_intellect": 4,
-        "skill_combat": 4,
-        "skill_agility": 4,
-		
-		"traits": "Sorcerer. Scholar.",
-		"text": "[reaction] 당신이 플레이어 카드에 있는 [willpower] 테스트를 개시할 때: [willpower] 대신 당신이 원하는 능력을 테스트합니다. 해당 기능에서 제공하는 [willpower] 보정값은 그 대신 이번 테스트와 일치하는 능력을 보정합니다.\n[reaction] 당신이 능력 카드를 소모한 테스트에서, 난이도를 넘어선 차이 2 이상으로 성공한 후: 카드를 1장 뽑습니다. (라운드당 1번 한정.)\n[elder_sign] 효과: +3. 이번 테스트에 능력 카드를 2장 이상 소모했다면, 카드를 1장 뽑습니다.",
-		
-		"health": 5,
-        "sanity": 9,
-		"flavor": "",
-		
-        "back_flavor": "",
-        "back_name": "제이슨 캘러핸",
-        "back_text": "<b>덱 크기:</b> 30장.\n<b>보조 역할군 선택:</b> 덱 구성 시, 수호자([guardian])/탐구자([seeker])/무법자([rogue])/생존자([survivor]) 중 하나 선택.\n<b>덱 구성 선택지:</b> 레벨 0-5 신비주의자([mystic]) 카드. 레벨 0-5 중립 카드. 레벨 0-3 당신이 선택한 보조 역할군의 능력 카드.\n<b>덱 구성 요구조건</b>(덱 크기에 포함되지 않습니다):</b> 구도자의 길, 주화입마, 무작위 기본 약점 카드 1장.",
-        "deck_requirements": "size:30, card:cw2_033, card:cw2_034, random:subtype:basicweakness",
-        "deck_options": [
-          {
-            "faction": ["mystic"],
-            "level": {
-              "min": 0,
-              "max": 5
-            }
-          },
-          {
-            "faction": ["neutral"],
-            "level": {
-              "min": 0,
-              "max": 5
-            }
-          },
-		  {
-            "faction_select": ["guardian", "seeker", "rogue", "survivor"],
-			"name": "보조 역할군",
-			"type": ["skill"],
-            "level": {
-              "min": 0,
-              "max": 3
-            }
-          }
-        ]
-      },
-      {
-		"pack_code": "72e5eaa7-dd4d-47eb-9ebc-88777c31e3aa",
-		"position": 33,
-        "quantity": 1,
-		
-        "code": "cw2_033",
-        "faction_code": "neutral",
-		"type_code": "skill",
-		"restrictions": "investigator:cw2_032",
-		"deck_limit": 1,
-		
-		"name": "구도자의 길",
-		"is_unique": false,
-        
-		"traits": "Spirit. Expert.",
-        "text": "제이슨 캘러핸 덱 전용. 오직 '제이슨 캘러핸'만이 이 카드를 소모할 수 있습니다.\n당신이 능력 테스트에 '구도자의 길'을 소모한 후, 당신의 덱에서 능력 카드를 하나 찾아서 뽑습니다. 이번 능력 테스트 동안, '구도자의 길'은 그 카드의 아이콘과 문구를 획득합니다(이러한 문구를 해결하는 목적에서, '구도자의 길'은 그 카드와 명칭이 동일한 것으로 간주합니다).",
-		"flavor": "",
-        
-        "image_url": "https://raw.githubusercontent.com/lyraprivate/custompics/main/cw/cw2_033.png",
-        "thumbnail_url": "https://raw.githubusercontent.com/lyraprivate/custompics/main/cw/cw2_033_t.png",
-		"illustrator": ""
-      },{
-        "pack_code": "72e5eaa7-dd4d-47eb-9ebc-88777c31e3aa",
-        "position": 34,
-        "quantity": 1,
-		
-		"code": "cw2_034",
-		"faction_code": "neutral",
-		"type_code": "treachery",
-		"subtype_code": "weakness",
-		"restrictions": "investigator:cw2_032",
-        "deck_limit": 1,
-        
-		"name": "주화입마",
-        "is_unique": false,
-        
-        "traits": "Flaw.",
-		"text": "<b>폭로</b> - '주화입마'를 플레이 영역 중 당신의 위협 영역에 둡니다.\n<b>강제</b> - 당신은 자신이 수행하는 능력 테스트마다, (가능하다면) 당신의 손에서 소모할 수 있는 모든 카드를 소모해야 합니다.\n[action][action]: '주화입마'를 버립니다.",
-		"flavor": "",
-        
-        "image_url": "https://raw.githubusercontent.com/lyraprivate/custompics/main/cw/cw2_034.png",
-        "thumbnail_url": "https://raw.githubusercontent.com/lyraprivate/custompics/main/cw/cw2_034_t.png",
-		"illustrator": ""
-      },
-	  {
-		"pack_code": "72e5eaa7-dd4d-47eb-9ebc-88777c31e3aa",
-        "position": 35,
-        "quantity": 1,
-		"deck_limit": 1,
-		"illustrator": "",
-        "is_unique": true,
-		
-		"code": "cw2_035",
-		"faction_code": "survivor",
-		"type_code": "investigator",
-        "double_sided": true,
-		
-		"image_url": "https://raw.githubusercontent.com/lyraprivate/custompics/main/cw/cw2_035a.png",
-        "thumbnail_url": "https://raw.githubusercontent.com/lyraprivate/custompics/main/cw/cw2_035a_t.png",
-        "back_image_url": "https://raw.githubusercontent.com/lyraprivate/custompics/main/cw/cw2_035b.png",
-        "back_thumbnail_url": "https://raw.githubusercontent.com/lyraprivate/custompics/main/cw/cw2_035b_t.png",
-		
-		"name": "아서 테넌트",
-		"subname": "해결사",
-		"skill_willpower": 2,
-		"skill_intellect": 2,
-        "skill_combat": 2,
-        "skill_agility": 2,
-		
-		"traits": "Drifter. Entrepreneur.",
-		"text": "당신은 '만능 공구함'을 플레이 영역에 두고 게임을 시작합니다.\n<b>강제</b> - 당신이 (전투/조사/회피/협상/조우 카드에 있는 활성화) 중, 이번 라운드에 당신이 실시하지 않은 행동을 개시할 때: 이번 행동을 해결하는 동안, 모든 능력 테스트의 난이도가 2만큼 감소합니다.\n[elder_sign] 효과: +2. 성공하면, 이번 라운드가 끝날 때까지 위 <b>강제</b> 기능의 조건을 \"당신이 행동을 개시할 때\"로 바꿉니다.",
-		
-		"health": 6,
-        "sanity": 8,
-		"flavor": "",
-		
-        "back_flavor": "",
-        "back_name": "아서 테넌트",
-        "back_text": "<b>덱 크기:</b> 30장.\n<b>덱 구성 선택지:</b> 레벨 0-5 생존자([survivor]) 카드. 레벨 0-5 중립 카드. 이외의 레벨 0-1 이벤트 그리고/또는 능력 카드 최대 10장.\n<b>덱 구성 요구조건</b>(덱 크기에 포함되지 않습니다):</b> 만능 공구함, 변변치 못한 일, 무작위 기본 약점 카드 1장.",
-        "deck_requirements": "size:30, card:cw2_036, card:cw2_040, random:subtype:basicweakness",
-        "deck_options": [
-          {
-            "faction": ["survivor"],
-            "level": {
-              "min": 0,
-              "max": 5
-            }
-          },
-          {
-            "faction": ["neutral"],
-            "level": {
-              "min": 0,
-              "max": 5
-            }
-          },
-		  {
-			"type": ["event", "skill"],
-			"level": {
-			  "min": 0,
-			  "max": 1
-			},
-			"limit": 10
-		  }
-        ]
-      },
-      {
-		"pack_code": "72e5eaa7-dd4d-47eb-9ebc-88777c31e3aa",
-		"position": 36,
-        "quantity": 1,
-		
-        "code": "cw2_036",
-        "faction_code": "neutral",
-		"type_code": "asset",
-		"restrictions": "investigator:cw2_035",
-		"deck_limit": 1,
-		
-		"cost": 3,
-		"name": "만능 공구함",
-		"is_unique": false,
-        
-		"traits": "Item.",
-        "text": "아서 테넌트 덱 전용.\n<b>강제</b> - '만능 공구함'이 플레이 영역에서 나갈 때: '쇠지렛대', '수색 막대', '반사판'의 위치(비플레이 상태더라도)를 모두 확인하여 비플레이 상태로 치워 둡니다.\n[free]: '만능 공구함'에서 부착된 카드를 비플레이 상태로 치워 둡니다. 당신의 결속 카드에서 '쇠지렛대', '수색 막대', '반사판' 중 하나를 확인하여 그 카드를 '만능 공구함'에 앞면으로 부착합니다.",
-		"flavor": "",
-        
-        "image_url": "https://raw.githubusercontent.com/lyraprivate/custompics/main/cw/cw2_036.png",
-        "thumbnail_url": "https://raw.githubusercontent.com/lyraprivate/custompics/main/cw/cw2_036_t.png",
-		"illustrator": ""
-      },
-	  {
-		"pack_code": "72e5eaa7-dd4d-47eb-9ebc-88777c31e3aa",
-		"position": 37,
-        "quantity": 1,
-		
-		"bonded_count": 1,
-		"bonded_to": "cw2_036",
-        "code": "cw2_037",
-        "faction_code": "neutral",
-		"type_code": "asset",
-		"restrictions": "investigator:cw2_035",
-		"deck_limit": 1,
-		
-		"name": "쇠지렛대",
-		"is_unique": false,
-		
-        "skill_combat": 1,
-		"traits": "Item. Tool. Weapon. Melee.",
-        "text": "결속(만능 공구함).\n[reaction] 당신이 공격하는 데 성공하려 할 때, '만능 공구함'을 소진합니다: 당신은 이번 능력 테스트에서 -1 능력값을 얻습니다. 이번 테스트가 성공하면, 이번 공격은 +1 피해를 줍니다.\n[reaction] 당신이 공격하는 데 실패하려 할 때, '만능 공구함'을 소진합니다: 이번 능력 테스트가 -1 난이도를 얻습니다. 성공한 테스트의 모든 효과를 취소합니다.",
-		"flavor": "",
-        
-        "image_url": "https://raw.githubusercontent.com/lyraprivate/custompics/main/cw/cw2_037.png",
-        "thumbnail_url": "https://raw.githubusercontent.com/lyraprivate/custompics/main/cw/cw2_037_t.png",
-		"illustrator": ""
-      },
-	  {
-		"pack_code": "72e5eaa7-dd4d-47eb-9ebc-88777c31e3aa",
-		"position": 38,
-        "quantity": 1,
-		
-		"bonded_count": 1,
-		"bonded_to": "cw2_036",
-        "code": "cw2_038",
-        "faction_code": "neutral",
-		"type_code": "asset",
-		"restrictions": "investigator:cw2_035",
-		"deck_limit": 1,
-		
-		"name": "수색 막대",
-		"is_unique": false,
-		
-        "skill_intellect": 1,
-		"traits": "Item. Tool.",
-        "text": "결속(만능 공구함).\n[reaction] 당신이 조사하는 데 성공하려 할 때, '만능 공구함'을 소진합니다: 당신은 이번 능력 테스트에서 -1 능력값을 얻습니다. 이번 테스트가 성공하면, 당신이 위치한 장소에서 추가로 단서를 1개 더 발견합니다.\n[reaction] 당신이 조사하는 데 실패하려 할 때, '만능 공구함'을 소진합니다: 이번 능력 테스트가 -1 난이도를 얻습니다. 성공한 테스트의 모든 효과를 취소합니다.",
-		"flavor": "",
-        
-        "image_url": "https://raw.githubusercontent.com/lyraprivate/custompics/main/cw/cw2_038.png",
-        "thumbnail_url": "https://raw.githubusercontent.com/lyraprivate/custompics/main/cw/cw2_038_t.png",
-		"illustrator": ""
-      },
-	  {
-		"pack_code": "72e5eaa7-dd4d-47eb-9ebc-88777c31e3aa",
-		"position": 39,
-        "quantity": 1,
-		
-		"bonded_count": 1,
-		"bonded_to": "cw2_036",
-        "code": "cw2_039",
-        "faction_code": "neutral",
-		"type_code": "asset",
-		"restrictions": "investigator:cw2_035",
-		"deck_limit": 1,
-		
-		"name": "반사판",
-		"is_unique": false,
-		
-        "skill_intellect": 1,
-		"traits": "Item. Tool.",
-        "text": "결속(만능 공구함).\n[reaction] 당신이 회피 시도하는 데 성공하려 할 때, '만능 공구함'을 소진합니다: 당신은 이번 능력 테스트에서 -1 능력값을 얻습니다. 이번 테스트가 성공하면, 당신은 이어진 장소 한 곳으로 이동하거나 회피한 적(<b>정예</b>가 아닌 경우에 한해)을 당신으로부터 1칸 멀리 이동시켜도 됩니다.\n[reaction] 당신이 회피 시도하는 데 실패하려 할 때, '만능 공구함'을 소진합니다: 이번 능력 테스트가 -1 난이도를 얻습니다. 성공한 테스트의 모든 효과를 취소합니다.",
-		"flavor": "",
-        
-        "image_url": "https://raw.githubusercontent.com/lyraprivate/custompics/main/cw/cw2_039.png",
-        "thumbnail_url": "https://raw.githubusercontent.com/lyraprivate/custompics/main/cw/cw2_039_t.png",
-		"illustrator": ""
-      },
-	  {
-        "pack_code": "72e5eaa7-dd4d-47eb-9ebc-88777c31e3aa",
-        "position": 40,
-        "quantity": 1,
-		
-		"code": "cw2_040",
-		"faction_code": "neutral",
-		"type_code": "treachery",
-		"subtype_code": "weakness",
-		"restrictions": "investigator:cw2_035",
-        "deck_limit": 1,
-        
-		"name": "변변치 못한 일",
-        "is_unique": false,
-        
-        "traits": "Task.",
-		"text": "<b>폭로</b> - '변변치 못한 일'을 플레이 영역 중 당신의 위협 영역에 둡니다.\n<b>강제</b> - 당신이 난이도가 2 이하인 능력 테스트를 개시한 후: 자원을 1개 잃거나 공포를 1 받아야 합니다.\n<b>강제</b> - '아서 테넌트'가 난이도가 3 이상인 테스트에 성공한 후: '변변치 못한 일'을 버립니다.",
-		"flavor": "",
-        
-        "image_url": "https://raw.githubusercontent.com/lyraprivate/custompics/main/cw/cw2_040.png",
-        "thumbnail_url": "https://raw.githubusercontent.com/lyraprivate/custompics/main/cw/cw2_040_t.png",
-		"illustrator": ""
-      },
-	  
-	  
-	  
-	  
-	  
-	  
-	  {
-		"pack_code": "72e5eaa7-dd4d-47eb-9ebc-88777c31e3aa",
-        "position": 177,
-        "quantity": 1,
-		"deck_limit": 1,
-		"illustrator": "",
-        "is_unique": true,
-		
-		"code": "touhou_177",
-		"faction_code": "survivor",
-		"type_code": "investigator",
-        "double_sided": true,
-		
-		"image_url": "https://raw.githubusercontent.com/lyraprivate/custompics/main/touhou/touhou_177a.png",
-        "thumbnail_url": "https://raw.githubusercontent.com/lyraprivate/custompics/main/touhou/touhou_177a_t.png",
-        "back_image_url": "https://raw.githubusercontent.com/lyraprivate/custompics/main/touhou/touhou_177b.png",
-        "back_thumbnail_url": "https://raw.githubusercontent.com/lyraprivate/custompics/main/touhou/touhou_177b_t.png",
-		
-		"name": "미스티아 로렐라이",
-		"subname": "심야식당의 여주인",
-		"skill_willpower": 3,
-		"skill_intellect": 3,
-        "skill_combat": 2,
-        "skill_agility": 4,
-		
-		"traits": "요스즈메. Entrepreneur.",
-		"text": "당신의 장소에 있는 다른 조사자만 이 카드의 [action] 기능을 활성화할 수 있습니다.\n[action] 카드를 3장 뽑고, 2장 버립니다: 버린 카드 중에서 서로 다른 능력 아이콘을 2개 고릅니다. 그 중 하나의 [wild] 아이콘을 임의의 능력 아이콘으로 간주해도 됩니다. '야작식당 메뉴판'의 해당하는 효과를 해결합니다(조사자 당 라운드 1회 한정).\n[elder_sign] 효과: +2. 다른 조사자를 선택하여 덱이나 버린 카드 더미에서 '야작식당 음식 배달'을 찾아 뽑고 덱을 섞도록 합니다.",
-		
-		"health": 6,
-        "sanity": 8,
-		"flavor": "밤이라 배가 많이 고프시조? 먹고 싶은게 있으면 편하게 말하세요.",
-		
-        "back_flavor": "",
-        "back_name": "미스티아 로렐라이",
-        "back_text": "<b>덱 크기:</b> 35장.\n<b>덱 구성 선택지:</b> 레벨 0-5 생존자([survivor]) 카드. 레벨 0 능력 아이콘이 있는 다른 역할군 카드 최대 10장, 레벨 0-5 중립 카드.\n<b>덱 구성 요구조건</b>(덱 크기에 포함되지 않습니다): 야작식당 음식 배달 3장, 개점준비 1장, 아노이변 1장, 무작위 기본 약점 카드 1장.",
-        "deck_requirements": "size:35, card:touhou_178, card:touhou_181, card:touhou_183, random:subtype:basicweakness",
-        "deck_options": [
-          {
-            "faction": ["survivor"],
-            "level": {
-              "min": 0,
-              "max": 5
-            }
-          },
-          {
-            "faction": ["neutral"],
-            "level": {
-              "min": 0,
-              "max": 5
-            }
-          },
-		  {
-            "level": {
-              "min": 0,
-              "max": 0
-            },
-			"limit": 10
-          }
-        ]
-      },
-      {
-		"pack_code": "72e5eaa7-dd4d-47eb-9ebc-88777c31e3aa",
-		"position": 178,
-        "quantity": 3,
-		
-        "code": "touhou_178",
-        "faction_code": "survivor",
-		"type_code": "event",
-		"restrictions": "investigator:touhou_177",
-		"deck_limit": 3,
-		
-		"cost": 1,
-		"name": "야작식당 음식 배달",
-		"is_unique": false,
-        
-		"skill_willpower": 1,
-		"skill_intellect": 1,
-		"skill_combat": 1,
-		"skill_agility": 1,
-		"traits": "Tactic. Supply.",
-        "text": "미스티아 로렐라이 덱 전용.\n신속. 당신의 차례 동안에만 플레이합니다.\n다른 조사자 한 명을 선택합니다. 장소 제한을 무시하고, 그 조사자가 '미스티아 로렐라이'의 [action] 기능을 [action] 비용을 지불하지 않고 해결하도록 합니다.",
-		"flavor": "밤참새 식당의 최신 배달 서비스를 이용해 주셔서 감사합니다.",
-        
-        "image_url": "https://raw.githubusercontent.com/lyraprivate/custompics/main/touhou/touhou_178p.png",
-        "thumbnail_url": "https://raw.githubusercontent.com/lyraprivate/custompics/main/touhou/touhou_178p_t.png",
-		"illustrator": ""
-      },
-	  {
-		"pack_code": "72e5eaa7-dd4d-47eb-9ebc-88777c31e3aa",
-		"position": 181,
-        "quantity": 1,
-		
-        "code": "touhou_179",
-        "faction_code": "neutral",
-		"type_code": "event",
-		"restrictions": "investigator:touhou_177",
-		"deck_limit": 1,
-		
-		"name": "개점준비",
-		"is_unique": true,
-		"permanent": true,
-        
-		"traits": "Talent.",
-        "text": "미스티아 로렐라이 덱 전용. 영속.\n[reaction] 아무 조사자가 '미스티아 로렐라이'의 [action] 기능을 통해 손에서 카드를 버릴 때, '개점준비'를 소진합니다: 대신 당신과 그 조사자가 합쳐서 카드를 총 2장 버리고(여전히 비용을 지불한 것으로 간주합니다), 당신도 '야작식당 메뉴판'의 해당하는 효과를 해결합니다.",
-		"flavor": "소녀 요리중...",
-        
-        "image_url": "https://raw.githubusercontent.com/lyraprivate/custompics/main/touhou/touhou_181p.png",
-        "thumbnail_url": "https://raw.githubusercontent.com/lyraprivate/custompics/main/touhou/touhou_181p_t.png",
-		"illustrator": ""
-      },
-	  {
-        "pack_code": "72e5eaa7-dd4d-47eb-9ebc-88777c31e3aa",
-        "position": 183,
-        "quantity": 1,
-		
-		"code": "touhou_183",
-		"faction_code": "neutral",
-		"type_code": "enemy",
-		"subtype_code": "weakness",
-		"restrictions": "investigator:touhou_177",
-        "deck_limit": 1,
-        
-		"name": "아노이변",
-		"enemy_fight": 3,
-		"enemy_evade": 2,
-		"enemy_damage": 1,
-		"enemy_horror": 1,
-        "is_unique": false,
-        
-        "traits": "환상. Elite.",
-		"text": "사냥꾼. 경계.\n<b>먹잇감</b> - '미스티아 로렐라이'.\n<b>강제</b> - 조사자가 '미스티아 로렐라이'의 [action] 기능을 통해 손에서 카드 2장을 버린 후, 그 중 무작위로 1장을 게임에서 제거하고 이 카드에 자원을 1개 놓습니다. 이 카드에 자원이 3개 이상 있다면, 이 카드를 게임에서 제거하고, '사이교우지 유우코' 조사자가 있다면 그 조사자의 피해와 공포를 1 회복합니다.",
-        
-        "image_url": "https://raw.githubusercontent.com/lyraprivate/custompics/main/touhou/touhou_183p.png",
-        "thumbnail_url": "https://raw.githubusercontent.com/lyraprivate/custompics/main/touhou/touhou_183p_t.png",
-		"illustrator": ""
-      }
-    ],
-    "encounter_sets": [],
-    "packs": [
-      {
-        "code": "72e5eaa7-dd4d-47eb-9ebc-88777c31e3aa",
-        "name": "로컬 커스텀",
-        "date_release": "2026-09-09",
-        "icon_url": "https://eons.arkham.build/c00a0d19-d317-48b8-a3cb-a859fdb89a02-collection-icon.png?cachebust=1770310060604"
-      }
-    ]
+   "cards": [
+     {
+      "pack_code": "72e5eaa7-dd4d-47eb-9ebc-88777c31e3aa",
+      "position": 1,
+      "quantity": 1,
+      "deck_limit": 1,
+      "illustrator": "",
+      "is_unique": true,
+      
+      "code": "cw1_001",
+      "faction_code": "guardian",
+      "type_code": "investigator",
+      "double_sided": true,
+      
+      "image_url": "https://raw.githubusercontent.com/lyraprivate/custompics/main/cw/cw1_001a.png",
+      "thumbnail_url": "https://raw.githubusercontent.com/lyraprivate/custompics/main/cw/cw1_001a_t.png",
+      "back_image_url": "https://raw.githubusercontent.com/lyraprivate/custompics/main/cw/cw1_001b.png",
+      "back_thumbnail_url": "https://raw.githubusercontent.com/lyraprivate/custompics/main/cw/cw1_001b_t.png",
+      
+      "name": "루이스 커닝엄",
+      "subname": "심문 전문가",
+      "skill_willpower": 3,
+      "skill_intellect": 4,
+      "skill_combat": 2,
+      "skill_agility": 3,
+      
+      "traits": "Police. Criminal.",
+      "text": "[reaction] 당신이 <b>총</b> 자산으로 적을 공격할 때: 이번 공격에 당신의 [intellect]을 추가합니다. 성공하면, 그 적에게 피해를 주는 것이 아니라 그 대신, 당신이 위치한 장소에서 단서를 1개 발견합니다. 난이도를 넘어선 차이 X 이상으로 성공하면, 그 적을 자동 회피합니다. X는 그 적의 회피값입니다. (라운드당 적마다 단서 발견은 1번 한정.)\n[elder_sign] 효과: +2. 성공하면, 당신이 조종하는 <b>총</b> 자산마다 탄약을 1발씩 놓습니다.",
+      
+      "health": 6,
+      "sanity": 8,
+      "flavor": "",
+      
+      "back_flavor": "",
+      "back_name": "루이스 커닝엄",
+      "back_text": "<b>덱 크기:</b> 30장.\n<b>덱 구성 선택지:</b> 레벨 0-5 수호자([guardian]) 카드. 레벨 0-3 한 손 슬롯을 차지하는 <b>총</b> 카드. 레벨 0-5 중립 카드. 이외의 레벨 0-1 탐구자([seeker]) 그리고/또는 무법자([rogue]) 카드 최대 5장.\n<b>덱 구성 요구조건</b> (덱 크기에 포함되지 않습니다): 증거 인멸, 낡은 권총, 양심의 가책, 무작위 기본 약점 카드 1장.\n<b>추가 게임준비:</b> 당신은 매 게임마다 시작 카드에 추가로 '낡은 권총'을 가지고 시작합니다.",
+      "deck_requirements": "size:30, card:cw1_002, card:cw1_003, card:cw1_004, random:subtype:basicweakness",
+      "deck_options": [
+        {
+         "faction": ["guardian"],
+         "level": {"min": 0, "max": 5}
+        },
+        {
+         "faction": ["neutral"],
+         "level": {"min": 0, "max": 5}
+        },
+        {
+         "not": true,
+         "trait": ["Firearm"],
+         "slot": ["Hand x2"],
+         "level": {"min": 2, "max": 5}
+        },
+        {
+         "trait": ["Firearm"],
+         "slot": ["Hand"],
+         "level": {"min": 0, "max": 3}
+        },
+        {
+         "faction": ["seeker", "rogue"],
+         "level": {"min": 0, "max": 1},
+         "limit": 5
+        }
+      ]
+     },
+     {
+      "pack_code": "72e5eaa7-dd4d-47eb-9ebc-88777c31e3aa",
+      "position": 2,
+      "quantity": 1,
+      
+      "code": "cw1_002",
+      "faction_code": "neutral",
+      "type_code": "asset",
+      "restrictions": "investigator:cw1_001",
+      "deck_limit": 1,
+      
+      "cost": 1,
+      "name": "증거 인멸",
+      "is_unique": false,
+      
+      "skill_intellect": 1,
+      "skill_combat": 1,
+      "skill_wild": 1,
+      "traits": "Talent. Illicit.",
+      "text": "루이스 커닝엄 덱 전용.\n[free] '증거 인멸'을 소진합니다: 당신이 위치한 장소에 있는 적 하나를 선택합니다. 그 적에게 피해를 1 줍니다. 이 기능은 이번 라운드에 '루이스 커닝엄'의 [reaction] 기능의 대상이 되었던 적을 대상으로만 격발할 수 있습니다.",
+      "flavor": "",
+      
+      "image_url": "https://raw.githubusercontent.com/lyraprivate/custompics/main/cw/cw1_002.png",
+      "thumbnail_url": "https://raw.githubusercontent.com/lyraprivate/custompics/main/cw/cw1_002_t.png",
+      "illustrator": ""
+     },
+     {
+      "pack_code": "72e5eaa7-dd4d-47eb-9ebc-88777c31e3aa",
+      "position": 3,
+      "quantity": 1,
+      
+      "code": "cw1_003",
+      "faction_code": "neutral",
+      "type_code": "asset",
+      "restrictions": "investigator:cw1_001",
+      "deck_limit": 1,
+      
+      "cost": 1,
+      "name": "낡은 권총",
+      "is_unique": false,
+      
+      "skill_intellect": 1,
+      "skill_combat": 1,
+      "traits": "Item. Weapon. Firearm.",
+      "text": "루이스 커닝엄 덱 전용.\n신속. 사용(탄약 3발).\n'낡은 권총'은 부착물을 가질 수 없습니다.\n[action] 탄약을 1발 소비합니다: <b>전투.</b> 당신은 이번 공격에서 +2 [combat]을 얻습니다. 이번 공격은 일반 사거리보다 최대 1칸까지 더 떨어진 장소의 '<b>정예</b>가 아닌 적'을 대상으로 삼아도 되며, 그렇게 할 경우 '냉담한'과 '보복' 키워드를 무시합니다.",
+      "slot": "Hand",
+      "flavor": "",
+      
+      "image_url": "https://raw.githubusercontent.com/lyraprivate/custompics/main/cw/cw1_003.png",
+      "thumbnail_url": "https://raw.githubusercontent.com/lyraprivate/custompics/main/cw/cw1_003_t.png",
+      "illustrator": ""
+     },
+     {
+      "pack_code": "72e5eaa7-dd4d-47eb-9ebc-88777c31e3aa",
+      "position": 4,
+      "quantity": 1,
+      
+      "code": "cw1_004",
+      "faction_code": "neutral",
+      "type_code": "treachery",
+      "subtype_code": "weakness",
+      "restrictions": "investigator:cw1_001",
+      "deck_limit": 1,
+      
+      "name": "양심의 가책",
+      "is_unique": false,
+      
+      "traits": "Blunder.",
+      "text": "<b>폭로</b> - '양심의 가책'을 플레이 영역 중 당신의 위협 영역에 둡니다.\n<b>강제</b> - 당신이 적 하나를 회피한 후: 당신은 당신이 조종하는 단서 1개를 당신이 위치한 장소에 놓거나 공포를 1 받아야 합니다.\n[reaction]: '루이스 커닝엄'이 (당신이 유발한 틈새 공격을 제외하고) 적에게 공격받은 후: '양심의 가책'을 버립니다.",
+      "flavor": "",
+      
+      "image_url": "https://raw.githubusercontent.com/lyraprivate/custompics/main/cw/cw1_004.png",
+      "thumbnail_url": "https://raw.githubusercontent.com/lyraprivate/custompics/main/cw/cw1_004_t.png",
+      "illustrator": ""
+     },
+     {
+      "pack_code": "72e5eaa7-dd4d-47eb-9ebc-88777c31e3aa",
+      "position": 5,
+      "quantity": 1,
+      "deck_limit": 1,
+      "illustrator": "",
+      "is_unique": true,
+      
+      "code": "cw1_005",
+      "faction_code": "seeker",
+      "type_code": "investigator",
+      "double_sided": true,
+      
+      "image_url": "https://raw.githubusercontent.com/lyraprivate/custompics/main/cw/cw1_005a.png",
+      "thumbnail_url": "https://raw.githubusercontent.com/lyraprivate/custompics/main/cw/cw1_005a_t.png",
+      "back_image_url": "https://raw.githubusercontent.com/lyraprivate/custompics/main/cw/cw1_005b.png",
+      "back_thumbnail_url": "https://raw.githubusercontent.com/lyraprivate/custompics/main/cw/cw1_005b_t.png",
+      
+      "name": "앤 윈터스",
+      "subname": "검시관",
+      "skill_willpower": 3,
+      "skill_intellect": 4,
+      "skill_combat": 4,
+      "skill_agility": 1,
+      
+      "traits": "Police.",
+      "text": "이번 라운드에 적 하나가 쓰러졌던 장소에 한하여, 당신은 그 장소를 조사하는 동안 지정된 능력 대신 [combat]을 사용해야 합니다. 이러한 조사에서, 당신의 모든 [intellect] 보정값은 대신 당신의 [combat]을 보정합니다.\n[reaction] 당신이 위치한 장소에서 적 하나가 쓰러진 후: 조사 행동을 1번 수행합니다. (라운드당 1번 한정.)\n[elder_sign] 효과: +1. 성공하면, '검시관의 일지'에 증거를 1개 놓습니다.",
+      
+      "health": 7,
+      "sanity": 7,
+      "flavor": "",
+      
+      "back_flavor": "",
+      "back_name": "앤 윈터스",
+      "back_text": "<b>덱 크기:</b> 30장.\n<b>덱 구성 선택지:</b> 레벨 0-5 탐구자([seeker]) 카드. 레벨 0-3 수호자([guardian]) 카드. 레벨 0-5 중립 카드. \n<b>덱 구성 요구조건</b> (덱 크기에 포함되지 않습니다): 검시관의 일지, 검시 보고서, 은밀한 숭배자, 무작위 기본 약점 카드 1장.\n<b>덱 구성 제한:</b> 당신의 수호자 카드(탐구자가 포함된 다중 역할군은 제외) 레벨 합계는 15를 초과할 수 없습니다.\n<b>＊(주의) 덱 빌드 옵션 포맷의 한계로, 덱 구성 시 수호자 레벨 합계 15 제한이 정확히 체크되지 않습니다. 대신 수호자 1레벨, 2레벨, 3레벨 별 카드 수를 확인할 수 있게 세팅했으니 참고 바랍니다.</b>\n<b>추가 게임준비:</b> 당신은 '검시관의 일지'를 플레이 영역에 두고 게임을 시작합니다.",
+      "deck_requirements": "size:30, card:cw1_006, card:cw1_007, card:cw1_008, random:subtype:basicweakness",
+      "deck_options": [
+        {
+         "faction": ["seeker"],
+         "level": {"min": 0, "max": 5}
+        },
+        {
+         "faction": ["neutral"],
+         "level": {"min": 0, "max": 5}
+        },
+        {
+         "faction": ["guardian"],
+         "level": {"min": 3, "max": 3},
+         "limit": 5
+        },
+        {
+         "faction": ["guardian"],
+         "level": {"min": 2, "max": 2},
+         "limit": 7
+        },
+        {
+         "faction": ["guardian"],
+         "level": {"min": 1, "max": 1},
+         "limit": 15
+        },
+        {
+         "faction": ["guardian"],
+         "level": {"min": 0, "max": 0}
+        }
+      ]
+     },
+     {
+      "pack_code": "72e5eaa7-dd4d-47eb-9ebc-88777c31e3aa",
+      "position": 6,
+      "quantity": 1,
+      
+      "code": "cw1_006",
+      "faction_code": "neutral",
+      "type_code": "asset",
+      "restrictions": "investigator:cw1_005",
+      "deck_limit": 1,
+      
+      "cost": 2,
+      "name": "검시관의 일지",
+      "is_unique": false,
+      
+      "traits": "Item. Tome.",
+      "text": "앤 윈터스 덱 전용.\n사용(증거 2개).\n[action] '검시관의 일지'를 소진합니다: <b>조사</b>. 성공하면, 당신이 위치한 장소에서 추가로 단서를 1개 더 발견하기 위해 당신이 조종하는 <b>물품</b> 또는 <b>조력자</b> 자산 하나에서 증거를 1개 소비해도 됩니다. 이 기능은 이번 라운드에 적이 쓰러졌던 장소에서만 격발할 수 있습니다.",
+      "flavor": "",
+      
+      "image_url": "https://raw.githubusercontent.com/lyraprivate/custompics/main/cw/cw1_006.png",
+      "thumbnail_url": "https://raw.githubusercontent.com/lyraprivate/custompics/main/cw/cw1_006_t.png",
+      "illustrator": ""
+     },
+     {
+      "pack_code": "72e5eaa7-dd4d-47eb-9ebc-88777c31e3aa",
+      "position": 7,
+      "quantity": 1,
+      
+      "code": "cw1_007",
+      "faction_code": "neutral",
+      "type_code": "event",
+      "restrictions": "investigator:cw1_005",
+      "deck_limit": 1,
+      
+      "cost": 3,
+      "name": "검시 보고서",
+      "is_unique": false,
+      
+      "skill_intellect": 1,
+      "skill_combat": 1,
+      "skill_wild": 1,
+      "traits": "Insight.",
+      "text": "앤 윈터스 덱 전용.\n신속. 당신이 '앤 윈터스'의 [reaction] 기능으로 실시한 조사 행동이 끝난 후 플레이할 수 있습니다.\n당신이 조종하는 <b>물품</b> 또는 <b>조력자</b> 자산에서 증거를 도합 5개 소비합니다. 그런 다음, '검시 보고서'를 승점 더미에 추가합니다.\n<b>승점 1점.</b>",
+      "flavor": "",
+      
+      "image_url": "https://raw.githubusercontent.com/lyraprivate/custompics/main/cw/cw1_007.png",
+      "thumbnail_url": "https://raw.githubusercontent.com/lyraprivate/custompics/main/cw/cw1_007_t.png",
+      "illustrator": ""
+     },
+     {
+      "pack_code": "72e5eaa7-dd4d-47eb-9ebc-88777c31e3aa",
+      "position": 8,
+      "quantity": 1,
+      
+      "code": "cw1_008",
+      "faction_code": "neutral",
+      "type_code": "enemy",
+      "subtype_code": "weakness",
+      "restrictions": "investigator:cw1_005",
+      "deck_limit": 1,
+      
+      "name": "은밀한 숭배자",
+      "enemy_fight": 2,
+      "health": 2,
+      "enemy_evade": 2,
+      "enemy_damage": 1,
+      "enemy_horror": 1,
+      "is_unique": false,
+      
+      "traits": "Humanoid. Cultist.",
+      "text": "사냥꾼.\n<b>먹잇감</b> - 오직 '앤 윈터스'만 쫓습니다.\n'앤 윈터스'의 손 슬롯을 차지하는 모든 카드의 인쇄된 글 상자는 (<b>특성</b>은 제외하고) 백지화됩니다.",
+      "flavor": "비밀은 비밀로 남아야만 한다.",
+      
+      "image_url": "https://raw.githubusercontent.com/lyraprivate/custompics/main/cw/cw1_008.png",
+      "thumbnail_url": "https://raw.githubusercontent.com/lyraprivate/custompics/main/cw/cw1_008_t.png",
+      "illustrator": ""
+     },
+     {
+      "pack_code": "72e5eaa7-dd4d-47eb-9ebc-88777c31e3aa",
+      "position": 9,
+      "quantity": 1,
+      "deck_limit": 1,
+      "illustrator": "",
+      "is_unique": true,
+      
+      "code": "cw1_009",
+      "faction_code": "rogue",
+      "type_code": "investigator",
+      "double_sided": true,
+      
+      "image_url": "https://raw.githubusercontent.com/lyraprivate/custompics/main/cw/cw1_009a.png",
+      "thumbnail_url": "https://raw.githubusercontent.com/lyraprivate/custompics/main/cw/cw1_009a_t.png",
+      "back_image_url": "https://raw.githubusercontent.com/lyraprivate/custompics/main/cw/cw1_009b.png",
+      "back_thumbnail_url": "https://raw.githubusercontent.com/lyraprivate/custompics/main/cw/cw1_009b_t.png",
+      
+      "name": "채드 블랙우드",
+      "subname": "잠복 요원",
+      "skill_willpower": 2,
+      "skill_intellect": 3,
+      "skill_combat": 2,
+      "skill_agility": 5,
+      
+      "traits": "Agency. 진실의 횃대.",
+      "text": "조사 단계 동안, 당신은 적과 자동으로 교전하지 않습니다.\n[free] 당신과 교전 상태인 적이 없다면: <b>교전.</b> 이번 라운드의 다음 능력 테스트 한 번에 한해, 난이도를 2만큼 낮춥니다. (라운드당 1번 한정.)\n[elder_sign] 효과: +2. 성공하면, '즉흥적 발상' 이벤트를 찾아 ('즉흥적 발상'이 비플레이 상태더라도) 당신의 손으로 가져옵니다.",
+      
+      "health": 8,
+      "sanity": 6,
+      "flavor": "",
+      
+      "back_flavor": "",
+      "back_name": "채드 블랙우드",
+      "back_text": "<b>덱 크기:</b> 30장.\n<b>덱 구성 선택지:</b> 레벨 0-5 무법자([rogue]) 카드. 레벨 0-3 <b>전술</b> 카드. 레벨 0-3 <b>속임수</b> 카드. 레벨 0-5 중립 카드.\n<b>덱 구성 요구조건</b>(덱 크기에 포함되지 않습니다): 즉흥적 발상, 강박적인 규제, 무작위 기본 약점 카드 1장.",
+      "deck_requirements": "size:30, card:cw1_010, card:cw1_011, random:subtype:basicweakness",
+      "deck_options": [
+        {
+         "faction": ["rogue"],
+         "level": {"min": 0, "max": 5}
+        },
+        {
+         "faction": ["neutral"],
+         "level": {"min": 0, "max": 5}
+        },
+        {
+         "trait": ["Tactic"],
+         "level": {"min": 0, "max": 3}
+        },
+        {
+         "trait": ["Trick"],
+         "level": {"min": 0, "max": 3}
+        }
+      ]
+     },
+     {
+      "pack_code": "72e5eaa7-dd4d-47eb-9ebc-88777c31e3aa",
+      "position": 10,
+      "quantity": 1,
+      
+      "code": "cw1_010",
+      "faction_code": "neutral",
+      "type_code": "event",
+      "restrictions": "investigator:cw1_009",
+      "deck_limit": 1,
+      
+      "cost": 1,
+      "name": "즉흥적 발상",
+      "is_unique": false,
+      
+      "skill_intellect": 1,
+      "skill_agility": 1,
+      "skill_wild": 1,
+      "traits": "Tactic.",
+      "text": "채드 블랙우드 덱 전용.\n신속. 당신이 위치한 장소에 적이 있는 경우에만 플레이할 수 있습니다.\n당신의 덱 맨 위 카드 12장 중에서 <b>전술</b> 또는 <b>속임수</b> 이벤트를 하나 찾아, 비용을 2 낮춰 플레이합니다. 해당 카드를 플레이하는 동안, 능력 테스트의 난이도를 2만큼 낮춥니다.",
+      "flavor": "",
+      
+      "image_url": "https://raw.githubusercontent.com/lyraprivate/custompics/main/cw/cw1_010.png",
+      "thumbnail_url": "https://raw.githubusercontent.com/lyraprivate/custompics/main/cw/cw1_010_t.png",
+      "illustrator": ""
+     },
+     {
+      "pack_code": "72e5eaa7-dd4d-47eb-9ebc-88777c31e3aa",
+      "position": 11,
+      "quantity": 1,
+      
+      "code": "cw1_011",
+      "faction_code": "neutral",
+      "type_code": "treachery",
+      "subtype_code": "weakness",
+      "restrictions": "investigator:cw1_009",
+      "deck_limit": 1,
+      
+      "name": "강박적인 규제",
+      "is_unique": false,
+      
+      "traits": "Task. Flaw.",
+      "text": "<b>폭로</b> - '강박적인 규제'를 플레이 영역 중 당신의 위협 영역에 둡니다.\n<b>강제</b> - 당신이 이벤트를 플레이한 후: 토큰 저장소에서 자원 토큰을 1개 가져와 '강박적인 규제'에 놓습니다. 그런 다음, '강박적인 규제'에 놓인 자원 토큰이 4개 이상이라면, '강박적인 규제'를 당신의 덱에 섞어넣고 당신은 이번 라운드가 끝날 때까지 이벤트를 플레이할 수 없습니다.",
+      "flavor": "",
+      
+      "image_url": "https://raw.githubusercontent.com/lyraprivate/custompics/main/cw/cw1_011.png",
+      "thumbnail_url": "https://raw.githubusercontent.com/lyraprivate/custompics/main/cw/cw1_011_t.png",
+      "illustrator": ""
+     },
+     {
+      "pack_code": "72e5eaa7-dd4d-47eb-9ebc-88777c31e3aa",
+      "position": 12,
+      "quantity": 1,
+      "deck_limit": 1,
+      "illustrator": "",
+      "is_unique": true,
+      
+      "code": "cw1_012",
+      "faction_code": "mystic",
+      "type_code": "investigator",
+      "double_sided": true,
+      
+      "image_url": "https://raw.githubusercontent.com/lyraprivate/custompics/main/cw/cw1_012a.png",
+      "thumbnail_url": "https://raw.githubusercontent.com/lyraprivate/custompics/main/cw/cw1_012a_t.png",
+      "back_image_url": "https://raw.githubusercontent.com/lyraprivate/custompics/main/cw/cw1_013.png",
+      "back_thumbnail_url": "https://raw.githubusercontent.com/lyraprivate/custompics/main/cw/cw1_013_t.png",
+      
+      "name": "진 스칼렛",
+      "subname": "저주를 받아들인 자",
+      "skill_willpower": 5,
+      "skill_intellect": 3,
+      "skill_combat": 2,
+      "skill_agility": 2,
+      
+      "traits": "Humanoid. Witch. Cursed.",
+      "text": "<b>강제</b> - 신화 단계 끝에: '진 스칼렛'을 뒤집습니다.\n<b>강제</b> - '진 스칼렛'을 이 면으로 뒤집은 후: 당신이 이번 라운드에 처음 플레이하는 카드의 비용을 1 낮춥니다. 당신은 교전 중인 모든 적과 교전을 풀고, 이어진 장소로 이동해도 됩니다.\n[reaction] 당신이 <b>마법</b> 이벤트를 플레이한 후: 그 이벤트를 버리는 것이 아니라, 그 대신 당신의 플레이 영역에 뒷면으로 둡니다(그 카드를 <b>마법</b> 특성을 가진 '잉걸불' 자산으로 간주합니다).\n[elder_sign] 효과: +1. 이번 테스트가 끝난 후, '진 스칼렛'을 뒤집어도 됩니다.",
+      
+      "health": 7,
+      "sanity": 7,
+      "flavor": "",
+      
+      "back_flavor": "",
+      "back_name": "진 스칼렛",
+      "back_text": "<b>덱 크기:</b> 30장.\n<b>덱 구성 선택지:</b> 레벨 0-5 <b>전투</b> 기능을 가진 이벤트 카드. 레벨 0-3 신비주의자([mystic]) 카드. 레벨 0-3 <b>비술</b> 카드. 레벨 0-5 중립 카드. 이외의 레벨 0 수호자([guardian]) 그리고/또는 생존자([survivor]) 카드 최대 5장.\n<b>덱 구성 요구조건</b> (덱 크기에 포함되지 않습니다): 저주의 잔불, 각성 의지, 혈월, 무작위 기본 약점 카드 1장.\n<b>추가 게임준비:</b> 당신은 게임을 준비할 때, 진 스칼렛 조사자 카드를 원하는 면으로 둡니다.",
+      "deck_requirements": "size:30, card:card:cw1_014, card:cw1_015, card:cw1_016, random:subtype:basicweakness",
+      "deck_options": [
+        {
+         "text_exact": ["<b>Fight.</b>"],
+         "type": ["event"],
+         "level": {"min": 0, "max": 5}
+        },
+        {
+         "faction": ["mystic"],
+         "level": {"min": 0, "max": 3}
+        },
+        {
+         "trait": ["Occult"],
+         "level": {"min": 0, "max": 3}
+        },
+        {
+         "faction": ["neutral"],
+         "level": {"min": 0, "max": 5}
+        },
+        {
+         "faction": ["guardian", "survivor"],
+         "level": {"min": 0, "max": 0},
+         "limit": 5
+        }
+      ]
+     },
+     {
+      "pack_code": "72e5eaa7-dd4d-47eb-9ebc-88777c31e3aa",
+      "position": 13,
+      "quantity": 1,
+      "deck_limit": 1,
+      "illustrator": "",
+      "is_unique": true,
+      
+      "code": "cw1_012b",
+      "faction_code": "mystic",
+      "type_code": "investigator",
+      "hidden": true,
+      
+      "image_url": "https://raw.githubusercontent.com/lyraprivate/custompics/main/cw/cw1_012b.png",
+      "thumbnail_url": "https://raw.githubusercontent.com/lyraprivate/custompics/main/cw/cw1_012b_t.png",
+      
+      "name": "진 스칼렛",
+      "bonded_to": "cw1_012",
+      
+      "subname": "저주를 받아들인 자",
+      "skill_willpower": 2,
+      "skill_intellect": 2,
+      "skill_combat": 4,
+      "skill_agility": 4,
+      
+      "traits": "Monster. Witch. Cursed.",
+      "text": "<b>강제</b> - 신화 단계 끝에: '진 스칼렛'을 뒤집습니다.\n<b>강제</b> - '진 스칼렛'을 이 면으로 뒤집은 후: 가장 가까운 적을 향해 1칸 이동해도 됩니다.\n[reaction] 당신이 기본 공격을 개시할 때, 당신의 플레이 영역에서 <b>마법</b> 자산을 X장 버립니다: 이번 공격에서 당신은 +2X 능력값을 얻고 +X 피해를 줍니다. (X는 최대 3.)\n[elder_sign] 효과: +1. 이번 테스트가 끝난 후, '진 스칼렛'을 뒤집어도 됩니다.",
+      
+      "health": 7,
+      "sanity": 7,
+      "flavor": ""
+     },
+     {
+      "pack_code": "72e5eaa7-dd4d-47eb-9ebc-88777c31e3aa",
+      "position": 14,
+      "quantity": 1,
+      
+      "code": "cw1_014",
+      "faction_code": "neutral",
+      "type_code": "asset",
+      "restrictions": "investigator:cw1_012",
+      "deck_limit": 1,
+      
+      "cost": 1,
+      "name": "저주의 잔불",
+      "is_unique": false,
+      
+      "skill_willpower": 1,
+      "skill_combat": 1,
+      "skill_wild": 1,
+      "traits": "Spell. Cursed.",
+      "text": "진 스칼렛 덱 전용.\n[reaction] '진 스칼렛'을 <b>괴물</b> 면으로 뒤집은 후: 당신이 위치한 장소에 있는 적 하나에게 피해를 1 줍니다.\n[reaction] '진 스칼렛'을 <b>인간형</b> 면으로 뒤집은 후: 당신의 버린 카드 더미에서 약점이 아닌 카드 1장을 선택하여 당신의 플레이 영역에 뒷면으로 둡니다(그 카드를 마법 특성을 가진 '잉걸불' 자산으로 간주합니다).",
+      "flavor": "",
+      
+      "image_url": "https://raw.githubusercontent.com/lyraprivate/custompics/main/cw/cw1_014.png",
+      "thumbnail_url": "https://raw.githubusercontent.com/lyraprivate/custompics/main/cw/cw1_014_t.png",
+      "illustrator": ""
+     },
+     {
+      "pack_code": "72e5eaa7-dd4d-47eb-9ebc-88777c31e3aa",
+      "position": 15,
+      "quantity": 1,
+      
+      "code": "cw1_015",
+      "faction_code": "neutral",
+      "type_code": "skill",
+      "restrictions": "investigator:cw1_012",
+      "deck_limit": 1,
+      
+      "name": "각성 의지",
+      "is_unique": false,
+      
+      "skill_willpower": 1,
+      "skill_combat": 1,
+      "skill_wild": 1,
+      "traits": "Spirit. Spell.",
+      "text": "진 스칼렛 덱 전용. 당신이 수행하는 능력 테스트에만 소모할 수 있습니다.\n이번 능력 테스트가 끝난 후, '진 스칼렛'을 뒤집습니다. 그런 다음, '각성 의지'를 버리는 것이 아니라, 그 대신 당신의 플레이 영역에 뒷면으로 둬도 됩니다(그 카드를 <b>마법</b> 특성을 가진 '잉걸불' 자산으로 간주합니다).",
+      "flavor": "",
+      
+      "image_url": "https://raw.githubusercontent.com/lyraprivate/custompics/main/cw/cw1_015.png",
+      "thumbnail_url": "https://raw.githubusercontent.com/lyraprivate/custompics/main/cw/cw1_015_t.png",
+      "illustrator": ""
+     },
+     {
+      "pack_code": "72e5eaa7-dd4d-47eb-9ebc-88777c31e3aa",
+      "position": 16,
+      "quantity": 1,
+      
+      "code": "cw1_016",
+      "faction_code": "neutral",
+      "type_code": "treachery",
+      "subtype_code": "weakness",
+      "restrictions": "investigator:cw1_012",
+      "deck_limit": 1,
+      
+      "name": "혈월",
+      "is_unique": false,
+      
+      "traits": "Cursed.",
+      "text": "<b>폭로</b> - '진 스칼렛'을 <b>괴물</b> 면으로 뒤집습니다. '혈월'을 플레이 영역 중 당신의 위협 영역에 둡니다.\n'진 스칼렛'을 <b>인간형</b> 면으로 뒤집을 수 없습니다.\n[action][action][action]: '혈월'을 버립니다. 이 기능을 격발하기 위한 추가 비용으로, 당신의 손과 플레이 영역에서 <b>마법</b> 카드를 원하는 만큼 버려도 됩니다. 이렇게 버린 카드마다, 이 기능의 행동 비용이 1씩 줄어듭니다(최소 [action]).",
+      "flavor": "",
+      
+      "image_url": "https://raw.githubusercontent.com/lyraprivate/custompics/main/cw/cw1_016.png",
+      "thumbnail_url": "https://raw.githubusercontent.com/lyraprivate/custompics/main/cw/cw1_016_t.png",
+      "illustrator": ""
+     },
+     {
+      "pack_code": "72e5eaa7-dd4d-47eb-9ebc-88777c31e3aa",
+      "position": 17,
+      "quantity": 1,
+      "deck_limit": 1,
+      "illustrator": "",
+      "is_unique": true,
+      
+      "code": "cw1_017",
+      "faction_code": "survivor",
+      "type_code": "investigator",
+      "double_sided": true,
+      
+      "image_url": "https://raw.githubusercontent.com/lyraprivate/custompics/main/cw/cw1_017a.png",
+      "thumbnail_url": "https://raw.githubusercontent.com/lyraprivate/custompics/main/cw/cw1_017a_t.png",
+      "back_image_url": "https://raw.githubusercontent.com/lyraprivate/custompics/main/cw/cw1_017b.png",
+      "back_thumbnail_url": "https://raw.githubusercontent.com/lyraprivate/custompics/main/cw/cw1_017b_t.png",
+      
+      "name": "올리브 스콧",
+      "subname": "핑커튼 탐정",
+      "skill_willpower": 4,
+      "skill_intellect": 2,
+      "skill_combat": 5,
+      "skill_agility": 1,
+      
+      "traits": "Chosen.",
+      "text": "테스트 동안, 당신이 공개하는 [elder_sign] 토큰을 [auto_fail] 토큰으로 취급합니다.\n[reaction] 당신이 (조사/전투/회피/조우 카드에 있는) 능력 테스트에 실패한 후: 이번 라운드에, 당신이 수행하는 그와 동일한 종류의 다음 번 능력 테스트 한 번에 한해, 혼돈 토큰을 1개 대신 2개 공개합니다. 그중 1개를 무시합니다.\n[auto_fail] 효과: 0. 난이도에 모자란 차이 0으로 자동 실패합니다. 지금이 당신의 차례라면, 당신은 이번 차례에 추가로 행동 한 번을 더 수행해도 됩니다.",
+      
+      "health": 8,
+      "sanity": 6,
+      "flavor": "",
+      
+      "back_flavor": "",
+      "back_name": "올리브 스콧",
+      "back_text": "<b>덱 크기:</b> 30장.\n<b>덱 구성 선택지:</b> 레벨 0-5 생존자([survivor]) 카드. 레벨 0-2 <b>마법</b>이 아닌 신비주의자([mystic]) 카드. 레벨 0-5 중립 카드.\n<b>덱 구성 요구조건</b>(덱 크기에 포함되지 않습니다):</b> 궂은 날도 지나가리라 사본 2장, 노덴스의 부름, 무작위 기본 약점 카드 1장.",
+      "deck_requirements": "size:30, card:cw1_018, card:cw1_019, random:subtype:basicweakness",
+      "deck_options": [
+        {
+         "faction": ["survivor"],
+         "level": {"min": 0, "max": 5}
+        },
+        {
+         "faction": ["neutral"],
+         "level": {"min": 0, "max": 5}
+        },
+        {
+         "not": true,
+         "trait": ["Spell"],
+         "faction": ["mystic"],
+         "level": {"min": 0, "max": 2}
+        },
+        {
+         "faction": ["mystic"],
+         "level": {"min": 0, "max": 2}
+        }
+      ]
+     },
+     {
+      "pack_code": "72e5eaa7-dd4d-47eb-9ebc-88777c31e3aa",
+      "position": 18,
+      "quantity": 2,
+      
+      "code": "cw1_018",
+      "faction_code": "neutral",
+      "type_code": "skill",
+      "restrictions": "investigator:cw1_017",
+      "deck_limit": 2,
+      
+      "cost": 1,
+      "name": "궂은 날도 지나가리라",
+      "is_unique": false,
+      
+      "skill_willpower": 1,
+      "skill_intellect": 1,
+      "skill_combat": 1,
+      "skill_agility": 1,
+      "skill_wild": 2,
+      "traits": "Innate.",
+      "text": "올리브 스콧 덱 전용. '올리브 스콧'의 차례 동안 수행되는 능력 테스트에만 소모할 수 있습니다.\n이번 능력 테스트에서는 혼돈 주머니에서 혼돈 토큰을 공개하지 않습니다. 이번 테스트에서 [auto_fail] 토큰이 공개된 것으로 간주합니다. 이번 테스트 동안, 당신은 카드를 뽑을 수도 자원을 획득할 수도 없습니다.",
+      "flavor": "",
+      
+      "image_url": "https://raw.githubusercontent.com/lyraprivate/custompics/main/cw/cw1_018.png",
+      "thumbnail_url": "https://raw.githubusercontent.com/lyraprivate/custompics/main/cw/cw1_018_t.png",
+      "illustrator": ""
+     },
+     {
+      "pack_code": "72e5eaa7-dd4d-47eb-9ebc-88777c31e3aa",
+      "position": 19,
+      "quantity": 1,
+      
+      "code": "cw1_019",
+      "faction_code": "neutral",
+      "type_code": "treachery",
+      "subtype_code": "weakness",
+      "restrictions": "investigator:cw1_017",
+      "deck_limit": 1,
+      
+      "name": "노덴스의 부름",
+      "is_unique": false,
+      
+      "traits": "Task. Pact.",
+      "text": "<b>폭로</b> - '노덴스의 부름'을 플레이 영역 중 당신의 위협 영역에 둡니다.\n<b>강제</b> - 당신이 (조사/전투/회피/조우 카드에 있는) 능력 테스트에 실패한 후: 이번 라운드에, 당신이 수행하는 그와 동일한 종류의 다음 번 능력 테스트 한 번에 한 해, -2 능력값을 얻습니다.\n[free] 당신이 수행하는 능력 테스트 동안, '올리브 스콧'의 능력값이 0이라면: '노덴스의 부름'을 버립니다.",
+      "flavor": "",
+      
+      "image_url": "https://raw.githubusercontent.com/lyraprivate/custompics/main/cw/cw1_019.png",
+      "thumbnail_url": "https://raw.githubusercontent.com/lyraprivate/custompics/main/cw/cw1_019_t.png",
+      "illustrator": ""
+     },
+     {
+      "pack_code": "72e5eaa7-dd4d-47eb-9ebc-88777c31e3aa",
+      "position": 20,
+      "quantity": 1,
+      "deck_limit": 1,
+      "illustrator": "",
+      "is_unique": true,
+      
+      "code": "cw2_020",
+      "faction_code": "guardian",
+      "type_code": "investigator",
+      "double_sided": true,
+      
+      "image_url": "https://raw.githubusercontent.com/lyraprivate/custompics/main/cw/cw2_020a.png",
+      "thumbnail_url": "https://raw.githubusercontent.com/lyraprivate/custompics/main/cw/cw2_020a_t.png",
+      "back_image_url": "https://raw.githubusercontent.com/lyraprivate/custompics/main/cw/cw2_020b.png",
+      "back_thumbnail_url": "https://raw.githubusercontent.com/lyraprivate/custompics/main/cw/cw2_020b_t.png",
+      
+      "name": "류드밀라 로마노바",
+      "subname": "저격수",
+      "skill_willpower": 2,
+      "skill_intellect": 2,
+      "skill_combat": 5,
+      "skill_agility": 3,
+      
+      "traits": "Veteran. Criminal.",
+      "text": "당신에게 손 슬롯이 1칸 추가됩니다. 이 손 슬롯에는 <b>무기</b> 자산만 놓을 수 있습니다.\n[reaction] 당신이 양손 슬롯을 차지하는 <b>총</b> 자산에 있는 <b>전투</b> 행동을 개시할 때: 이 공격은 일반 사거리보다 최대 1칸까지 더 떨어진 공개된 장소에 있는 '<b>정예</b>가 아닌 적'을 대상으로 삼아도 됩니다. 이번 공격은 -1 피해를 줍니다. 이번 공격으로 어떠한 적에게도 피해를 주지 못했다면, '저격수의 자부심'을 소진하거나 공포를 1 받아야 합니다.\n[elder_sign] 효과: +1. 성공하면, '저격수의 자부심'을 뒤집거나 준비시켜도 됩니다.",
+      
+      "health": 7,
+      "sanity": 7,
+      "flavor": "",
+      
+      "back_flavor": "",
+      "back_name": "류드밀라 로마노바",
+      "back_text": "<b>덱 크기:</b> 30장.\n<b>주요 역할군 선택:</b> 덱 구성 시, 수호자([guardian])/무법자([rogue]) 중 하나 선택. 선택하지 않은 역할군은 보조 역할군이 됨.\n<b>덱 구성 선택지:</b> 레벨 0-5 주요 역할군 카드. 레벨 0-1 보조 역할군 카드. 레벨 0-5 중립 카드. 레벨 0-5 양손 슬롯을 차지하는 <b>총</b> 카드.\n<b>덱 구성 요구조건</b>(덱 크기에 포함되지 않습니다): 저격수의 자부심, 암시장 특별 개조(주요 역할군이 수호자라면 <b>불법</b>이 없는 버전, 무법자라면 <b>불법</b>이 있는 버전), 전쟁의 허상, 무작위 기본 약점 카드 1장.\n<b>추가 게임준비:</b> 당신은 '저격수의 자부심'을 (부동 조준) 면으로 플레이 영역에 두고 게임을 시작합니다.\n<b>추가 제한조건:</b> 명칭에 산탄총이 포함된 카드 포함 불가.",
+      "deck_requirements": "size:30, card:cw2_021a, card:cw2_021b, card:cw2_022, card:cw2_024, random:subtype:basicweakness",
+      "deck_options": [
+        {
+         "not": true,
+         "text_exact": ["Instead of its standard damage, this attack deals 1 damage for each point you succeed by (to a minimum of 1, to a maximum of 5). If you fail and would damage another investigator, this attack deals 1 damage for each point you fail by (to a minimum of 1, to a maximum of 5)."],
+         "faction": ["guardian"],
+         "level": {"min": 4, "max": 4}
+        },
+        {
+         "not": true,
+         "text_exact": ["Instead of its standard damage, this attack deals 1 damage for each point you succeed by (to a minimum of 1, to a maximum of 6). If you fail and would damage another investigator, this attack deals 1 damage for each point you fail by (to a minimum of 1, to a maximum of 6)."],
+         "faction": ["rogue"],
+         "level": {"min": 5, "max": 5}
+        },
+        {
+         "not": true,
+         "text_exact": ["Instead of its standard damage, this attack's damage is equal to the amount you succeed by, or fail by if you fail and would damage another investigator (to a minimum of 1, to a maximum of 3)."],
+         "faction": ["guardian"],
+         "level": {"min": 2, "max": 2}
+        },
+        {
+         "faction_select": ["guardian", "rogue"],
+         "name": "주요 역할군",
+         "id": "first",
+         "level": {"min": 0, "max": 5}
+        },
+        {
+         "faction_select": ["guardian", "rogue"],
+         "name": "보조 역할군",
+         "id": "second",
+         "level": {"min": 0, "max": 1}
+        },
+        {
+         "faction": ["neutral"],
+         "level": {"min": 0, "max": 5}
+        },
+        {
+         "trait": ["Firearm"],
+         "slot": ["Hand x2"],
+         "level": {"min": 0, "max": 5}
+        }
+      ]
+     },
+     {
+      "pack_code": "72e5eaa7-dd4d-47eb-9ebc-88777c31e3aa",
+      "position": 21,
+      "quantity": 1,
+      
+      "code": "cw2_021a",
+      "faction_code": "neutral",
+      "type_code": "asset",
+      "restrictions": "investigator:cw2_020",
+      "deck_limit": 1,
+      
+      "name": "저격수의 자부심",
+      "subname": "부동 조준",
+      "is_unique": false,
+      "permanent": true,
+      
+      "traits": "Talent.",
+      "text": "영속. 류드밀라 로마노바 덱 전용.\n[reaction] 당신이 '류드밀라 로마노바'의 [reaction] 기능을 격발할 때: 그 기능의 \"최대 1칸까지\"라는 문구를 \"최대 2칸까지\"로, \"-1 피해\"라는 문구를 \"-2 피해\"로 바꿉니다.\n[free] 당신이 1칸 이상 떨어진 적을 공격하는 동안, '저격수의 자부심'을 소진합니다: 이번 공격은 +1 피해를 줍니다. 이번 공격이 끝난 후, 이 카드를 뒤집습니다.",
+      "flavor": "",
+      
+      "image_url": "https://raw.githubusercontent.com/lyraprivate/custompics/main/cw/cw2_021a.png",
+      "thumbnail_url": "https://raw.githubusercontent.com/lyraprivate/custompics/main/cw/cw2_021a_t.png",
+      "illustrator": ""
+     },
+     {
+      "pack_code": "72e5eaa7-dd4d-47eb-9ebc-88777c31e3aa",
+      "position": 21,
+      "quantity": 1,
+      
+      "code": "cw2_021b",
+      "faction_code": "neutral",
+      "type_code": "asset",
+      "restrictions": "investigator:cw2_020",
+      "deck_limit": 1,
+      
+      "name": "저격수의 자부심",
+      "subname": "전술적 대비",
+      "is_unique": false,
+      "permanent": true,
+      
+      "traits": "Talent.",
+      "text": "영속. 류드밀라 로마노바 덱 전용.\n[reaction] 당신이 <b>전술/속임수/영혼</b> 이벤트를 플레이한 후: '저격수의 자부심'을 뒤집거나 준비시킵니다.\n[action]: '저격수의 자부심'을 뒤집거나 준비시킵니다.",
+      "flavor": "",
+      
+      "image_url": "https://raw.githubusercontent.com/lyraprivate/custompics/main/cw/cw2_021b.png",
+      "thumbnail_url": "https://raw.githubusercontent.com/lyraprivate/custompics/main/cw/cw2_021b_t.png",
+      "illustrator": ""
+     },
+     {
+      "pack_code": "72e5eaa7-dd4d-47eb-9ebc-88777c31e3aa",
+      "position": 22,
+      "quantity": 1,
+      
+      "cost": 2,
+      "code": "cw2_022",
+      "faction_code": "neutral",
+      "type_code": "event",
+      "restrictions": "investigator:cw2_020",
+      "deck_limit": 1,
+      
+      "name": "암시장 특별 개조",
+      "is_unique": false,
+      
+      "skill_combat": 2,
+      "skill_wild": 1,
+      "traits": "Tactic. Upgrade.",
+      "text": "류드밀라 로마노바 덱 전용.\n당신이 조종하며 양손 슬롯을 차지하는 <b>총</b> 자산에 부착합니다.\n[free] 부착된 자산에 있는 전투 행동을 수행하는 동안, 당신이 위치한 장소에 있지 않은 적을 공격 대상으로 삼았다면, '암시장 특별 개조'를 소진합니다: 당신은 이번 공격에서 +2 [combat]을 얻거나 +1 피해를 줍니다.",
+      "flavor": "",
+      
+      "image_url": "https://raw.githubusercontent.com/lyraprivate/custompics/main/cw/cw2_022.png",
+      "thumbnail_url": "https://raw.githubusercontent.com/lyraprivate/custompics/main/cw/cw2_022_t.png",
+      "illustrator": ""
+     },
+     {
+      "pack_code": "72e5eaa7-dd4d-47eb-9ebc-88777c31e3aa",
+      "position": 23,
+      "quantity": 1,
+      
+      "bonded_count": 1,
+      "bonded_to": "cw2_022",
+      "code": "cw2_023",
+      "faction_code": "neutral",
+      "type_code": "event",
+      "restrictions": "investigator:cw2_020",
+      "deck_limit": 1,      
+      
+      "cost": 2,
+      "name": "암시장 특별 개조",
+      "is_unique": false,
+      
+      "skill_combat": 2,
+      "skill_wild": 1,
+      "traits": "Tactic. Illicit. Upgrade.",
+      "text": "류드밀라 로마노바 덱 전용.\n신속. 당신이 조종하며 양손 슬롯을 차지하는 <b>총</b> 자산에 부착합니다.\n[reaction] '저격수의 자부심'을 (부동 조준) 면으로 뒤집은 후, '암시장 특별 개조'를 소진합니다: 부착된 자산에 탄약을 1발 놓습니다.\n[free]: '암시장 특별 개조'를 당신의 손으로 가져옵니다.",
+      "flavor": "",
+      
+      "image_url": "https://raw.githubusercontent.com/lyraprivate/custompics/main/cw/cw2_023.png",
+      "thumbnail_url": "https://raw.githubusercontent.com/lyraprivate/custompics/main/cw/cw2_023_t.png",
+      "illustrator": ""
+     },
+     {
+      "pack_code": "72e5eaa7-dd4d-47eb-9ebc-88777c31e3aa",
+      "position": 24,
+      "quantity": 1,
+      
+      "code": "cw2_024",
+      "faction_code": "neutral",
+      "type_code": "enemy",
+      "subtype_code": "weakness",
+      "restrictions": "investigator:cw2_020",
+      "deck_limit": 1,
+      
+      "name": "전쟁의 허상",
+      "enemy_fight": 4,
+      "health": 1,
+      "enemy_evade": 4,
+      "enemy_horror": 1,
+      "is_unique": false,
+      
+      "traits": "Eidolon. Terror. Madness.",
+      "text": "위험. 숨김.\n<b>폭로</b> - 이 적을 공개하지 않고 당신의 손에 듭니다.\n당신은 이 적이 자신의 손에 있는 동안, 이 적을 조사자 한 명(가능하다면 다른 조사자)과 교전한 것처럼 간주하여 이 적을 대상으로 전투를 수행해도 됩니다. 성공하면, 당신의 손에서 이 카드를 버립니다.\n<b>강제</b> - 당신의 차례 끝에, '전쟁의 허상'이 당신의 손에 있다면: 이 적이 (당신의 손에서) 당신을 공격합니다.",
+      "flavor": "비밀은 비밀로 남아야만 한다.",
+      
+      "image_url": "https://raw.githubusercontent.com/lyraprivate/custompics/main/cw/cw2_024.png",
+      "thumbnail_url": "https://raw.githubusercontent.com/lyraprivate/custompics/main/cw/cw2_024_t.png",
+      "illustrator": ""
+     },
+     {
+      "pack_code": "72e5eaa7-dd4d-47eb-9ebc-88777c31e3aa",
+      "position": 25,
+      "quantity": 1,
+      "deck_limit": 1,
+      "illustrator": "",
+      "is_unique": true,
+      
+      "code": "cw2_025",
+      "faction_code": "seeker",
+      "type_code": "investigator",
+      "double_sided": true,
+      
+      "image_url": "https://raw.githubusercontent.com/lyraprivate/custompics/main/cw/cw2_025a.png",
+      "thumbnail_url": "https://raw.githubusercontent.com/lyraprivate/custompics/main/cw/cw2_025a_t.png",
+      "back_image_url": "https://raw.githubusercontent.com/lyraprivate/custompics/main/cw/cw2_025b.png",
+      "back_thumbnail_url": "https://raw.githubusercontent.com/lyraprivate/custompics/main/cw/cw2_025b_t.png",
+      
+      "name": "대니얼 킴",
+      "subname": "고유물 연구자",
+      "skill_willpower": 3,
+      "skill_intellect": 5,
+      "skill_combat": 2,
+      "skill_agility": 2,
+      
+      "traits": "Miskatonic. Scholar.",
+      "text": "당신이 조종하는 모든 '연구됨' 카드는 어떠한 슬롯도 차지하지 않습니다.\n당신은 (정체불명) 또는 (미해석본) 별칭을 가진 카드도 '연구됨' 카드로 간주합니다.\n[reaction] 당신이 '연구됨' 자산을 플레이할 때: 그 자산의 비용을 1 낮추거나 (또는) 당신의 덱에서 그 자산과 명칭이 같은 자산을 하나 찾아서 플레이합니다. (라운드 당 1번 한정.)\n[elder_sign] 효과: +1. 당신은 자신의 덱에서 '연구됨' 카드를 1장 찾아 당신의 손으로 가져와도 됩니다.",
+      
+      "health": 8,
+      "sanity": 6,
+      "flavor": "",
+      
+      "back_flavor": "",
+      "back_name": "대니얼 킴",
+      "back_text": "<b>덱 크기:</b> 30장.\n<b>덱 구성 선택지:</b> 레벨 0-3 탐구자([seeker]) 카드. 레벨 0-5 '연구됨' 카드. 레벨 0-5 중립 카드.\n<b>덱 구성 요구조건</b>(덱 크기에 포함되지 않습니다):</b> 연구 기록, 기록 소실, 무작위 기본 약점 카드 1장.\n<b>추가 선택지:</b> 언제든 당신이 '연구됨' 카드를 향상할 때, 그 카드의 향상된 사본을 1장 추가로 경험치 비용의 지불 없이 덱에 포함해도 됩니다. 이때, 포함하려는 카드는 유효한 선택지 중에서 무작위로 선택해야 합니다(이렇게 포함한 카드는 당신의 덱 크기를 계산하거나 당신의 덱에서 카드 사본 개수를 계산할 때 포함하지 않습니다).\n<b>추가 게임준비:</b> 당신이 3레벨 이상이고 명칭이 다른 '연구됨' 카드를 도합 6장 덱에 포함한 상태라면, 당신은 '완벽한 기록'을 플레이 영역에 두고 시작합니다.",
+      "deck_requirements": "size:30, card:cw2_026, card:cw2_028, random:subtype:basicweakness",
+      "deck_options": [
+        {
+         "faction": ["seeker"],
+         "level": {"min": 0, "max": 3}
+        },
+        {
+         "faction": ["neutral"],
+         "level": {"min": 0, "max": 5}
+        },
+        {
+         "text_exact": ["Researched."],
+         "level": {"min": 0, "max": 5}
+        }
+      ]
+     },
+     {
+      "pack_code": "72e5eaa7-dd4d-47eb-9ebc-88777c31e3aa",
+      "position": 26,
+      "quantity": 1,
+      
+      "code": "cw2_026",
+      "faction_code": "neutral",
+      "type_code": "asset",
+      "restrictions": "investigator:cw2_025",
+      "deck_limit": 1,
+      
+      "name": "연구 기록",
+      "is_unique": true,
+      "permanent": true,
+      
+      "traits": "Item. Tome.",
+      "text": "영속. 대니얼 킴 덱 전용. 사용(기록 X개). X는 서로 다른 (정체불명) 또는 (미해석본) 별칭을 가진 카드의 효과로 캠페인 기록지에 기록한 항목 개수입니다.\n[free] 기록을 1개 소비합니다: 당신의 손에서 '연구됨' 카드를 1장 플레이합니다.\n[reaction] 당신이 '연구됨' 카드에 있는 [action] 기능을 해결한 후, 기록을 1개 소비합니다: 그와 명칭이 다른 '연구됨' 카드에 있는 [action] 기능을 하나 활성화합니다.",
+      "flavor": "",
+      
+      "image_url": "https://raw.githubusercontent.com/lyraprivate/custompics/main/cw/cw2_026.png",
+      "thumbnail_url": "https://raw.githubusercontent.com/lyraprivate/custompics/main/cw/cw2_026_t.png",
+      "illustrator": ""
+     },
+     {
+      "pack_code": "72e5eaa7-dd4d-47eb-9ebc-88777c31e3aa",
+      "position": 27,
+      "quantity": 1,
+      
+      "bonded_count": 1,
+      "bonded_to": "cw2_026",
+      "code": "cw2_027",
+      "faction_code": "neutral",
+      "type_code": "asset",
+      "restrictions": "investigator:cw2_025",
+      "deck_limit": 1,
+      
+      "name": "완벽한 기록",
+      "is_unique": true,
+      "permanent": true,
+      
+      "traits": "Item. Tome.",
+      "text": "영속. 대니얼 킴 덱 전용.\n'완벽한 기록'은 플레이 영역에서 나갈 수 없습니다.\n당신의 차례 동안, 당신은 추가로 행동을 1번 더 수행해도 됩니다. 단, 이 추가 행동은 '연구됨' 카드에 있는 [action] 기능에만 사용할 수 있습니다.",
+      "flavor": "",
+      
+      "image_url": "https://raw.githubusercontent.com/lyraprivate/custompics/main/cw/cw2_027.png",
+      "thumbnail_url": "https://raw.githubusercontent.com/lyraprivate/custompics/main/cw/cw2_027_t.png",
+      "illustrator": ""
+     },
+     {
+      "pack_code": "72e5eaa7-dd4d-47eb-9ebc-88777c31e3aa",
+      "position": 28,
+      "quantity": 1,
+      
+      "code": "cw2_028",
+      "faction_code": "neutral",
+      "type_code": "treachery",
+      "subtype_code": "weakness",
+      "restrictions": "investigator:cw2_025",
+      "deck_limit": 1,
+      
+      "name": "기록 소실",
+      "is_unique": false,
+      
+      "traits": "Hazard. Blunder.",
+      "text": "<b>폭로</b> - 당신이 조종하는 '연구됨' 자산마다, 그 자산에 놓인 이용물을 1개씩 제거합니다. 이 효과로 자산에 놓인 마지막 이용물이 제거되었다면, 그 자산을 버립니다. 이 효과로 이용물이 도합 4개 이상 제거되지 않았다면, '기록 소실'을 당신의 덱에 섞어넣습니다.",
+      "flavor": "",
+      
+      "image_url": "https://raw.githubusercontent.com/lyraprivate/custompics/main/cw/cw2_028.png",
+      "thumbnail_url": "https://raw.githubusercontent.com/lyraprivate/custompics/main/cw/cw2_028_t.png",
+      "illustrator": ""
+     },
+     {
+      "pack_code": "72e5eaa7-dd4d-47eb-9ebc-88777c31e3aa",
+      "position": 29,
+      "quantity": 1,
+      "deck_limit": 1,
+      "illustrator": "",
+      "is_unique": true,
+      
+      "code": "cw2_029",
+      "faction_code": "rogue",
+      "type_code": "investigator",
+      "double_sided": true,
+      
+      "image_url": "https://raw.githubusercontent.com/lyraprivate/custompics/main/cw/cw2_029a.png",
+      "thumbnail_url": "https://raw.githubusercontent.com/lyraprivate/custompics/main/cw/cw2_029a_t.png",
+      "back_image_url": "https://raw.githubusercontent.com/lyraprivate/custompics/main/cw/cw2_029b.png",
+      "back_thumbnail_url": "https://raw.githubusercontent.com/lyraprivate/custompics/main/cw/cw2_029b_t.png",
+      
+      "name": "존 맥나마라",
+      "subname": "하원 의원",
+      "skill_willpower": 3,
+      "skill_intellect": 3,
+      "skill_combat": 3,
+      "skill_agility": 3,
+      
+      "traits": "Socialite.",
+      "text": "'존 맥나마라'는 자신의 밑에 있는 카드에 나와 있는 능력 아이콘([wild] 아이콘 제외)마다, 그와 일치하는 능력에 +1씩을 얻습니다.\n[free] 당신의 차례 동안, 당신의 손에서 <b>조력자</b> 자산을 1장 공개합니다: 모든 비용과 조건을 무시하고 그 카드의 [free] 또는 [action] 기능 하나를 해결합니다. 그 카드를 '존 맥나마라' 밑에 놓습니다. (이미 '존 맥나마라' 밑에 카드가 있다면, 밑에 있던 카드부터 버립니다.)\n[elder_sign] 효과: +1. '존 맥나마라' 밑에 있는 카드를 당신의 손으로 가져와도 됩니다.",
+      
+      "health": 7,
+      "sanity": 7,
+      "flavor": "",
+      
+      "back_flavor": "",
+      "back_name": "존 맥나마라",
+      "back_text": "<b>덱 크기:</b> 30장.\n<b>덱 구성 선택지:</b> 레벨 0-3 무법자([rogue]) 카드. 레벨 0-5 <b>조력자</b> 카드. 레벨 0-5 중립 카드.\n<b>덱 구성 요구조건</b>(덱 크기에 포함되지 않습니다):</b> 잭 케인, 선거철, 무작위 기본 약점 카드 1장.",
+      "deck_requirements": "size:30, card:cw2_030, card:cw2_031, random:subtype:basicweakness",
+      "deck_options": [
+        {
+         "faction": ["rogue"],
+         "level": {"min": 0, "max": 3}
+        },
+        {
+         "faction": ["neutral"],
+         "level": {"min": 0, "max": 5}
+        },
+        {
+         "trait": ["Ally"],
+         "level": {"min": 0, "max": 5}
+        }
+      ]
+     },
+     {
+      "pack_code": "72e5eaa7-dd4d-47eb-9ebc-88777c31e3aa",
+      "position": 30,
+      "quantity": 1,
+      
+      "code": "cw2_030",
+      "faction_code": "neutral",
+      "type_code": "asset",
+      "restrictions": "investigator:cw2_029",
+      "deck_limit": 1,
+      
+      "cost": 1,
+      "name": "잭 케인",
+      "subname": "충직한 비서실장",
+      "is_unique": true,
+      
+      "skill_wild": 2,
+      "traits": "Ally. Assistant.",
+      "text": "존 맥나마라 덱 전용. 이 카드가 '존 맥나마라' 밑에 있는 동안, 당신은 모든 능력에 +1을 얻습니다.\n[action]: 자원을 1개 획득합니다. 이번 차례에 이 기능을 2번 이상 실시했다면, 추가로 자원을 1개 더 획득합니다.\n[reaction] 당신의 차례 끝에, 이 카드가 '존 맥나마라' 밑에 있다면: '잭 케인'을 당신의 손으로 가져옵니다.",
+      "flavor": "",
+      
+      "image_url": "https://raw.githubusercontent.com/lyraprivate/custompics/main/cw/cw2_030.png",
+      "thumbnail_url": "https://raw.githubusercontent.com/lyraprivate/custompics/main/cw/cw2_030_t.png",
+      "illustrator": ""
+     },{
+      "pack_code": "72e5eaa7-dd4d-47eb-9ebc-88777c31e3aa",
+      "position": 31,
+      "quantity": 1,
+      
+      "code": "cw2_031",
+      "faction_code": "neutral",
+      "type_code": "treachery",
+      "subtype_code": "weakness",
+      "restrictions": "investigator:cw2_029",
+      "deck_limit": 1,
+      
+      "name": "선거철",
+      "is_unique": false,
+      
+      "traits": "Task.",
+      "text": "<b>폭로</b> - '선거철'을 플레이 영역 중 당신의 위협 영역에 둡니다.\n<b>강제</b> - 당신의 차례를 시작할 때: 자원을 2개 잃거나 행동을 1번 잃어야 합니다.\n<b>강제</b> - '존 맥나마라'의 [free] 기능을 통해, 그의 밑에서 카드를 버릴 때: '선거철'에 자원을 1개 놓습니다. 그런 다음, 이 카드에 자원이 2개 이상 있다면 '선거철'을 버립니다.",
+      "flavor": "",
+      
+      "image_url": "https://raw.githubusercontent.com/lyraprivate/custompics/main/cw/cw2_031.png",
+      "thumbnail_url": "https://raw.githubusercontent.com/lyraprivate/custompics/main/cw/cw2_031_t.png",
+      "illustrator": ""
+     },
+     {
+      "pack_code": "72e5eaa7-dd4d-47eb-9ebc-88777c31e3aa",
+      "position": 32,
+      "quantity": 1,
+      "deck_limit": 1,
+      "illustrator": "",
+      "is_unique": true,
+      
+      "code": "cw2_032",
+      "faction_code": "mystic",
+      "type_code": "investigator",
+      "double_sided": true,
+      
+      "image_url": "https://raw.githubusercontent.com/lyraprivate/custompics/main/cw/cw2_032a.png",
+      "thumbnail_url": "https://raw.githubusercontent.com/lyraprivate/custompics/main/cw/cw2_032a_t.png",
+      "back_image_url": "https://raw.githubusercontent.com/lyraprivate/custompics/main/cw/cw2_032b.png",
+      "back_thumbnail_url": "https://raw.githubusercontent.com/lyraprivate/custompics/main/cw/cw2_032b_t.png",
+      
+      "name": "제이슨 캘러핸",
+      "subname": "구도자",
+      "skill_willpower": 0,
+      "skill_intellect": 4,
+      "skill_combat": 4,
+      "skill_agility": 4,
+      
+      "traits": "Sorcerer. Scholar.",
+      "text": "[reaction] 당신이 플레이어 카드에 있는 [willpower] 테스트를 개시할 때: [willpower] 대신 당신이 원하는 능력을 테스트합니다. 해당 기능에서 제공하는 [willpower] 보정값은 그 대신 이번 테스트와 일치하는 능력을 보정합니다.\n[reaction] 당신이 능력 카드를 소모한 테스트에서, 난이도를 넘어선 차이 2 이상으로 성공한 후: 카드를 1장 뽑습니다. (라운드당 1번 한정.)\n[elder_sign] 효과: +3. 이번 테스트에 능력 카드를 2장 이상 소모했다면, 카드를 1장 뽑습니다.",
+      
+      "health": 5,
+      "sanity": 9,
+      "flavor": "",
+      
+      "back_flavor": "",
+      "back_name": "제이슨 캘러핸",
+      "back_text": "<b>덱 크기:</b> 30장.\n<b>보조 역할군 선택:</b> 덱 구성 시, 수호자([guardian])/탐구자([seeker])/무법자([rogue])/생존자([survivor]) 중 하나 선택.\n<b>덱 구성 선택지:</b> 레벨 0-5 신비주의자([mystic]) 카드. 레벨 0-5 중립 카드. 레벨 0-3 당신이 선택한 보조 역할군의 능력 카드.\n<b>덱 구성 요구조건</b>(덱 크기에 포함되지 않습니다):</b> 구도자의 길, 주화입마, 무작위 기본 약점 카드 1장.",
+      "deck_requirements": "size:30, card:cw2_033, card:cw2_034, random:subtype:basicweakness",
+      "deck_options": [
+        {
+         "faction": ["mystic"],
+         "level": {"min": 0, "max": 5}
+        },
+        {
+         "faction": ["neutral"],
+         "level": {"min": 0, "max": 5}
+        },
+        {
+         "faction_select": ["guardian", "seeker", "rogue", "survivor"],
+         "name": "보조 역할군",
+         "type": ["skill"],
+         "level": {"min": 0, "max": 3}
+        }
+      ]
+     },
+     {
+      "pack_code": "72e5eaa7-dd4d-47eb-9ebc-88777c31e3aa",
+      "position": 33,
+      "quantity": 1,
+      
+      "code": "cw2_033",
+      "faction_code": "neutral",
+      "type_code": "skill",
+      "restrictions": "investigator:cw2_032",
+      "deck_limit": 1,
+      
+      "name": "구도자의 길",
+      "is_unique": false,
+      
+      "traits": "Spirit. Expert.",
+      "text": "제이슨 캘러핸 덱 전용. 오직 '제이슨 캘러핸'만이 이 카드를 소모할 수 있습니다.\n당신이 능력 테스트에 '구도자의 길'을 소모한 후, 당신의 덱에서 능력 카드를 하나 찾아서 뽑습니다. 이번 능력 테스트 동안, '구도자의 길'은 그 카드의 아이콘과 문구를 획득합니다(이러한 문구를 해결하는 목적에서, '구도자의 길'은 그 카드와 명칭이 동일한 것으로 간주합니다).",
+      "flavor": "",
+      
+      "image_url": "https://raw.githubusercontent.com/lyraprivate/custompics/main/cw/cw2_033.png",
+      "thumbnail_url": "https://raw.githubusercontent.com/lyraprivate/custompics/main/cw/cw2_033_t.png",
+      "illustrator": ""
+     },{
+      "pack_code": "72e5eaa7-dd4d-47eb-9ebc-88777c31e3aa",
+      "position": 34,
+      "quantity": 1,
+      
+      "code": "cw2_034",
+      "faction_code": "neutral",
+      "type_code": "treachery",
+      "subtype_code": "weakness",
+      "restrictions": "investigator:cw2_032",
+      "deck_limit": 1,
+      
+      "name": "주화입마",
+      "is_unique": false,
+      
+      "traits": "Flaw.",
+      "text": "<b>폭로</b> - '주화입마'를 플레이 영역 중 당신의 위협 영역에 둡니다.\n<b>강제</b> - 당신은 자신이 수행하는 능력 테스트마다, (가능하다면) 당신의 손에서 소모할 수 있는 모든 카드를 소모해야 합니다.\n[action][action]: '주화입마'를 버립니다.",
+      "flavor": "",
+      
+      "image_url": "https://raw.githubusercontent.com/lyraprivate/custompics/main/cw/cw2_034.png",
+      "thumbnail_url": "https://raw.githubusercontent.com/lyraprivate/custompics/main/cw/cw2_034_t.png",
+      "illustrator": ""
+     },
+     {
+      "pack_code": "72e5eaa7-dd4d-47eb-9ebc-88777c31e3aa",
+      "position": 35,
+      "quantity": 1,
+      "deck_limit": 1,
+      "illustrator": "",
+      "is_unique": true,
+      
+      "code": "cw2_035",
+      "faction_code": "survivor",
+      "type_code": "investigator",
+      "double_sided": true,
+      
+      "image_url": "https://raw.githubusercontent.com/lyraprivate/custompics/main/cw/cw2_035a.png",
+      "thumbnail_url": "https://raw.githubusercontent.com/lyraprivate/custompics/main/cw/cw2_035a_t.png",
+      "back_image_url": "https://raw.githubusercontent.com/lyraprivate/custompics/main/cw/cw2_035b.png",
+      "back_thumbnail_url": "https://raw.githubusercontent.com/lyraprivate/custompics/main/cw/cw2_035b_t.png",
+      
+      "name": "아서 테넌트",
+      "subname": "해결사",
+      "skill_willpower": 2,
+      "skill_intellect": 2,
+      "skill_combat": 2,
+      "skill_agility": 2,
+      
+      "traits": "Drifter. Entrepreneur.",
+      "text": "당신은 '만능 공구함'을 플레이 영역에 두고 게임을 시작합니다.\n<b>강제</b> - 당신이 (전투/조사/회피/협상/조우 카드에 있는 활성화) 중, 이번 라운드에 당신이 실시하지 않은 행동을 개시할 때: 이번 행동을 해결하는 동안, 모든 능력 테스트의 난이도가 2만큼 감소합니다.\n[elder_sign] 효과: +2. 성공하면, 이번 라운드가 끝날 때까지 위 <b>강제</b> 기능의 조건을 \"당신이 행동을 개시할 때\"로 바꿉니다.",
+      
+      "health": 6,
+      "sanity": 8,
+      "flavor": "",
+      
+      "back_flavor": "",
+      "back_name": "아서 테넌트",
+      "back_text": "<b>덱 크기:</b> 30장.\n<b>덱 구성 선택지:</b> 레벨 0-5 생존자([survivor]) 카드. 레벨 0-5 중립 카드. 이외의 레벨 0-1 이벤트 그리고/또는 능력 카드 최대 10장.\n<b>덱 구성 요구조건</b>(덱 크기에 포함되지 않습니다):</b> 만능 공구함, 변변치 못한 일, 무작위 기본 약점 카드 1장.",
+      "deck_requirements": "size:30, card:cw2_036, card:cw2_040, random:subtype:basicweakness",
+      "deck_options": [
+        {
+         "faction": ["survivor"],
+         "level": {"min": 0, "max": 5}
+        },
+        {
+         "faction": ["neutral"],
+         "level": {"min": 0, "max": 5}
+        },
+        {
+         "type": ["event", "skill"],
+         "level": {"min": 0, "max": 1},
+         "limit": 10
+        }
+      ]
+     },
+     {
+      "pack_code": "72e5eaa7-dd4d-47eb-9ebc-88777c31e3aa",
+      "position": 36,
+      "quantity": 1,
+      
+      "code": "cw2_036",
+      "faction_code": "neutral",
+      "type_code": "asset",
+      "restrictions": "investigator:cw2_035",
+      "deck_limit": 1,
+      
+      "cost": 3,
+      "name": "만능 공구함",
+      "is_unique": false,
+      
+      "traits": "Item.",
+      "text": "아서 테넌트 덱 전용.\n<b>강제</b> - '만능 공구함'이 플레이 영역에서 나갈 때: '쇠지렛대', '수색 막대', '반사판'의 위치(비플레이 상태더라도)를 모두 확인하여 비플레이 상태로 치워 둡니다.\n[free]: '만능 공구함'에서 부착된 카드를 비플레이 상태로 치워 둡니다. 당신의 결속 카드에서 '쇠지렛대', '수색 막대', '반사판' 중 하나를 확인하여 그 카드를 '만능 공구함'에 앞면으로 부착합니다.",
+      "flavor": "",
+      
+      "image_url": "https://raw.githubusercontent.com/lyraprivate/custompics/main/cw/cw2_036.png",
+      "thumbnail_url": "https://raw.githubusercontent.com/lyraprivate/custompics/main/cw/cw2_036_t.png",
+      "illustrator": ""
+     },
+     {
+      "pack_code": "72e5eaa7-dd4d-47eb-9ebc-88777c31e3aa",
+      "position": 37,
+      "quantity": 1,
+      
+      "bonded_count": 1,
+      "bonded_to": "cw2_036",
+      "code": "cw2_037",
+      "faction_code": "neutral",
+      "type_code": "asset",
+      "restrictions": "investigator:cw2_035",
+      "deck_limit": 1,
+      
+      "name": "쇠지렛대",
+      "is_unique": false,
+      
+      "skill_combat": 1,
+      "traits": "Item. Tool. Weapon. Melee.",
+      "text": "결속(만능 공구함).\n[reaction] 당신이 공격하는 데 성공하려 할 때, '만능 공구함'을 소진합니다: 당신은 이번 능력 테스트에서 -1 능력값을 얻습니다. 이번 테스트가 성공하면, 이번 공격은 +1 피해를 줍니다.\n[reaction] 당신이 공격하는 데 실패하려 할 때, '만능 공구함'을 소진합니다: 이번 능력 테스트가 -1 난이도를 얻습니다. 성공한 테스트의 모든 효과를 취소합니다.",
+      "flavor": "",
+      
+      "image_url": "https://raw.githubusercontent.com/lyraprivate/custompics/main/cw/cw2_037.png",
+      "thumbnail_url": "https://raw.githubusercontent.com/lyraprivate/custompics/main/cw/cw2_037_t.png",
+      "illustrator": ""
+     },
+     {
+      "pack_code": "72e5eaa7-dd4d-47eb-9ebc-88777c31e3aa",
+      "position": 38,
+      "quantity": 1,
+      
+      "bonded_count": 1,
+      "bonded_to": "cw2_036",
+      "code": "cw2_038",
+      "faction_code": "neutral",
+      "type_code": "asset",
+      "restrictions": "investigator:cw2_035",
+      "deck_limit": 1,
+      
+      "name": "수색 막대",
+      "is_unique": false,
+      
+      "skill_intellect": 1,
+      "traits": "Item. Tool.",
+      "text": "결속(만능 공구함).\n[reaction] 당신이 조사하는 데 성공하려 할 때, '만능 공구함'을 소진합니다: 당신은 이번 능력 테스트에서 -1 능력값을 얻습니다. 이번 테스트가 성공하면, 당신이 위치한 장소에서 추가로 단서를 1개 더 발견합니다.\n[reaction] 당신이 조사하는 데 실패하려 할 때, '만능 공구함'을 소진합니다: 이번 능력 테스트가 -1 난이도를 얻습니다. 성공한 테스트의 모든 효과를 취소합니다.",
+      "flavor": "",
+      
+      "image_url": "https://raw.githubusercontent.com/lyraprivate/custompics/main/cw/cw2_038.png",
+      "thumbnail_url": "https://raw.githubusercontent.com/lyraprivate/custompics/main/cw/cw2_038_t.png",
+      "illustrator": ""
+     },
+     {
+      "pack_code": "72e5eaa7-dd4d-47eb-9ebc-88777c31e3aa",
+      "position": 39,
+      "quantity": 1,
+      
+      "bonded_count": 1,
+      "bonded_to": "cw2_036",
+      "code": "cw2_039",
+      "faction_code": "neutral",
+      "type_code": "asset",
+      "restrictions": "investigator:cw2_035",
+      "deck_limit": 1,
+      
+      "name": "반사판",
+      "is_unique": false,
+      
+      "skill_intellect": 1,
+      "traits": "Item. Tool.",
+      "text": "결속(만능 공구함).\n[reaction] 당신이 회피 시도하는 데 성공하려 할 때, '만능 공구함'을 소진합니다: 당신은 이번 능력 테스트에서 -1 능력값을 얻습니다. 이번 테스트가 성공하면, 당신은 이어진 장소 한 곳으로 이동하거나 회피한 적(<b>정예</b>가 아닌 경우에 한해)을 당신으로부터 1칸 멀리 이동시켜도 됩니다.\n[reaction] 당신이 회피 시도하는 데 실패하려 할 때, '만능 공구함'을 소진합니다: 이번 능력 테스트가 -1 난이도를 얻습니다. 성공한 테스트의 모든 효과를 취소합니다.",
+      "flavor": "",
+      
+      "image_url": "https://raw.githubusercontent.com/lyraprivate/custompics/main/cw/cw2_039.png",
+      "thumbnail_url": "https://raw.githubusercontent.com/lyraprivate/custompics/main/cw/cw2_039_t.png",
+      "illustrator": ""
+     },
+     {
+      "pack_code": "72e5eaa7-dd4d-47eb-9ebc-88777c31e3aa",
+      "position": 40,
+      "quantity": 1,
+      
+      "code": "cw2_040",
+      "faction_code": "neutral",
+      "type_code": "treachery",
+      "subtype_code": "weakness",
+      "restrictions": "investigator:cw2_035",
+      "deck_limit": 1,
+      
+      "name": "변변치 못한 일",
+      "is_unique": false,
+      
+      "traits": "Task.",
+      "text": "<b>폭로</b> - '변변치 못한 일'을 플레이 영역 중 당신의 위협 영역에 둡니다.\n<b>강제</b> - 당신이 난이도가 2 이하인 능력 테스트를 개시한 후: 자원을 1개 잃거나 공포를 1 받아야 합니다.\n<b>강제</b> - '아서 테넌트'가 난이도가 3 이상인 테스트에 성공한 후: '변변치 못한 일'을 버립니다.",
+      "flavor": "",
+      
+      "image_url": "https://raw.githubusercontent.com/lyraprivate/custompics/main/cw/cw2_040.png",
+      "thumbnail_url": "https://raw.githubusercontent.com/lyraprivate/custompics/main/cw/cw2_040_t.png",
+      "illustrator": ""
+     },
+     
+     
+     
+     {
+      "pack_code": "72e5eaa7-dd4d-47eb-9ebc-88777c31e3aa",
+      "position": 101,
+      "quantity": 1,
+      "deck_limit": 1,
+      "illustrator": "",
+      "is_unique": true,
+      
+      "code": "touhou_005",
+      "faction_code": "guardian",
+      "type_code": "investigator",
+      "double_sided": true,
+      
+      "image_url": "https://raw.githubusercontent.com/lyraprivate/custompics/main/touhou/touhou_005a.png",
+      "thumbnail_url": "https://raw.githubusercontent.com/lyraprivate/custompics/main/touhou/touhou_005a_t.png",
+      "back_image_url": "https://raw.githubusercontent.com/lyraprivate/custompics/main/touhou/touhou_005b.png",
+      "back_thumbnail_url": "https://raw.githubusercontent.com/lyraprivate/custompics/main/touhou/touhou_005b_t.png",
+      
+      "name": "홍 메이링",
+      "subname": "화인소녀",
+      "skill_willpower": 3,
+      "skill_intellect": 1,
+      "skill_combat": 4,
+      "skill_agility": 4,
+      
+      "traits": "무도가. Warden.",
+      "text": "당신은 능력 카드를 모든 유형의 능력 테스트에 소모할 수 있습니다.\n[reaction] 당신이 공격 능력 테스트에 성공하면: 이번 테스트에 소모한 각 기술 카드에서 서로 다른 능력 아이콘을 1개씩 고릅니다. 선택한 아이콘이...\n- ...[willpower]라면, 공포나 피해 1점을 회복합니다.\n- ...[intellect]라면, 카드를 1장 뽑습니다.\n- ...[combat]라면, 당신의 장소에 있는 적 하나에게 피해를 1 줍니다.\n- [agility]라면, 이어진 장소로 이동합니다.\n[elder_sign] 효과: +2. '맹호내경'에 기 2개를 놓습니다.",
+      
+      "health": 8,
+      "sanity": 6,
+      "flavor": "\"슬슬 내 이름을 기억해 줄 때도 되지 않았어?\"",
+      
+      "back_flavor": "",
+      "back_name": "홍 메이링",
+      "back_text": "<b>덱 크기</b>: 30장.\n<b>덱 구성 선택지</b>: 레벨 0-5 수호자([guardian]) 카드. 레벨 0-3 능력 카드. 레벨 0-5 중립 카드.\n<b>덱 구성 요구조건</b> (덱 크기에 포함되지 않습니다):</b> 홍색태극권 2장, 맹호내경, 낮잠, 무작위 기본 약점 카드 1장.\n<b>덱 구성 제한</b>: [[무기]] 및 [[마법]] 자산 카드 포함 불가.",
+      "deck_requirements": "size:30, card:touhou_007, card:touhou_008, card:touhou_009, random:subtype:basicweakness",
+      "deck_options": [
+        {
+         "not": true,
+         "trait": ["Weapon"],
+         "type":["asset"]
+        },
+        {
+         "not": true,
+         "trait": ["Spell"],
+         "type":["asset"]
+        },
+        {
+         "faction": ["guardian"],
+         "level": {"min": 0, "max": 5}
+        },
+        {
+         "type": ["skill"],
+         "level": {"min": 0, "max": 3}
+        },
+        {
+         "faction": ["neutral"],
+         "level": {"min": 0, "max": 5}
+        }
+      ]
+     },
+     {
+      "pack_code": "72e5eaa7-dd4d-47eb-9ebc-88777c31e3aa",
+      "position": 102,
+      "quantity": 2,
+      
+      "code": "touhou_007",
+      "faction_code": "neutral",
+      "type_code": "skill",
+      "restrictions": "investigator:touhou_005",
+      "deck_limit": 2,
+      
+      "name": "홍색태극권",
+      "is_unique": false,
+      
+      "skill_willpower": 1,
+      "skill_intellect": 1,
+      "skill_combat": 1,
+      "skill_agility": 1,
+      "skill_wild": 1,
+      "traits": "Practiced. Expert.",
+      "text": "홍 메이링 덱 전용.\n당신이 수행하는 능력 테스트에만 사용합니다.\n당신이 '홍색태극권'을 소모한 후, 당신의 덱 맨 위 6장 중에서 '홍색태극권'이 아닌 능력 카드 1장을 찾아 (아이콘과 관계없이) 소모합니다. 덱을 섞습니다. 성공하면, 테스트가 끝난 후 그 카드를 손으로 가져옵니다.",
+      "flavor": "밤참새 식당의 최신 배달 서비스를 이용해 주셔서 감사합니다.",
+      
+      "image_url": "https://raw.githubusercontent.com/lyraprivate/custompics/main/touhou/touhou_006.png",
+      "thumbnail_url": "https://raw.githubusercontent.com/lyraprivate/custompics/main/touhou/touhou_006_t.png",
+      "illustrator": ""
+     },
+     {
+      "pack_code": "72e5eaa7-dd4d-47eb-9ebc-88777c31e3aa",
+      "position": 103,
+      "quantity": 1,
+      
+      "code": "touhou_008",
+      "faction_code": "neutral",
+      "type_code": "asset",
+      "restrictions": "investigator:touhou_005",
+      "deck_limit": 1,
+      
+      "name": "맹호내경",
+      "subname": "기공",
+      "is_unique": true,
+      "permanent": true,
+      
+      "traits": "Talent.",
+      "text": "홍 메이링 덱 전용. 영속.\n사용(기 4회).\n[reaction] '홍 메이링'의 [reaction] 기능을 격발할 때, 기 1회를 소비합니다: 소모한 능력 카드 1장에 있는 [wild] 아이콘을 원하는 다른 아이콘으로 취급합니다.\n[action] '맹호내경'을 소진합니다: '맹호내경'에 기 2개를 보충합니다. 당신은 기 2개를 더 보충하기 위해 능력 카드 1장을 버려도 됩니다.",
+      
+      "image_url": "https://raw.githubusercontent.com/lyraprivate/custompics/main/touhou/touhou_008.png",
+      "thumbnail_url": "https://raw.githubusercontent.com/lyraprivate/custompics/main/touhou/touhou_008_t.png",
+      "illustrator": ""
+     },
+     {
+      "pack_code": "72e5eaa7-dd4d-47eb-9ebc-88777c31e3aa",
+      "position": 104,
+      "quantity": 1,
+      
+      "code": "touhou_009",
+      "faction_code": "neutral",
+      "type_code": "treachery",
+      "subtype_code": "weakness",
+      "restrictions": "investigator:touhou_005",
+      "deck_limit": 1,
+      
+      "name": "낮잠",
+      "is_unique": false,
+      
+      "traits": "Blunder.",
+      "text": "홍 메이링 덱 전용.\n<b>폭로</b> - 당신의 위협 영역에 '낮잠'을 둡니다.\n<b>강제</b> - 당신이 능력 테스트에 능력 카드를 소모한 후, 공포 1을 받거나 행동을 하나 잃습니다.\n[action][action][action] 능력 카드 X장을 버립니다: '낮잠'을 버립니다. 버린 능력 카드마다 [action] 비용이 하나 감소합니다(최대 3개).",
+      "flavor": "\"아니, 이건 게으름 피우는 게 아니라,\n아주 잠깐 쉬는 거야...\"",
+      
+      "image_url": "https://raw.githubusercontent.com/lyraprivate/custompics/main/touhou/touhou_009.png",
+      "thumbnail_url": "https://raw.githubusercontent.com/lyraprivate/custompics/main/touhou/touhou_009_t.png",
+      "illustrator": ""
+     },
+     {
+      "pack_code": "72e5eaa7-dd4d-47eb-9ebc-88777c31e3aa",
+      "position": 105,
+      "quantity": 1,
+      "deck_limit": 1,
+      "illustrator": "",
+      "is_unique": true,
+      
+      "code": "touhou_010",
+      "faction_code": "guardian",
+      "type_code": "investigator",
+      "double_sided": true,
+      
+      "image_url": "https://raw.githubusercontent.com/lyraprivate/custompics/main/touhou/touhou_010a.png",
+      "thumbnail_url": "https://raw.githubusercontent.com/lyraprivate/custompics/main/touhou/touhou_010a_t.png",
+      "back_image_url": "https://raw.githubusercontent.com/lyraprivate/custompics/main/touhou/touhou_010b.png",
+      "back_thumbnail_url": "https://raw.githubusercontent.com/lyraprivate/custompics/main/touhou/touhou_010b_t.png",
+      
+      "name": "코치야 사나에",
+      "subname": "숭상받는 바람의 인간",
+      "skill_willpower": 4,
+      "skill_intellect": 2,
+      "skill_combat": 4,
+      "skill_agility": 2,
+      
+      "traits": "무녀. Chosen. Blessed.",
+      "text": "당신의 장소에 있는 다른 조사자가 [elder_sign] 효과를 해결하려고 할 때, 대신 당신의 [elder_sign] 효과를 해결할 수 있습니다.\n[reaction] 당신이 수행하는 능력 테스트 도중 [bless] 토큰의 효과로 새로운 토큰을 공개할 때: 혼돈 주머니에서 [bless] 토큰을 찾아 해결합니다(라운드 1회 한정).\n[elder_sign] 효과: 자동성공. 테스트가 끝난 후, 혼돈 주머니에 [bless] 토큰을 2개 추가합니다. 추가할 수 없는 토큰마다 카드 1장을 뽑습니다.",
+      
+      "health": 8,
+      "sanity": 6,
+      "flavor": "\"이 기적을 부르는 신의 힘을!\"",
+      
+      "back_flavor": "",
+      "back_name": "코치야 사나에",
+      "back_text": "<b>덱 크기</b>: 30장.\n<b>덱 구성 선택지</b>: 레벨 0-4 수호자([guardian]) 카드. 레벨 0-5 <b>축복받은</b> 카드. 레벨 0 신비주의자([mystic]) 그리고/또는 생존자([survivor]) 카드 최대 5장. 레벨 0-5 중립 카드.\n<b>덱 구성 요구조건</b> (덱 크기에 포함되지 않습니다):</b> 모세의 기적, 빛나는 객성의 밤, 잊힌 의식, 무작위 기본 약점 카드 1장.\n<b>추가 게임 준비</b>: 당신은 매 게임마다 '빛나는 객성의 밤'을 비플레이 상태로 치워두고서 게임을 시작합니다.",
+      "deck_requirements": "size:30, card:touhou_011, card:touhou_012, card:touhou_013, random:subtype:basicweakness",
+      "deck_options": [
+        {
+         "faction": ["guardian"],
+         "level": {"min": 0, "max": 4}
+        },
+        {
+         "trait": ["Blessed"],
+         "level": {"min": 0, "max": 5}
+        },
+        {
+         "faction": ["neutral"],
+         "level": {"min": 0, "max": 5}
+        },
+        {
+           "faction": ["mystic", "survivor"],
+		   "level": {"min": 0, "max": 0},
+		   "limit": 5
+        }
+      ]
+     },
+     {
+      "pack_code": "72e5eaa7-dd4d-47eb-9ebc-88777c31e3aa",
+      "position": 106,
+      "quantity": 1,
+      
+      "code": "touhou_011",
+      "faction_code": "neutral",
+      "type_code": "asset",
+      "restrictions": "investigator:touhou_010",
+      "deck_limit": 1,
+      
+      "name": "모세의 기적",
+	  "subname": "기적의 현인신",
+      "is_unique": true,
+	  "permanent": true,
+      
+      "traits": "Blessed. Talent.",
+      "text": "영속. 코치야 사나에 덱 전용.\n당신이 조종하는 <b>축복받은</b> 자산의 총 개수가...\n- 2개 이상: 매 라운드 첫 번째 능력 테스트에 성공하면, 혼돈 주머니에 [bless] 토큰을 1개 추가합니다.\n- 4개 이상: '코치야 사나에'에 적힌 '당신의 장소에 있는 다른 조사자'라는 문구를 '다른 조사자'로 변경합니다.\n- 6개 이상: [elder_sign] 효과를 해결할 때마다, 당신의 장소에 있는 적에게 1 피해를 줍니다.",
+      
+      "image_url": "https://raw.githubusercontent.com/lyraprivate/custompics/main/touhou/touhou_011.png",
+      "thumbnail_url": "https://raw.githubusercontent.com/lyraprivate/custompics/main/touhou/touhou_011_t.png",
+      "illustrator": ""
+     },
+     {
+      "pack_code": "72e5eaa7-dd4d-47eb-9ebc-88777c31e3aa",
+      "position": 107,
+      "quantity": 1,
+      
+      "code": "touhou_012",
+      "faction_code": "neutral",
+      "type_code": "event",
+      "restrictions": "investigator:touhou_010",
+      "deck_limit": 1,
+      
+	  "cost": 0,
+      "name": "빛나는 객성의 밤",
+      "is_unique": false,
+      
+      "traits": "Ritual. 축복.",
+      "text": "코치야 사나에 덱 전용.\n신속. 능력 테스트 동안 혼돈 토큰을 공개하려 할 때, 옆에 치워둔 이 카드를 손에 있는 것처럼 사용할 수 있습니다.\n혼돈 주머니에 있는 모든 [bless] 토큰을 뽑고 해결합니다(추가로 토큰을 더 뽑지는 않습니다). 이렇게 [bless] 토큰 10개를 해결했다면, 혼돈 주머니에 [elder_sign] 토큰 하나를 추가하고 게임 종료 시에 제거합니다. '빛나는 객성의 밤'을 게임에서 제거합니다.",
+	  "flavor": "\"자, 별 그리는 법을 가르쳐 줄게.\"",
+      
+      "image_url": "https://raw.githubusercontent.com/lyraprivate/custompics/main/touhou/touhou_012.png",
+      "thumbnail_url": "https://raw.githubusercontent.com/lyraprivate/custompics/main/touhou/touhou_012_t.png",
+      "illustrator": ""
+     },
+     {
+      "pack_code": "72e5eaa7-dd4d-47eb-9ebc-88777c31e3aa",
+      "position": 108,
+      "quantity": 1,
+      
+      "code": "touhou_013",
+      "faction_code": "neutral",
+      "type_code": "treachery",
+      "subtype_code": "weakness",
+      "restrictions": "investigator:touhou_010",
+      "deck_limit": 1,
+      
+      "name": "잊힌 의식",
+      "is_unique": false,
+      
+      "traits": "Flaw.",
+      "text": "코치야 사나에 덱 전용.\n<b>폭로</b> - 혼돈 주머니에 [bless] 토큰이 없다면, '잊힌 의식'을 당신의 덱에 섞습니다. 그렇지 않다면, 혼돈 주머니에서 [bless] 토큰 5개를 제거합니다. 제거할 수 없는 [bless] 토큰마다 피해를 1 입습니다.",
+      "flavor": "\"지금과 같은 신앙 결핍이 지속된다면, 환상향 또한 힘을 잃게 될 거야...\"",
+      
+      "image_url": "https://raw.githubusercontent.com/lyraprivate/custompics/main/touhou/touhou_013.png",
+      "thumbnail_url": "https://raw.githubusercontent.com/lyraprivate/custompics/main/touhou/touhou_013_t.png",
+      "illustrator": ""
+     },
+     {
+      "pack_code": "72e5eaa7-dd4d-47eb-9ebc-88777c31e3aa",
+      "position": 109,
+      "quantity": 1,
+      "deck_limit": 1,
+      "illustrator": "",
+      "is_unique": true,
+      
+      "code": "touhou_039",
+      "faction_code": "seeker",
+      "type_code": "investigator",
+      "double_sided": true,
+      
+      "image_url": "https://raw.githubusercontent.com/lyraprivate/custompics/main/touhou/touhou_039a.png",
+      "thumbnail_url": "https://raw.githubusercontent.com/lyraprivate/custompics/main/touhou/touhou_039a_t.png",
+      "back_image_url": "https://raw.githubusercontent.com/lyraprivate/custompics/main/touhou/touhou_039b.png",
+      "back_thumbnail_url": "https://raw.githubusercontent.com/lyraprivate/custompics/main/touhou/touhou_039b_t.png",
+      
+      "name": "야쿠모 란",
+      "subname": "책사 구미호",
+      "skill_willpower": 3,
+      "skill_intellect": 4,
+      "skill_combat": 2,
+      "skill_agility": 3,
+      
+      "traits": "요호. Assistant. Scholar.",
+      "text": "당신의 손패 장수가....\n- 3장 이상일 때, +1 [intellect]을 얻습니다.\n- 6장 이상일 때, +1[intellect]을 얻습니다.\n- 9장 이상일 때, 당신이 이벤트 카드를 통해 수행하는 능력 테스트의 난이도를 1 낮춥니다.\n[elder_sign] 효과: 카드 1장을 뽑습니다. 그 후 당신의 손에 있는 카드 3장마다 +1.",
+      
+      "health": 5,
+      "sanity": 9,
+      "flavor": "\"우리 첸하고 자주 놀아준다고 들었습니다. 잘 돌바줘서 감사합니다.\"",
+      
+      "back_flavor": "",
+      "back_name": "야쿠모 란",
+      "back_text": "<b>덱 크기</b>: 30장.\n<b>덱 구성 선택지</b>: 레벨 0-5 탐구자([seeker]) 카드. 레벨 0-1 수호자([guardian]) 그리고/또는 신비주의자([mystic]) 카드 최대 9장. 레벨 0-5 중립 카드.\n<b>덱 구성 요구조건</b> (덱 크기에 포함되지 않습니다):</b> 첸, 절외생지, 무작위 기본 약점 카드 1장.\n<b>덱 구성 제한</b>: 처음 덱을 구성할 때, 수호자([guardian]) 및 신비주의자([mystic]) 카드를 사용할 수 없습니다. 캠페인 중 매 게임 사이에, 덱에서 최대 2장의 0-1 레벨 카드를 동일한 경험치의 다른 카드로 교체할 수 있습니다(덱 구성 선택지를 준수하여).",
+      "deck_requirements": "size:30, card:touhou_040, card:touhou_041, random:subtype:basicweakness",
+      "deck_options": [
+        {
+         "faction": ["seeker"],
+         "level": {"min": 0, "max": 5}
+        },
+        {
+         "faction": ["neutral"],
+         "level": {"min": 0, "max": 5}
+        },
+		{
+         "faction": ["guardian", "mystic"],
+         "level": {"min": 0, "max": 1},
+		 "limit": 9
+        }
+      ]
+     },
+     {
+      "pack_code": "72e5eaa7-dd4d-47eb-9ebc-88777c31e3aa",
+      "position": 110,
+      "quantity": 1,
+      
+      "code": "touhou_040",
+      "faction_code": "seeker",
+      "type_code": "asset",
+      "restrictions": "investigator:touhou_039",
+      "deck_limit": 1,
+      
+	  "cost": 3,
+      "name": "첸",
+      "is_unique": true,
+	  "slot": "Ally",
+	  "health": 2,
+	  "sanity": 2,
+      
+      "skill_intellect": 1,
+      "skill_combat": 1,
+      "skill_wild": 1,
+      "traits": "Ally. 소환수.",
+      "text": "야쿠모 란 덱 전용.\n당신이 '첸'을 플레이할 때, 카드 1장을 버려서 비용을 3만큼 줄여도 됩니다.\n[reaction] 조사에 성공했을 때, '첸'을 소진합니다: 카드를 1장 뽑습니다. 손에 카드가 9장 이상 있다면, 대신 공포 1을 회복해도 됩니다.",
+      "flavor": "란 님, 제게 맡겨주세요.",
+      
+      "image_url": "https://raw.githubusercontent.com/lyraprivate/custompics/main/touhou/touhou_040.png",
+      "thumbnail_url": "https://raw.githubusercontent.com/lyraprivate/custompics/main/touhou/touhou_040_t.png",
+      "illustrator": ""
+     },
+     {
+      "pack_code": "72e5eaa7-dd4d-47eb-9ebc-88777c31e3aa",
+      "position": 111,
+      "quantity": 1,
+      
+      "code": "touhou_041",
+      "faction_code": "neutral",
+      "type_code": "treachery",
+      "subtype_code": "weakness",
+      "restrictions": "investigator:touhou_039",
+      "deck_limit": 1,
+      
+      "name": "절외생지",
+      "is_unique": false,
+      
+      "traits": "Blunder.",
+      "text": "야쿠모 란 덱 전용.\n<b>폭로</b> - 당신의 위협 영역에 '절외생지'를 둡니다.\n<b>강제</b> - 당신의 차례 끝에: [agility](3)을 테스트합니다. 실패하면, 손에 있는 카드 절반(소숫점 내림)을 버리거나, '첸'을 버리고 공포 1을 받습니다. '절외생지'를 덱에 섞어넣습니다.",
+      "flavor": "\"첸!!!\"",
+      
+      "image_url": "https://raw.githubusercontent.com/lyraprivate/custompics/main/touhou/touhou_041.png",
+      "thumbnail_url": "https://raw.githubusercontent.com/lyraprivate/custompics/main/touhou/touhou_041_t.png",
+      "illustrator": ""
+     },
+     
+     
+     
+     
+     
+     
+     
+     
+     {
+      "pack_code": "72e5eaa7-dd4d-47eb-9ebc-88777c31e3aa",
+      "position": 177,
+      "quantity": 1,
+      "deck_limit": 1,
+      "illustrator": "",
+      "is_unique": true,
+      
+      "code": "touhou_177",
+      "faction_code": "survivor",
+      "type_code": "investigator",
+      "double_sided": true,
+      
+      "image_url": "https://raw.githubusercontent.com/lyraprivate/custompics/main/touhou/touhou_177a.png",
+      "thumbnail_url": "https://raw.githubusercontent.com/lyraprivate/custompics/main/touhou/touhou_177a_t.png",
+      "back_image_url": "https://raw.githubusercontent.com/lyraprivate/custompics/main/touhou/touhou_177b.png",
+      "back_thumbnail_url": "https://raw.githubusercontent.com/lyraprivate/custompics/main/touhou/touhou_177b_t.png",
+      
+      "name": "미스티아 로렐라이",
+      "subname": "심야식당의 여주인",
+      "skill_willpower": 3,
+      "skill_intellect": 3,
+      "skill_combat": 2,
+      "skill_agility": 4,
+      
+      "traits": "요스즈메. Entrepreneur.",
+      "text": "당신의 장소에 있는 다른 조사자만 이 카드의 [action] 기능을 활성화할 수 있습니다.\n[action] 카드를 3장 뽑고, 2장 버립니다: 버린 카드 중에서 서로 다른 능력 아이콘을 2개 고릅니다. 그 중 하나의 [wild] 아이콘을 임의의 능력 아이콘으로 간주해도 됩니다. '야작식당 메뉴판'의 해당하는 효과를 해결합니다(조사자 당 라운드 1회 한정).\n[elder_sign] 효과: +2. 다른 조사자를 선택하여 덱이나 버린 카드 더미에서 '야작식당 음식 배달'을 찾아 뽑고 덱을 섞도록 합니다.",
+      
+      "health": 6,
+      "sanity": 8,
+      "flavor": "밤이라 배가 많이 고프시조? 먹고 싶은게 있으면 편하게 말하세요.",
+      
+      "back_flavor": "",
+      "back_name": "미스티아 로렐라이",
+      "back_text": "<b>덱 크기:</b> 35장.\n<b>덱 구성 선택지:</b> 레벨 0-5 생존자([survivor]) 카드. 레벨 0 능력 아이콘이 있는 다른 역할군 카드 최대 10장, 레벨 0-5 중립 카드.\n<b>＊(주의) 덱 빌드 옵션 포맷의 한계로, 능력 아이콘 유무는 시스템으로 필터링이 불가능합니다.</b>\n<b>덱 구성 요구조건</b>(덱 크기에 포함되지 않습니다): 야작식당 음식 배달 3장, 개점준비 1장, 아노이변 1장, 무작위 기본 약점 카드 1장.",
+      "deck_requirements": "size:35, card:touhou_178, card:touhou_181, card:touhou_183, random:subtype:basicweakness",
+      "deck_options": [
+        {
+         "faction": ["survivor"],
+         "level": {"min": 0, "max": 5}
+        },
+        {
+         "faction": ["neutral"],
+         "level": {"min": 0, "max": 5}
+        },
+        {
+         "level": {"min": 0, "max": 0},
+         "limit": 10
+        }
+      ]
+     },
+     {
+      "pack_code": "72e5eaa7-dd4d-47eb-9ebc-88777c31e3aa",
+      "position": 178,
+      "quantity": 3,
+      
+      "code": "touhou_178",
+      "faction_code": "survivor",
+      "type_code": "event",
+      "restrictions": "investigator:touhou_177",
+      "deck_limit": 3,
+      
+      "cost": 1,
+      "name": "야작식당 음식 배달",
+      "is_unique": false,
+      
+      "skill_willpower": 1,
+      "skill_intellect": 1,
+      "skill_combat": 1,
+      "skill_agility": 1,
+      "traits": "Tactic. Supply.",
+      "text": "미스티아 로렐라이 덱 전용.\n신속. 당신의 차례 동안에만 플레이합니다.\n장소 제한을 무시하고, '미스티아 로렐라이'의 [action] 기능을 [action] 비용을 지불하지 않고 해결합니다.",
+      "flavor": "밤참새 식당의 최신 배달 서비스를 이용해 주셔서 감사합니다.",
+      
+      "image_url": "https://raw.githubusercontent.com/lyraprivate/custompics/main/touhou/touhou_178.png",
+      "thumbnail_url": "https://raw.githubusercontent.com/lyraprivate/custompics/main/touhou/touhou_178_t.png",
+      "illustrator": ""
+     },
+     {
+      "pack_code": "72e5eaa7-dd4d-47eb-9ebc-88777c31e3aa",
+      "position": 181,
+      "quantity": 1,
+      
+      "code": "touhou_181",
+      "faction_code": "neutral",
+      "type_code": "event",
+      "restrictions": "investigator:touhou_177",
+      "deck_limit": 1,
+      
+      "name": "개점준비",
+      "is_unique": true,
+      "permanent": true,
+      
+      "traits": "Talent.",
+      "text": "미스티아 로렐라이 덱 전용. 영속.\n[reaction] 아무 조사자가 '미스티아 로렐라이'의 [action] 기능을 통해 손에서 카드를 버릴 때, '개점준비'를 소진합니다: 대신 당신과 그 조사자가 합쳐서 카드를 총 2장 버리고(여전히 비용을 지불한 것으로 간주합니다), 당신도 '야작식당 메뉴판'의 해당하는 효과를 해결합니다.",
+      "flavor": "소녀 요리중...",
+      
+      "image_url": "https://raw.githubusercontent.com/lyraprivate/custompics/main/touhou/touhou_181.png",
+      "thumbnail_url": "https://raw.githubusercontent.com/lyraprivate/custompics/main/touhou/touhou_181_t.png",
+      "illustrator": ""
+     },
+     {
+      "pack_code": "72e5eaa7-dd4d-47eb-9ebc-88777c31e3aa",
+      "position": 183,
+      "quantity": 1,
+      
+      "code": "touhou_183",
+      "faction_code": "neutral",
+      "type_code": "enemy",
+      "subtype_code": "weakness",
+      "restrictions": "investigator:touhou_177",
+      "deck_limit": 1,
+      
+      "name": "아노이변",
+      "enemy_fight": 3,
+      "enemy_evade": 2,
+      "enemy_damage": 1,
+      "enemy_horror": 1,
+      "is_unique": false,
+      
+      "traits": "환상. Elite.",
+      "text": "사냥꾼. 경계.\n<b>먹잇감</b> - '미스티아 로렐라이'.\n<b>강제</b> - 조사자가 '미스티아 로렐라이'의 [action] 기능을 통해 손에서 카드 2장을 버린 후, 그 중 무작위로 1장을 게임에서 제거하고 이 카드에 자원을 1개 놓습니다. 이 카드에 자원이 3개 이상 있다면, 이 카드를 게임에서 제거하고, '사이교우지 유우코' 조사자가 있다면 그 조사자의 피해와 공포를 1 회복합니다.",
+      
+      "image_url": "https://raw.githubusercontent.com/lyraprivate/custompics/main/touhou/touhou_183.png",
+      "thumbnail_url": "https://raw.githubusercontent.com/lyraprivate/custompics/main/touhou/touhou_183_t.png",
+      "illustrator": ""
+     }
+   ],
+   "encounter_sets": [],
+   "packs": [
+     {
+      "code": "72e5eaa7-dd4d-47eb-9ebc-88777c31e3aa",
+      "name": "로컬 커스텀",
+      "date_release": "2026-09-09",
+      "icon_url": "https://raw.githubusercontent.com/lyraprivate/custompics/main/icon.png"
+     }
+   ]
   }
 }
