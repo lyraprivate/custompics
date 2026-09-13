@@ -602,7 +602,7 @@
       
       "back_flavor": "",
       "back_name": "올리브 스콧",
-      "back_text": "<b>덱 크기:</b> 30장.\n<b>덱 구성 선택지:</b> 레벨 0-5 생존자([survivor]) 카드. 레벨 0-2 <b>마법</b>이 아닌 신비주의자([mystic]) 카드. 레벨 0-5 중립 카드.\n<b>덱 구성 요구조건</b>(덱 크기에 포함되지 않습니다):</b> 궂은 날도 지나가리라 사본 2장, 노덴스의 부름, 무작위 기본 약점 카드 1장.",
+      "back_text": "<b>덱 크기:</b> 30장.\n<b>덱 구성 선택지:</b> 레벨 0-5 생존자([survivor]) 카드. 레벨 0-2 <b>마법</b>이 아닌 신비주의자([mystic]) 카드. 레벨 0-5 중립 카드.\n<b>덱 구성 요구조건</b>(덱 크기에 포함되지 않습니다): 궂은 날도 지나가리라 사본 2장, 노덴스의 부름, 무작위 기본 약점 카드 1장.",
       "deck_requirements": "size:30, card:cw1_018, card:cw1_019, random:subtype:basicweakness",
       "deck_options": [
         {
@@ -915,7 +915,7 @@
       
       "back_flavor": "",
       "back_name": "대니얼 킴",
-      "back_text": "<b>덱 크기:</b> 30장.\n<b>덱 구성 선택지:</b> 레벨 0-3 탐구자([seeker]) 카드. 레벨 0-5 '연구됨' 카드. 레벨 0-5 중립 카드.\n<b>덱 구성 요구조건</b>(덱 크기에 포함되지 않습니다):</b> 연구 기록, 기록 소실, 무작위 기본 약점 카드 1장.\n<b>추가 선택지:</b> 언제든 당신이 '연구됨' 카드를 향상할 때, 그 카드의 향상된 사본을 1장 추가로 경험치 비용의 지불 없이 덱에 포함해도 됩니다. 이때, 포함하려는 카드는 유효한 선택지 중에서 무작위로 선택해야 합니다(이렇게 포함한 카드는 당신의 덱 크기를 계산하거나 당신의 덱에서 카드 사본 개수를 계산할 때 포함하지 않습니다).\n<b>추가 게임준비:</b> 당신이 3레벨 이상이고 명칭이 다른 '연구됨' 카드를 도합 6장 덱에 포함한 상태라면, 당신은 '완벽한 기록'을 플레이 영역에 두고 시작합니다.",
+      "back_text": "<b>덱 크기:</b> 30장.\n<b>덱 구성 선택지:</b> 레벨 0-3 탐구자([seeker]) 카드. 레벨 0-5 '연구됨' 카드. 레벨 0-5 중립 카드.\n<b>덱 구성 요구조건</b>(덱 크기에 포함되지 않습니다): 연구 기록, 기록 소실, 무작위 기본 약점 카드 1장.\n<b>추가 선택지:</b> 언제든 당신이 '연구됨' 카드를 향상할 때, 그 카드의 향상된 사본을 1장 추가로 경험치 비용의 지불 없이 덱에 포함해도 됩니다. 이때, 포함하려는 카드는 유효한 선택지 중에서 무작위로 선택해야 합니다(이렇게 포함한 카드는 당신의 덱 크기를 계산하거나 당신의 덱에서 카드 사본 개수를 계산할 때 포함하지 않습니다).\n<b>추가 게임준비:</b> 당신이 3레벨 이상이고 명칭이 다른 '연구됨' 카드를 도합 6장 덱에 포함한 상태라면, 당신은 '완벽한 기록'을 플레이 영역에 두고 시작합니다.",
       "deck_requirements": "size:30, card:cw2_026, card:cw2_028, random:subtype:basicweakness",
       "deck_options": [
         {
@@ -1037,7 +1037,7 @@
       
       "back_flavor": "",
       "back_name": "존 맥나마라",
-      "back_text": "<b>덱 크기:</b> 30장.\n<b>덱 구성 선택지:</b> 레벨 0-3 무법자([rogue]) 카드. 레벨 0-5 <b>조력자</b> 카드. 레벨 0-5 중립 카드.\n<b>덱 구성 요구조건</b>(덱 크기에 포함되지 않습니다):</b> 잭 케인, 선거철, 무작위 기본 약점 카드 1장.",
+      "back_text": "<b>덱 크기:</b> 30장.\n<b>덱 구성 선택지:</b> 레벨 0-3 무법자([rogue]) 카드. 레벨 0-5 <b>조력자</b> 카드. 레벨 0-5 중립 카드.\n<b>덱 구성 요구조건</b>(덱 크기에 포함되지 않습니다): 잭 케인, 선거철, 무작위 기본 약점 카드 1장.",
       "deck_requirements": "size:30, card:cw2_030, card:cw2_031, random:subtype:basicweakness",
       "deck_options": [
         {
@@ -1070,6 +1070,7 @@
       "subname": "충직한 비서실장",
       "is_unique": true,
       
+	  "slot": "Ally",
       "skill_wild": 2,
       "traits": "Ally. Assistant.",
       "text": "존 맥나마라 덱 전용. 이 카드가 '존 맥나마라' 밑에 있는 동안, 당신은 모든 능력에 +1을 얻습니다.\n[action]: 자원을 1개 획득합니다. 이번 차례에 이 기능을 2번 이상 실시했다면, 추가로 자원을 1개 더 획득합니다.\n[reaction] 당신의 차례 끝에, 이 카드가 '존 맥나마라' 밑에 있다면: '잭 케인'을 당신의 손으로 가져옵니다.",
@@ -1135,7 +1136,7 @@
       
       "back_flavor": "",
       "back_name": "제이슨 캘러핸",
-      "back_text": "<b>덱 크기:</b> 30장.\n<b>보조 역할군 선택:</b> 덱 구성 시, 수호자([guardian])/탐구자([seeker])/무법자([rogue])/생존자([survivor]) 중 하나 선택.\n<b>덱 구성 선택지:</b> 레벨 0-5 신비주의자([mystic]) 카드. 레벨 0-5 중립 카드. 레벨 0-3 당신이 선택한 보조 역할군의 능력 카드.\n<b>덱 구성 요구조건</b>(덱 크기에 포함되지 않습니다):</b> 구도자의 길, 주화입마, 무작위 기본 약점 카드 1장.",
+      "back_text": "<b>덱 크기:</b> 30장.\n<b>보조 역할군 선택:</b> 덱 구성 시, 수호자([guardian])/탐구자([seeker])/무법자([rogue])/생존자([survivor]) 중 하나 선택.\n<b>덱 구성 선택지:</b> 레벨 0-5 신비주의자([mystic]) 카드. 레벨 0-5 중립 카드. 레벨 0-3 당신이 선택한 보조 역할군의 능력 카드.\n<b>덱 구성 요구조건</b>(덱 크기에 포함되지 않습니다): 구도자의 길, 주화입마, 무작위 기본 약점 카드 1장.",
       "deck_requirements": "size:30, card:cw2_033, card:cw2_034, random:subtype:basicweakness",
       "deck_options": [
         {
@@ -1232,7 +1233,7 @@
       
       "back_flavor": "",
       "back_name": "아서 테넌트",
-      "back_text": "<b>덱 크기:</b> 30장.\n<b>덱 구성 선택지:</b> 레벨 0-5 생존자([survivor]) 카드. 레벨 0-5 중립 카드. 이외의 레벨 0-1 이벤트 그리고/또는 능력 카드 최대 10장.\n<b>덱 구성 요구조건</b>(덱 크기에 포함되지 않습니다):</b> 만능 공구함, 변변치 못한 일, 무작위 기본 약점 카드 1장.",
+      "back_text": "<b>덱 크기:</b> 30장.\n<b>덱 구성 선택지:</b> 레벨 0-5 생존자([survivor]) 카드. 레벨 0-5 중립 카드. 이외의 레벨 0-1 이벤트 그리고/또는 능력 카드 최대 10장.\n<b>덱 구성 요구조건</b>(덱 크기에 포함되지 않습니다): 만능 공구함, 변변치 못한 일, 무작위 기본 약점 카드 1장.",
       "deck_requirements": "size:30, card:cw2_036, card:cw2_040, random:subtype:basicweakness",
       "deck_options": [
         {
@@ -1408,7 +1409,7 @@
       
       "back_flavor": "",
       "back_name": "홍 메이링",
-      "back_text": "<b>덱 크기</b>: 30장.\n<b>덱 구성 선택지</b>: 레벨 0-5 수호자([guardian]) 카드. 레벨 0-3 능력 카드. 레벨 0-5 중립 카드.\n<b>덱 구성 요구조건</b> (덱 크기에 포함되지 않습니다):</b> 홍색태극권 2장, 맹호내경, 낮잠, 무작위 기본 약점 카드 1장.\n<b>덱 구성 제한</b>: [[무기]] 및 [[마법]] 자산 카드 포함 불가.",
+      "back_text": "<b>덱 크기</b>: 30장.\n<b>덱 구성 선택지</b>: 레벨 0-5 수호자([guardian]) 카드. 레벨 0-3 능력 카드. 레벨 0-5 중립 카드.\n<b>덱 구성 요구조건</b> (덱 크기에 포함되지 않습니다): 홍색태극권 2장, 맹호내경, 낮잠, 무작위 기본 약점 카드 1장.\n<b>덱 구성 제한</b>: [[무기]] 및 [[마법]] 자산 카드 포함 불가.",
       "deck_requirements": "size:30, card:touhou_007, card:touhou_008, card:touhou_009, random:subtype:basicweakness",
       "deck_options": [
         {
@@ -1542,7 +1543,7 @@
       
       "back_flavor": "",
       "back_name": "코치야 사나에",
-      "back_text": "<b>덱 크기</b>: 30장.\n<b>덱 구성 선택지</b>: 레벨 0-4 수호자([guardian]) 카드. 레벨 0-5 <b>축복받은</b> 카드. 레벨 0 신비주의자([mystic]) 그리고/또는 생존자([survivor]) 카드 최대 5장. 레벨 0-5 중립 카드.\n<b>덱 구성 요구조건</b> (덱 크기에 포함되지 않습니다):</b> 모세의 기적, 빛나는 객성의 밤, 잊힌 의식, 무작위 기본 약점 카드 1장.\n<b>추가 게임 준비</b>: 당신은 매 게임마다 '빛나는 객성의 밤'을 비플레이 상태로 치워두고서 게임을 시작합니다.",
+      "back_text": "<b>덱 크기</b>: 30장.\n<b>덱 구성 선택지</b>: 레벨 0-4 수호자([guardian]) 카드. 레벨 0-5 <b>축복받은</b> 카드. 레벨 0 신비주의자([mystic]) 그리고/또는 생존자([survivor]) 카드 최대 5장. 레벨 0-5 중립 카드.\n<b>덱 구성 요구조건</b> (덱 크기에 포함되지 않습니다): 모세의 기적, 빛나는 객성의 밤, 잊힌 의식, 무작위 기본 약점 카드 1장.\n<b>추가 게임 준비</b>: 당신은 매 게임마다 '빛나는 객성의 밤'을 비플레이 상태로 치워두고서 게임을 시작합니다.",
       "deck_requirements": "size:30, card:touhou_011, card:touhou_012, card:touhou_013, random:subtype:basicweakness",
       "deck_options": [
         {
@@ -1667,7 +1668,7 @@
       
       "back_flavor": "",
       "back_name": "야쿠모 란",
-      "back_text": "<b>덱 크기</b>: 30장.\n<b>덱 구성 선택지</b>: 레벨 0-5 탐구자([seeker]) 카드. 레벨 0-1 수호자([guardian]) 그리고/또는 신비주의자([mystic]) 카드 최대 9장. 레벨 0-5 중립 카드.\n<b>덱 구성 요구조건</b> (덱 크기에 포함되지 않습니다):</b> 첸, 절외생지, 무작위 기본 약점 카드 1장.\n<b>덱 구성 제한</b>: 처음 덱을 구성할 때, 수호자([guardian]) 및 신비주의자([mystic]) 카드를 사용할 수 없습니다. 캠페인 중 매 게임 사이에, 덱에서 최대 2장의 0-1 레벨 카드를 동일한 경험치의 다른 카드로 교체할 수 있습니다(덱 구성 선택지를 준수하여).",
+      "back_text": "<b>덱 크기</b>: 30장.\n<b>덱 구성 선택지</b>: 레벨 0-5 탐구자([seeker]) 카드. 레벨 0-1 수호자([guardian]) 그리고/또는 신비주의자([mystic]) 카드 최대 9장. 레벨 0-5 중립 카드.\n<b>덱 구성 요구조건</b> (덱 크기에 포함되지 않습니다): 첸, 절외생지, 무작위 기본 약점 카드 1장.\n<b>덱 구성 제한</b>: 처음 덱을 구성할 때, 수호자([guardian]) 및 신비주의자([mystic]) 카드를 사용할 수 없습니다. 캠페인 중 매 게임 사이에, 덱에서 최대 2장의 0-1 레벨 카드를 동일한 경험치의 다른 카드로 교체할 수 있습니다(덱 구성 선택지를 준수하여).",
       "deck_requirements": "size:30, card:touhou_040, card:touhou_041, random:subtype:basicweakness",
       "deck_options": [
         {
@@ -1737,13 +1738,829 @@
       "thumbnail_url": "https://raw.githubusercontent.com/lyraprivate/custompics/main/touhou/touhou_041_t.png",
       "illustrator": ""
      },
+     {
+      "pack_code": "72e5eaa7-dd4d-47eb-9ebc-88777c31e3aa",
+      "position": 112,
+      "quantity": 1,
+      "deck_limit": 1,
+      "illustrator": "",
+      "is_unique": true,
+      
+      "code": "touhou_063",
+      "faction_code": "seeker",
+      "type_code": "investigator",
+      "double_sided": true,
+      
+      "image_url": "https://raw.githubusercontent.com/lyraprivate/custompics/main/touhou/touhou_063a.png",
+      "thumbnail_url": "https://raw.githubusercontent.com/lyraprivate/custompics/main/touhou/touhou_063a_t.png",
+      "back_image_url": "https://raw.githubusercontent.com/lyraprivate/custompics/main/touhou/touhou_063b.png",
+      "back_thumbnail_url": "https://raw.githubusercontent.com/lyraprivate/custompics/main/touhou/touhou_063b_t.png",
+      
+      "name": "히메카이도 하타테",
+      "subname": "요즘 시대의 염사 기자",
+      "skill_willpower": 3,
+      "skill_intellect": 4,
+      "skill_combat": 2,
+      "skill_agility": 3,
+      
+      "traits": "텐구. Reporter.",
+      "text": "당신이 가진 단서를 소비하거나 장소에 올려놓아야 할 때, '화과자념보' 위에 놓인 단서를 소비하거나 올려놓아도 됩니다.\n[reaction] 당신이 단서를 발견했을 때: 토큰 공급처에서 단서 1개를 가져와 '화과자념보' 위에 놓습니다(라운드 1회 한정).\n[elder_sign] 효과: +1. '화과자념보' 위에 단서 2개를 놓습니다.",
+      
+      "health": 6,
+      "sanity": 8,
+      "flavor": "\"흥미로운 사건이...\n아직 일어나지 않은 거야...!?\"",
+      
+      "back_flavor": "",
+      "back_name": "히메카이도 하타테",
+      "back_text": "<b>덱 크기</b>: 30장.\n<b>덱 구성 선택지</b>: 레벨 0-5 탐구자([seeker]) 카드. 레벨 0-5 '단서'라고 적힌 카드. 레벨 0-5 중립 카드.\n<b>덱 구성 요구조건</b> (덱 크기에 포함되지 않습니다): 화과자념보, 텐구 염사법 2장, 잘못된 인터뷰, 무작위 기본 약점 카드 1장.",
+      "deck_requirements": "size:30, card:touhou_064, card:touhou_065, card:touhou_067, random:subtype:basicweakness",
+      "deck_options": [
+        {
+         "faction": ["seeker"],
+         "level": {"min": 0, "max": 5}
+        },
+        {
+         "faction": ["neutral"],
+         "level": {"min": 0, "max": 5}
+        },
+		{
+         "text_exact": ["clue", "Clue"],
+         "level": {"min": 0, "max": 5}
+        }
+      ]
+     },
+     {
+      "pack_code": "72e5eaa7-dd4d-47eb-9ebc-88777c31e3aa",
+      "position": 113,
+      "quantity": 1,
+      
+      "code": "touhou_064",
+      "faction_code": "seeker",
+      "type_code": "asset",
+      "restrictions": "investigator:touhou_063",
+      "deck_limit": 1,
+      
+	  "name": "화과자념보",
+	  "subname": "무작위 검색",
+      "is_unique": true,
+	  
+      "traits": "Pact.",
+      "text": "히메카이도 하타테 덱 전용. 영속.\n'화과자념보' 위에 놓인 단서는 '히메카이도 하타테' 외의 카드의 효과로 소비하거나 영향을 줄 수 없으며, 주요 목적을 진행하기 위해 사용할 수 없고, 장소에 올려놓은 후에는 제거됩니다.",
+      "flavor": "충격! 교회 밖 호수에서 거대한 소용돌이가 일어났고, 떠오른 고대의 물건이 기이한 빛을 내뿜고 있다...",
+      
+      "image_url": "https://raw.githubusercontent.com/lyraprivate/custompics/main/touhou/touhou_064.png",
+      "thumbnail_url": "https://raw.githubusercontent.com/lyraprivate/custompics/main/touhou/touhou_064_t.png",
+      "illustrator": ""
+     },
+	 {
+      "pack_code": "72e5eaa7-dd4d-47eb-9ebc-88777c31e3aa",
+      "position": 114,
+      "quantity": 2,
+      
+      "code": "touhou_065",
+      "faction_code": "seeker",
+      "type_code": "skill",
+      "restrictions": "investigator:touhou_063",
+      "deck_limit": 2,
+      
+	  "name": "텐구 염사법",
+	  "is_unique": false,
+	  
+	  "skill_intellect": 1,
+	  "skill_wild": 1,
+      "traits": "Practiced. Expert.",
+      "text": "히메카이도 하타테 덱 전용.\n테스트당 최대 1장 소모할 수 있습니다.\n이번 능력 테스트가 성공하면, 다음 중 하나를 선택합니다:\n- 토큰 공급처에서 단서 1개를 가져와 '화과자념보' 위에 놓습니다.\n- 당신이 가진 단서 1개를 당신의 장소에 올려놓고, 연결된 장소나 텅 빈 장소에서 단서 1개를 발견합니다.",
+      "flavor": "염사의 정밀도가 올라간 것 같아.\n또 괜찮은 기사를 쓸 수 있겠어.",
+      
+      "image_url": "https://raw.githubusercontent.com/lyraprivate/custompics/main/touhou/touhou_065.png",
+      "thumbnail_url": "https://raw.githubusercontent.com/lyraprivate/custompics/main/touhou/touhou_065_t.png",
+      "illustrator": ""
+     },
+     {
+      "pack_code": "72e5eaa7-dd4d-47eb-9ebc-88777c31e3aa",
+      "position": 115,
+      "quantity": 1,
+      
+      "code": "touhou_067",
+      "faction_code": "neutral",
+      "type_code": "treachery",
+      "subtype_code": "weakness",
+      "restrictions": "investigator:touhou_063",
+      "deck_limit": 1,
+      
+      "name": "잘못된 인터뷰",
+      "is_unique": false,
+      
+      "traits": "Blunder.",
+      "text": "히메카이도 하타테 덱 전용.\n<b>폭로</b> - 당신의 위협 영역에 '잘못된 인터뷰'를 둡니다.\n<b>강제</b> - 조사 단계 끝에, [willpower](X)를 테스트합니다. X는 '화과자념보' 위에 놓인 단서의 개수입니다. 실패한 차이마다 공포 1점을 받거나 '화과자념보'에서 단서 1개를 제거합니다.\n[action][action]: '잘못된 인터뷰'를 버립니다.",
+      "flavor": "\"아, 진짜 중요한 자료인데...\"",
+      
+      "image_url": "https://raw.githubusercontent.com/lyraprivate/custompics/main/touhou/touhou_067.png",
+      "thumbnail_url": "https://raw.githubusercontent.com/lyraprivate/custompics/main/touhou/touhou_067_t.png",
+      "illustrator": ""
+     },
+     {
+      "pack_code": "72e5eaa7-dd4d-47eb-9ebc-88777c31e3aa",
+      "position": 116,
+      "quantity": 1,
+      "deck_limit": 1,
+      "illustrator": "",
+      "is_unique": true,
+      
+      "code": "touhou_073",
+      "faction_code": "rogue",
+      "type_code": "investigator",
+      "double_sided": true,
+      
+      "image_url": "https://raw.githubusercontent.com/lyraprivate/custompics/main/touhou/touhou_073a.png",
+      "thumbnail_url": "https://raw.githubusercontent.com/lyraprivate/custompics/main/touhou/touhou_073a_t.png",
+      "back_image_url": "https://raw.githubusercontent.com/lyraprivate/custompics/main/touhou/touhou_073b.png",
+      "back_thumbnail_url": "https://raw.githubusercontent.com/lyraprivate/custompics/main/touhou/touhou_073b_t.png",
+      
+      "name": "카와시로 니토리",
+      "subname": "물에 사는 기술자",
+      "skill_willpower": 2,
+      "skill_intellect": 4,
+      "skill_combat": 2,
+      "skill_agility": 4,
+      
+      "traits": "캇파. Entrepreneur.",
+      "text": "[reaction] 당신이 <b>향상</b> 카드를 플레이할 때: 그 카드의 '당신이 조종하는'이라는 문구를 '아무 조사자가 조종하는'으로 바꿉니다. 이렇게 다른 조사자가 조종하는 자산에 부착하면, 카드를 1장 뽑습니다.\n[reaction] 당신이 <b>향상</b> 카드를 플레이할 때, 비용을 1 증가시킵니다: 요구하는 특성을 <b>조력자</b>가 아닌 원하는 특성으로 간주합니다.\n[elder_sign] 효과: +2. 당신은 즉시 자신의 차례인 것처럼 덱이나 손에서 향상 카드 1장을 플레이합니다. 덱을 섞습니다.",
+      
+      "health": 8,
+      "sanity": 6,
+      "flavor": "\"아직 개조할 여지가 남아있네!\"",
+      
+      "back_flavor": "",
+      "back_name": "히메카이도 하타테",
+      "back_text": "<b>덱 크기</b>: 35장.\n<b>덱 구성 선택지</b>: 레벨 0-5 무법자([rogue]) 카드. 레벨 0-5 <b>향상</b> 카드. 레벨 0-5 중립 카드.\n<b>덱 구성 요구조건</b> (덱 크기에 포함되지 않습니다): 옵티컬 카모플라주 2장, 반짝이는 물밑의 트라우마, 무작위 기본 약점 카드 1장.",
+      "deck_requirements": "size:35, card:touhou_074, card:touhou_076, random:subtype:basicweakness",
+      "deck_options": [
+        {
+         "faction": ["rogue"],
+         "level": {"min": 0, "max": 5}
+        },
+        {
+         "faction": ["neutral"],
+         "level": {"min": 0, "max": 5}
+        },
+		{
+         "trait": ["Upgrade"],
+         "level": {"min": 0, "max": 5}
+        }
+      ]
+     },
+     {
+      "pack_code": "72e5eaa7-dd4d-47eb-9ebc-88777c31e3aa",
+      "position": 117,
+      "quantity": 2,
+      
+      "code": "touhou_074",
+      "faction_code": "rogue",
+      "type_code": "event",
+      "restrictions": "investigator:touhou_073",
+      "deck_limit": 2,
+      
+	  "name": "옵티컬 카모플라주",
+	  "is_unique": false,
+	  
+      "traits": "Upgrade. Illicit.",
+      "text": "카와시로 니토리 덱 전용.\n신속. 자신의 차례에만 사용합니다.\n아무 조사자가 조종하는 조력자가 아닌 자산에 부착합니다. 그 조사자가 이 카드를 조종합니다.\n당신은 '옵티컬 카모플라주'가 준비된 동안 +1 [agility]을 얻습니다.\n[reaction] 적이 당신을 공격할 때, '옵티컬 카모플라주'를 소진합니다: 그 공격을 취소합니다.",
+      "flavor": "공격이 너무 빗나가는 거 아니야?",
+      
+      "image_url": "https://raw.githubusercontent.com/lyraprivate/custompics/main/touhou/touhou_074.png",
+      "thumbnail_url": "https://raw.githubusercontent.com/lyraprivate/custompics/main/touhou/touhou_074_t.png",
+      "illustrator": ""
+     },
+     {
+      "pack_code": "72e5eaa7-dd4d-47eb-9ebc-88777c31e3aa",
+      "position": 118,
+      "quantity": 1,
+      
+      "code": "touhou_076",
+      "faction_code": "neutral",
+      "type_code": "treachery",
+      "subtype_code": "weakness",
+      "restrictions": "investigator:touhou_073",
+      "deck_limit": 1,
+      
+      "name": "반짝이는 물밑의 트라우마",
+      "is_unique": false,
+      
+      "traits": "Blunder.",
+      "text": "카와시로 니토리 덱 전용.\n<b>폭로</b> - [willpower](3)을 테스트합니다. 실패하면, 당신이 조종하는 <b>향상</b> 카드가 부착된 자산 1장을 버리거나, 공포를 2 받습니다.",
+      "flavor": "\"이렇게까지 망가뜨리려던 건 아니었는데.\"",
+      
+      "image_url": "https://raw.githubusercontent.com/lyraprivate/custompics/main/touhou/touhou_076.png",
+      "thumbnail_url": "https://raw.githubusercontent.com/lyraprivate/custompics/main/touhou/touhou_076_t.png",
+      "illustrator": ""
+     },
+     {
+      "pack_code": "72e5eaa7-dd4d-47eb-9ebc-88777c31e3aa",
+      "position": 119,
+      "quantity": 1,
+      "deck_limit": 1,
+      "illustrator": "",
+      "is_unique": true,
+      
+      "code": "touhou_081",
+      "faction_code": "rogue",
+      "type_code": "investigator",
+      "double_sided": true,
+      
+      "image_url": "https://raw.githubusercontent.com/lyraprivate/custompics/main/touhou/touhou_081a.png",
+      "thumbnail_url": "https://raw.githubusercontent.com/lyraprivate/custompics/main/touhou/touhou_081a_t.png",
+      "back_image_url": "https://raw.githubusercontent.com/lyraprivate/custompics/main/touhou/touhou_081b.png",
+      "back_thumbnail_url": "https://raw.githubusercontent.com/lyraprivate/custompics/main/touhou/touhou_081b_t.png",
+      
+      "name": "코메이지 코이시",
+      "subname": "닫힌 사랑의 눈동자",
+      "skill_willpower": 2,
+      "skill_intellect": 3,
+      "skill_combat": 2,
+      "skill_agility": 5,
+      
+      "traits": "사토리 요괴. Drifter. Wayfarer.",
+      "text": "<b>강제</b> - 같은 장소에 다른 조사자가 있다면, 약점이 아닌 적의 '사냥꾼'이나 '사냥감'을 해결할 때 당신을 무시합니다.\n[reaction] 조사 단계 끝에, 플레이 영역에 소진된 적이 있다면: 당신의 덱 맨 위 6장 중에서 카드 1장을 찾아 뽑고 덱을 섞습니다. 소진된 적이 셋 이상이면, 대신 12장 중에서 찾습니다.\n[elder_sign] 효과: +1. 공개된 장소에 있는 적 1명을 소진시킵니다.",
+      
+      "health": 8,
+      "sanity": 6,
+      "flavor": "\"우리 전에 어디서 만난 적 있던가?\"",
+      
+      "back_flavor": "",
+      "back_name": "코메이지 코이시",
+      "back_text": "<b>덱 크기</b>: 30장.\n<b>덱 구성 선택지</b>: 레벨 0-5 무법자([rogue]) 카드. 레벨 0 수호자([guardian]) 그리고/또는 생존자([survivor]) 카드 최대 5장. 레벨 0-5 중립 카드.\n<b>덱 구성 요구조건</b> (덱 크기에 포함되지 않습니다): 무의식, 편협한 순진함, 무작위 기본 약점 카드 1장.",
+      "deck_requirements": "size:35, card:touhou_082, card:touhou_083, random:subtype:basicweakness",
+      "deck_options": [
+        {
+         "faction": ["rogue"],
+         "level": {"min": 0, "max": 5}
+        },
+        {
+         "faction": ["neutral"],
+         "level": {"min": 0, "max": 5}
+        },
+		{
+         "trait": ["guardian", "survivor"],
+         "level": {"min": 0, "max": 0},
+		 "limit": 5
+        }
+      ]
+     },
+     {
+      "pack_code": "72e5eaa7-dd4d-47eb-9ebc-88777c31e3aa",
+      "position": 120,
+      "quantity": 1,
+      
+      "code": "touhou_082",
+      "faction_code": "rogue",
+      "type_code": "asset",
+      "restrictions": "investigator:touhou_081",
+      "deck_limit": 1,
+      
+	  "name": "무의식",
+	  "subname": "이드의 해방",
+	  "is_unique": true,
+	  
+	  "cost": 3,
+	  "skill_intellect": 1,
+	  "skill_agility": 1,
+	  "skill_wild": 1,
+      "traits": "Talent. Ritual.",
+      "text": "코메이지 코이시 덱 전용.\n당신은 같은 장소에 있는 교전 중이 아닌 적을 마치 위협 영역에 있는 것처럼 회피할 수 있습니다.\n[free] '무의식'을 소진합니다: <b>회피</b>. 공개된 장소에 있는 교전 상태가 아닌 적 1명을 대상으로 선택할 수 있습니다. 성공하면, 당신은 그 적이 있는 장소로 이동할 수 있습니다.",
+      
+      "image_url": "https://raw.githubusercontent.com/lyraprivate/custompics/main/touhou/touhou_082.png",
+      "thumbnail_url": "https://raw.githubusercontent.com/lyraprivate/custompics/main/touhou/touhou_082_t.png",
+      "illustrator": ""
+     },
+     {
+      "pack_code": "72e5eaa7-dd4d-47eb-9ebc-88777c31e3aa",
+      "position": 121,
+      "quantity": 1,
+      
+      "code": "touhou_083",
+      "faction_code": "neutral",
+      "type_code": "treachery",
+      "subtype_code": "weakness",
+      "restrictions": "investigator:touhou_081",
+      "deck_limit": 1,
+      
+      "name": "편협한 순진함",
+      "is_unique": false,
+      
+      "traits": "Flaw.",
+      "text": "코메이지 코이시 덱 전용.\n<b>폭로</b> - 당신의 위협 영역에 '편협한 순진함'을 추가합니다.\n<b>강제</b> - 당신의 차례 끝에, 당신이 있는 장소에 적이 없다면: 공포 1점을 받습니다.\n[reaction] 적을 X 이상으로 회피하면: '편협한 순진함'을 버립니다. X는 당신이 있는 장소의 장막값입니다.",
+      "flavor": "\"나를 바라봐 줘.\"",
+      
+      "image_url": "https://raw.githubusercontent.com/lyraprivate/custompics/main/touhou/touhou_083.png",
+      "thumbnail_url": "https://raw.githubusercontent.com/lyraprivate/custompics/main/touhou/touhou_083_t.png",
+      "illustrator": ""
+     },
      
      
-     
-     
-     
-     
-     
+	 {
+      "pack_code": "72e5eaa7-dd4d-47eb-9ebc-88777c31e3aa",
+      "position": 119,
+      "quantity": 1,
+      "deck_limit": 1,
+      "illustrator": "",
+      "is_unique": true,
+      
+      "code": "touhou_102",
+      "faction_code": "mystic",
+      "type_code": "investigator",
+      "double_sided": true,
+      
+      "image_url": "https://raw.githubusercontent.com/lyraprivate/custompics/main/touhou/touhou_102a.png",
+      "thumbnail_url": "https://raw.githubusercontent.com/lyraprivate/custompics/main/touhou/touhou_102a_t.png",
+      "back_image_url": "https://raw.githubusercontent.com/lyraprivate/custompics/main/touhou/touhou_102b.png",
+      "back_thumbnail_url": "https://raw.githubusercontent.com/lyraprivate/custompics/main/touhou/touhou_102b_t.png",
+      
+      "name": "키리사메 마리사",
+      "subname": "평범한 마법사",
+      "skill_willpower": 5,
+      "skill_intellect": 3,
+      "skill_combat": 2,
+      "skill_agility": 2,
+      
+      "traits": "마법사. Sorcerer. Criminal.",
+      "text": "[reaction] 당신이 능력 테스트에 성공한 후: 이 카드에 영력 1개를 놓습니다.\n[free] 영력 1개를 소비합니다: 아무 조사자의 버린 카드 더미에서, 지난 라운드에 사용한 것과 다른 약점이 아닌 카드 1장을 플레이합니다. 이벤트 카드를 플레이했다면, 그 카드를 버리는 대신 '환상향의 대도' 아래에 두거나, 그 중 하나와 교체하고 원래 있던 카드는 소유자의 덱에 섞습니다(라운드 1회 한정).\n[elder_sign] 효과: +2. 키리사메 마리사에 영력을 2개 놓습니다.",
+      
+      "health": 6,
+      "sanity": 8,
+      "flavor": "\"이게 뭘까. 일단 빌려서 써볼게.\"",
+      
+      "back_flavor": "",
+      "back_name": "키리사메 마리사",
+      "back_text": "<b>덱 크기</b>: 30장.\n<b>덱 구성 선택지</b>: 레벨 0-5 신비주의자([mystic]) 카드. 레벨 0-2 무법자([rogue]) 카드. 레벨 3 무법자([rogue]) 카드 최대 1장. 레벨 0-5 중립 카드.\n<b>덱 구성 요구조건</b> (덱 크기에 포함되지 않습니다): 미니 팔괘로, 환상향의 대도, 안 빌려줄 거야!, 위성 환각, 무작위 기본 약점 카드 1장.\n<b>추가 영력 향상:</b> 매 게임 끝에, 당신이 가진 영력을 기록합니다. 다음 시나리오를 시작하기 전에, 기록한 영력 4점마다 이를 소비하여 아래 중 하나를 고를 수 있습니다.\n- 덱 구성 선택지에, 레벨 3 무법자([rogue]) 1장을 추가합니다(최대 3회).\n- 경험치 2점을 소비하여 '미니 팔괘로'나 '환상향의 대도'를 '강화된' 카드로 영구히 교체합니다.\n- 경험치 3점을 소비하여 덱에 있는 기본 약점 1장을 '탄막부호'로 영구히 교체합니다(1회 한정).",
+      
+	  "deck_requirements": "size:30, card:touhou_103, card:touhou_104, card:touhou_107, card:touhou_108, random:subtype:basicweakness",
+      "deck_options": [
+        {
+         "faction": ["mystic"],
+         "level": {"min": 0, "max": 5}
+        },
+		{
+         "faction": ["rogue"],
+         "level": {"min": 0, "max": 2}
+        },
+		{
+         "faction": ["rogue"],
+         "level": {"min": 3, "max": 3},
+		 "limit": 4
+        },
+        {
+         "faction": ["neutral"],
+         "level": {"min": 0, "max": 5}
+        }
+      ]
+     },
+     {
+      "pack_code": "72e5eaa7-dd4d-47eb-9ebc-88777c31e3aa",
+      "position": 120,
+      "quantity": 1,
+      
+      "code": "touhou_103",
+      "faction_code": "mystic",
+      "type_code": "asset",
+      "restrictions": "investigator:touhou_102",
+      "deck_limit": 1,
+      
+	  "name": "미니 팔괘로",
+	  "subname": "마스터 스파크",
+	  "is_unique": true,
+	  
+	  "cost": 3,
+	  "skill_willpower": 1,
+	  "skill_combat": 1,
+	  "skill_wild": 1,
+      "traits": "Talent.",
+      "text": "키리사메 마리사 덱 전용.\n[action]: <b>전투</b>([willpower]).\n[reaction] 당신이 위의 [action] 능력을 격발할 때, 미니 팔괘로를 소진하거나 1 영력을 소비합니다: 이 공격은 +1 피해를 줍니다. 공격에 성공했다면, 환상향의 대도에 부착된 카드 1장을 주인의 덱으로 섞어넣을 수 있습니다. 그렇게 하면, 추가로 +1 피해를 줍니다.",
+      
+      "image_url": "https://raw.githubusercontent.com/lyraprivate/custompics/main/touhou/touhou_103.png",
+      "thumbnail_url": "https://raw.githubusercontent.com/lyraprivate/custompics/main/touhou/touhou_103_t.png",
+      "illustrator": ""
+     },
+	 {
+      "pack_code": "72e5eaa7-dd4d-47eb-9ebc-88777c31e3aa",
+      "position": 120,
+      "quantity": 1,
+      
+      "code": "touhou_104",
+      "faction_code": "neutral",
+      "type_code": "asset",
+      "restrictions": "investigator:touhou_102",
+      "deck_limit": 1,
+      
+	  "name": "환상향의 대도",
+	  "subname": "기묘한 도둑",
+	  "is_unique": true,
+	  
+	  "traits": "Talent.",
+      "text": "키리사메 마리사 덱 전용.\n'환상향의 대도' 밑에 부착한 카드는 3장으로 한정.\n[free] 영력을 1 소비합니다: 아무 조사자의 덱에서 무작위 카드 1장을 뒷면으로 '환상향의 대도' 밑에 부착하거나, 부착된 카드 중 한 장과 교체하고 원래 있던 카드는 소유자의 덱으로 되돌립니다(단계당 1회 한정).",
+      
+      "image_url": "https://raw.githubusercontent.com/lyraprivate/custompics/main/touhou/touhou_104.png",
+      "thumbnail_url": "https://raw.githubusercontent.com/lyraprivate/custompics/main/touhou/touhou_104_t.png",
+      "illustrator": ""
+     },
+	 {
+      "pack_code": "72e5eaa7-dd4d-47eb-9ebc-88777c31e3aa",
+      "position": 120,
+      "quantity": 1,
+      
+      "code": "touhou_105",
+      "faction_code": "mystic",
+      "type_code": "asset",
+      "restrictions": "investigator:touhou_102",
+      "deck_limit": 1,
+	  
+	  "bonded_count": 1,
+      "bonded_to": "touhou_103",
+	  "name": "미니 팔괘로",
+	  "subname": "파이널 스파크",
+	  "is_unique": true,
+	  
+	  "cost": 2,
+	  "skill_willpower": 1,
+	  "skill_wild": 2,
+      "traits": "Talent.",
+      "text": "키리사메 마리사 덱 전용. 강화된.\n[action]: <b>전투</b>([willpower]). 당신은 이번 공격에서 +2 [willpower]를 받습니다.\n[reaction] 당신이 위의 [action] 능력을 격발할 때, 미니 팔괘로를 소진하거나 1 영력을 소비합니다: 이 공격은 +1 피해를 줍니다. 공격에 성공했다면, 환상향의 대도에 부착된 카드 X장을 주인의 덱으로 섞어넣을 수 있습니다. 그렇게 하면, 추가로 +X 피해를 줍니다.",
+      
+      "image_url": "https://raw.githubusercontent.com/lyraprivate/custompics/main/touhou/touhou_105.png",
+      "thumbnail_url": "https://raw.githubusercontent.com/lyraprivate/custompics/main/touhou/touhou_105_t.png",
+      "illustrator": ""
+     },
+	 {
+      "pack_code": "72e5eaa7-dd4d-47eb-9ebc-88777c31e3aa",
+      "position": 120,
+      "quantity": 1,
+      
+      "code": "touhou_106",
+      "faction_code": "neutral",
+      "type_code": "asset",
+      "restrictions": "investigator:touhou_102",
+      "deck_limit": 1,
+      
+	  "bonded_count": 1,
+	  "bonded_to": "touhou_104",
+	  "name": "환상향의 대도",
+	  "subname": "훌륭한 도둑",
+	  "is_unique": true,
+	  
+	  "traits": "Talent.",
+      "text": "키리사메 마리사 덱 전용. 강화된.\n'환상향의 대도' 밑에 부착한 카드는 4장으로 한정.\n[free] '환상향의 대도'를 소진하거나 영력을 1 소비합니다: 아무 조사자의 덱에서 무작위 카드 1장을 뒷면으로 '환상향의 대도' 밑에 부착하거나, 부착된 카드 중 한 장과 교체하고 원래 있던 카드는 소유자의 덱으로 되돌립니다(단계당 1회 한정).",
+      
+      "image_url": "https://raw.githubusercontent.com/lyraprivate/custompics/main/touhou/touhou_106.png",
+      "thumbnail_url": "https://raw.githubusercontent.com/lyraprivate/custompics/main/touhou/touhou_106_t.png",
+      "illustrator": ""
+     },
+     {
+      "pack_code": "72e5eaa7-dd4d-47eb-9ebc-88777c31e3aa",
+      "position": 121,
+      "quantity": 1,
+      
+      "code": "touhou_107",
+      "faction_code": "neutral",
+      "type_code": "treachery",
+      "subtype_code": "weakness",
+      "restrictions": "investigator:touhou_102",
+      "deck_limit": 1,
+      
+      "name": "안 빌려줄 거야!",
+      "is_unique": false,
+      
+      "traits": "Flaw.",
+      "text": "영속. 키리사메 마리사 덱 전용.\n'환상향의 대도'에 플레이어 카드가 부착되어 있을 때, 다른 조사자는 어디서든 다음 [action] 기능을 사용할 수 있습니다.\n[action]: 가장 높은 능력값(2)를 테스트합니다. 성공하면, '환상향의 대도'에 부착된 플레이어 카드 1장을 소유자의 손으로 가져옵니다(조사자당 라운드 1회 한정).",
+      
+      "image_url": "https://raw.githubusercontent.com/lyraprivate/custompics/main/touhou/touhou_107.png",
+      "thumbnail_url": "https://raw.githubusercontent.com/lyraprivate/custompics/main/touhou/touhou_107_t.png",
+      "illustrator": ""
+     },
+     {
+      "pack_code": "72e5eaa7-dd4d-47eb-9ebc-88777c31e3aa",
+      "position": 121,
+      "quantity": 1,
+      
+      "code": "touhou_108",
+      "faction_code": "neutral",
+      "type_code": "treachery",
+      "subtype_code": "weakness",
+      "restrictions": "investigator:touhou_102",
+      "deck_limit": 1,
+      
+      "name": "위성 환각",
+      "is_unique": false,
+      
+      "traits": "Flaw.",
+      "text": "키리사메 마리사 덱 전용.\n<b>폭로</b> - '위성 환각'을 당신의 위협 영역에 놓습니다.\n<b>강제</b> - 당신이 능력 테스트에 2 차이 미만으로 성공하면: 당신은 직접적인 공포 1을 받거나, '환상향의 대도'에 부착된 무작위 카드 1장을 버립니다. 이렇게 약점 카드를 버리면, 그 카드의 소유자는 그 카드를 뽑습니다.\n[action][action]: '위성 환각'을 버립니다.",
+	  "flavor":"\"날씨가 엉망이 되어가지만, 나는 절대 포기하지 않아.\"",
+      
+      "image_url": "https://raw.githubusercontent.com/lyraprivate/custompics/main/touhou/touhou_108.png",
+      "thumbnail_url": "https://raw.githubusercontent.com/lyraprivate/custompics/main/touhou/touhou_108_t.png",
+      "illustrator": ""
+     },
+	 {
+      "pack_code": "72e5eaa7-dd4d-47eb-9ebc-88777c31e3aa",
+      "position": 121,
+      "quantity": 1,
+      
+      "code": "touhou_109",
+      "faction_code": "neutral",
+      "type_code": "treachery",
+      "subtype_code": "weakness",
+      "restrictions": "investigator:touhou_102",
+      "deck_limit": 1,
+      
+      "name": "탄막부호",
+      "is_unique": false,
+      
+	  "bonded_count": 1,
+	  "bonded_to": "touhou_102",
+      "traits": "환상.",
+      "text": "키리사메 마리사 덱 전용.\n<b>폭로</b> - 당신은 다른 조사자 하나를 고릅니다. 당신과 그 조사자는 각자 자신의 가장 높은 능력값(3)을 테스트합니다. 성공한 조사자는 덱 또는 버린 카드 더미에서 약점이 아닌 카드 1장을 찾아 뽑고, 실패한 조사자는 자원을 2개 잃거나 공포를 1 받습니다. 둘 모두 성공하면, '탄막부호'를 게임에서 제거합니다.",
+      
+      "image_url": "https://raw.githubusercontent.com/lyraprivate/custompics/main/touhou/touhou_109.png",
+      "thumbnail_url": "https://raw.githubusercontent.com/lyraprivate/custompics/main/touhou/touhou_109_t.png",
+      "illustrator": ""
+     },
+	 {
+      "pack_code": "72e5eaa7-dd4d-47eb-9ebc-88777c31e3aa",
+      "position": 119,
+      "quantity": 1,
+      "deck_limit": 1,
+      "illustrator": "",
+      "is_unique": true,
+      
+      "code": "touhou_135",
+      "faction_code": "mystic",
+      "type_code": "investigator",
+      "double_sided": true,
+      
+      "image_url": "https://raw.githubusercontent.com/lyraprivate/custompics/main/touhou/touhou_135a.png",
+      "thumbnail_url": "https://raw.githubusercontent.com/lyraprivate/custompics/main/touhou/touhou_135a_t.png",
+      "back_image_url": "https://raw.githubusercontent.com/lyraprivate/custompics/main/touhou/touhou_135b.png",
+      "back_thumbnail_url": "https://raw.githubusercontent.com/lyraprivate/custompics/main/touhou/touhou_135b_t.png",
+      
+      "name": "야고코로 에이린",
+      "subname": "달의 두뇌",
+      "skill_willpower": 4,
+      "skill_intellect": 3,
+      "skill_combat": 2,
+      "skill_agility": 3,
+      
+      "traits": "월인. Medic. Scholar.",
+      "text": "[reaction] 당신이 카드 효과로 <b>물품</b>이 아닌 카드에 있는 피해나 공포를 회복한 후, 이번 라운드에 고르지 않은 선택지 하나를 골라 해결합니다:\n- 자원을 1 얻습니다.\n- 카드를 1장 뽑습니다.\n- 당신이 조종하는 자산 하나에 충전/비밀/보급품 하나를 보충합니다.\n[elder_sign] 효과: +1. 당신의 장소에 있는 조사자 및 조력자 카드마다, 그 카드의 피해나 공포를 1 회복합니다.",
+      
+      "health": 6,
+      "sanity": 8,
+      "flavor": "\"마침 신약의 실험체가 필요하던 참이었어.\"",
+      
+      "back_flavor": "",
+      "back_name": "야고코로 에이린",
+      "back_text": "<b>덱 크기</b>: 30장.\n<b>덱 구성 선택지</b>: 레벨 0-3 신비주의자([mystic]) 카드. 레벨 0-5 피해 그리고/또는 공포를 회복하는 카드, 레벨 0-1 수호자([guardian]) 그리고/또는 탐구자([seeker]) 카드 최대 15장. 레벨 0-5 중립 카드.\n<b>덱 구성 요구조건</b> (덱 크기에 포함되지 않습니다): 개량판 봉래의 약, 천문학적 비법, 신들의 기억, 무작위 기본 약점 카드 1장.",
+      
+	  "deck_requirements": "size:30, card:touhou_136, card:touhou_137, card:touhou_138, random:subtype:basicweakness",
+      "deck_options": [
+        {
+         "faction": ["mystic"],
+         "level": {"min": 0, "max": 3}
+        },
+		{
+         "text exact": [" heal ", " heals "],
+         "level": {"min": 0, "max": 5}
+        },
+        {
+         "faction": ["neutral"],
+         "level": {"min": 0, "max": 5}
+        },
+		{
+         "faction": ["guardian", "seeker"],
+         "level": {"min": 0, "max": 1},
+		 "limit": 15
+        }
+      ]
+     },
+     {
+      "pack_code": "72e5eaa7-dd4d-47eb-9ebc-88777c31e3aa",
+      "position": 120,
+      "quantity": 1,
+      
+      "code": "touhou_136",
+      "faction_code": "neutral",
+      "type_code": "asset",
+      "restrictions": "investigator:touhou_135",
+      "deck_limit": 1,
+      
+	  "name": "개량판 봉래의 약",
+	  "is_unique": false,
+	  
+	  "cost": 0,
+	  "skill_wild": 2,
+      "traits": "Spell. Science.",
+      "text": "야고코로 에이린 덱 전용.\n'개량판 봉래의 약'은 당신이 위치한 장소의 다른 조사자 한 명이 조종하도록 플레이합니다.[reaction] 당신이 후퇴하거나 게임이 종료될 때, '개량판 봉래의 약'이 당신의 플레이 영역에 있다면: 육체적 또는 정신적 트라우마 1점을 회복합니다. '개량판 봉래의 약'을 게임에서 제거합니다.",
+      
+      "image_url": "https://raw.githubusercontent.com/lyraprivate/custompics/main/touhou/touhou_136.png",
+      "thumbnail_url": "https://raw.githubusercontent.com/lyraprivate/custompics/main/touhou/touhou_136_t.png",
+      "illustrator": ""
+     },
+	 {
+      "pack_code": "72e5eaa7-dd4d-47eb-9ebc-88777c31e3aa",
+      "position": 120,
+      "quantity": 1,
+      
+      "code": "touhou_137",
+      "faction_code": "mystic",
+      "type_code": "asset",
+      "restrictions": "investigator:touhou_135",
+      "deck_limit": 1,
+      
+	  "name": "천문학적 비법",
+	  "subname": "생명유희",
+	  
+	  "cost": 2,
+	  "skill_willpower": 1,
+	  "skill_combat": 1,
+	  "skill_wild": 1,
+      "traits": "Spell. Science. Talent.",
+      "text": "야고코로 에이린 덱 전용.\n[free] '천문학적 비법'을 소진합니다: 피해 및 공포를 도합 2점까지 받습니다. 같은 장소 또는 연결된 장소에 있는 <b>물품</b>이 아닌 카드 1장에서 그만큼 피해 그리고/또는 공포를 회복합니다.",
+	  "flavor": "\"봐라. 환상향의 빛이 바로 눈앞에 있다!\"",
+      
+      "image_url": "https://raw.githubusercontent.com/lyraprivate/custompics/main/touhou/touhou_137.png",
+      "thumbnail_url": "https://raw.githubusercontent.com/lyraprivate/custompics/main/touhou/touhou_137_t.png",
+      "illustrator": ""
+     },
+     {
+      "pack_code": "72e5eaa7-dd4d-47eb-9ebc-88777c31e3aa",
+      "position": 121,
+      "quantity": 1,
+      
+      "code": "touhou_138",
+      "faction_code": "neutral",
+      "type_code": "treachery",
+      "subtype_code": "weakness",
+      "restrictions": "investigator:touhou_135",
+      "deck_limit": 1,
+      
+      "name": "신들의 기억",
+      "is_unique": false,
+      
+      "traits": "Madness.",
+      "text": "야고코로 에이린 덱 전용.\n<b>폭로</b> - 당신의 위협 영역에 '신들의 기억'을 둡니다. '신들의 기억'에 피해 및 공포 토큰을 하나씩 둡니다. 이는 당신이 가진 피해/공포로 간주하여 회복될 수 있습니다. '신들의 기억'에 피해 및 공포 토큰이 없다면, 이 카드를 버립니다.\n<b>강제</b> - 조사 단계 끝에, '신들의 기억'에 있는 피해 및 공포를 같은 장소에 있는 조사자에게로 옮깁니다.",
+      
+      "image_url": "https://raw.githubusercontent.com/lyraprivate/custompics/main/touhou/touhou_138.png",
+      "thumbnail_url": "https://raw.githubusercontent.com/lyraprivate/custompics/main/touhou/touhou_138_t.png",
+      "illustrator": ""
+     },
+     {
+      "pack_code": "72e5eaa7-dd4d-47eb-9ebc-88777c31e3aa",
+      "position": 119,
+      "quantity": 1,
+      "deck_limit": 1,
+      "illustrator": "",
+      "is_unique": true,
+      
+      "code": "touhou_150",
+      "faction_code": "mystic",
+      "type_code": "investigator",
+      "double_sided": true,
+      
+      "image_url": "https://raw.githubusercontent.com/lyraprivate/custompics/main/touhou/touhou_150a.png",
+      "thumbnail_url": "https://raw.githubusercontent.com/lyraprivate/custompics/main/touhou/touhou_150a_t.png",
+      "back_image_url": "https://raw.githubusercontent.com/lyraprivate/custompics/main/touhou/touhou_150b.png",
+      "back_thumbnail_url": "https://raw.githubusercontent.com/lyraprivate/custompics/main/touhou/touhou_150b_t.png",
+      
+      "name": "야쿠모 유카리",
+      "subname": "환상의 경계",
+      "skill_willpower": 5,
+      "skill_intellect": 3,
+      "skill_combat": 3,
+      "skill_agility": 1,
+      
+      "traits": "현자. Sorcerer.",
+      "text": "당신의 장소와 스키마가 있는 장소는 서로 연결된 것으로 간주합니다.\n당신의 차례 동안, 당신은 스키마가 있는 장소에 있는 것처럼 행동할 수 있으며, 그 행동 동안 해당 장소에 있는 것으로 간주하고, 해당 장소의 모든 적과 교전 중인 것으로 간주합니다.\n[action]: <b>협상.</b> 아무 장소에 스키마를 놓습니다(장소마다 스키마는 1개 한정).\n[elder_sign] 효과: +3. '야쿠모 유카리'의 [action] 기능을 격발하거나, 연결된 장소로 이동합니다.",
+      
+      "health": 6,
+      "sanity": 8,
+      "flavor": "\"잠시 시간을 내주실 수 있을까요?\"",
+      
+      "back_flavor": "",
+      "back_name": "야쿠모 유카리",
+      "back_text": "<b>덱 크기</b>: 30장.\n<b>보조 역할군 선택:</b> 덱을 구성할 때, 수호자([guardian]) 또는 탐구자([seeker]) 중 하나를 보조 역할군으로 선택합니다.\n<b>덱 구성 선택지</b>: 레벨 0-5 신비주의자([mystic]) 카드. 레벨 0-3 선택한 보조 역할군의 이벤트/능력 카드. 레벨 0-5 중립 카드.\n<b>덱 구성 요구조건</b> (덱 크기에 포함되지 않습니다): 물질과 반물질의 우주([guardian]/[seeker]), 경계 조작, 스키마 폭주, 무작위 기본 약점 카드 1장.\n<b>추가 게임 준비:</b> 보조 역할군이 수호자([guardian])라면 '물질과 반물질의 우주'를 '청색 경계'면으로, 탐구자([seeker])라면 '황색 경계'면으로 둡니다.",
+      
+	  "deck_requirements": "size:30, card:touhou_151a, card:touhou_151b, card:touhou_152, card:touhou_153, random:subtype:basicweakness",
+      "deck_options": [
+        {
+         "faction": ["mystic"],
+         "level": {"min": 0, "max": 5}
+        },
+		{
+         "faction_select": ["guardian", "seeker"],
+		 "name": "보조 역할군",
+		 "id": "subfaction",
+		 "type": ["event", "skill"],
+         "level": {"min": 0, "max": 3}
+        },
+        {
+         "faction": ["neutral"],
+         "level": {"min": 0, "max": 5}
+        }
+      ]
+     },
+     {
+      "pack_code": "72e5eaa7-dd4d-47eb-9ebc-88777c31e3aa",
+      "position": 120,
+      "quantity": 1,
+      
+      "code": "touhou_151a",
+      "faction_code": "guardian",
+      "type_code": "asset",
+      "restrictions": "investigator:touhou_150",
+      "deck_limit": 1,
+      
+	  "name": "물질과 반물질의 우주",
+	  "subname": "청색 경계",
+	  "is_unique": true,
+	  
+	  "traits": "Talent.",
+      "text": "영속. 야쿠모 유카리 덱 전용.\n[free] 당신의 차례 동안, 당신의 장소에 스키마가 있다면 이 카드를 소진합니다: 당신은 즉시 행동을 수행합니다. 이는 '야쿠모 유카리'의 [action] 능력이나 전투에만 사용할 수 있습니다.",
+	  "flavor": "\"이 게임을 영원히 하고 싶네.\"",
+      
+      "image_url": "https://raw.githubusercontent.com/lyraprivate/custompics/main/touhou/touhou_151a.png",
+      "thumbnail_url": "https://raw.githubusercontent.com/lyraprivate/custompics/main/touhou/touhou_151a_t.png",
+      "illustrator": ""
+     },
+	 {
+      "pack_code": "72e5eaa7-dd4d-47eb-9ebc-88777c31e3aa",
+      "position": 120,
+      "quantity": 1,
+      
+      "code": "touhou_151b",
+      "faction_code": "seeker",
+      "type_code": "asset",
+      "restrictions": "investigator:touhou_150",
+      "deck_limit": 1,
+      
+	  "name": "물질과 반물질의 우주",
+	  "subname": "황색 경계",
+	  "is_unique": true,
+	  
+	  "traits": "Talent.",
+      "text": "영속. 야쿠모 유카리 덱 전용.\n[free] 당신의 차례 동안, 당신의 장소에 스키마가 있다면 이 카드를 소진합니다: 당신은 즉시 행동을 수행합니다. 이는 '야쿠모 유카리'의 [action] 능력이나 조사에만 사용할 수 있습니다.",
+	  "flavor": "\"이 게임을 영원히 하고 싶네.\"",
+      
+      "image_url": "https://raw.githubusercontent.com/lyraprivate/custompics/main/touhou/touhou_151b.png",
+      "thumbnail_url": "https://raw.githubusercontent.com/lyraprivate/custompics/main/touhou/touhou_151b_t.png",
+      "illustrator": ""
+     },
+	 {
+      "pack_code": "72e5eaa7-dd4d-47eb-9ebc-88777c31e3aa",
+      "position": 120,
+      "quantity": 1,
+      
+      "code": "touhou_152",
+      "faction_code": "mystic",
+      "type_code": "asset",
+      "restrictions": "investigator:touhou_150",
+      "deck_limit": 1,
+      
+	  "name": "경계 조작",
+	  "subname": "환상향의 카미카쿠시",
+	  "is_unique": false,
+	  
+	  "cost": 3,
+	  "skill_willpower": 1,
+	  "skill_wild": 2,
+	  "traits": "Spell. Talent.",
+      "text": "야쿠모 유카리 덱 전용.\n[free] '경계 조작'을 소진합니다: 스키마가 있는 장소에 있는 조사자나 정예가 아닌 적 하나, 혹은 이야기 카드가 아닌 플레이어 카드 1장을 다른 스키마가 있는 장소로 이동시킵니다. 대상이 조사자라면, 그 조사자는 공포를 1 받습니다.",
+	  "flavor": "\"환상향은 모든 것을 받아들여.\n이건 아주 잔혹한 일이지.\"",
+      
+      "image_url": "https://raw.githubusercontent.com/lyraprivate/custompics/main/touhou/touhou_152.png",
+      "thumbnail_url": "https://raw.githubusercontent.com/lyraprivate/custompics/main/touhou/touhou_152_t.png",
+      "illustrator": ""
+     },
+     {
+      "pack_code": "72e5eaa7-dd4d-47eb-9ebc-88777c31e3aa",
+      "position": 121,
+      "quantity": 1,
+      
+      "code": "touhou_153",
+      "faction_code": "neutral",
+      "type_code": "treachery",
+      "subtype_code": "weakness",
+      "restrictions": "investigator:touhou_150",
+      "deck_limit": 1,
+      
+      "name": "스키마 폭주",
+      "is_unique": false,
+      
+      "traits": "Blunder",
+      "text": "야쿠모 유카리 덱 전용.\n<b>폭로</b> - 당신의 위협 영역에 '스키마 폭주'를 둡니다.\n<b>강제</b> - 당신의 차례 시작에: 당신과 가장 가까운 장소 2곳에 있는 스키마를 제거하거나, 공포 1점을 받습니다.\n[reaction] 라운드 끝에, 이번 라운드 동안 스키마가 있는 장소에서 행동한 적이 없다면: '스키마 폭주'를 버립니다.",
+	  "flavor": "\"어머나, 괜찮으신가요?\"",
+      
+      "image_url": "https://raw.githubusercontent.com/lyraprivate/custompics/main/touhou/touhou_153.png",
+      "thumbnail_url": "https://raw.githubusercontent.com/lyraprivate/custompics/main/touhou/touhou_153_t.png",
+      "illustrator": ""
+     },
      
      {
       "pack_code": "72e5eaa7-dd4d-47eb-9ebc-88777c31e3aa",
@@ -1830,7 +2647,7 @@
       
       "code": "touhou_181",
       "faction_code": "neutral",
-      "type_code": "event",
+      "type_code": "asset",
       "restrictions": "investigator:touhou_177",
       "deck_limit": 1,
       
