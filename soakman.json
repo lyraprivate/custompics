@@ -2,7 +2,7 @@
   "meta": {
    "code": "zsti",
    "name": "소크만 조사자",
-   "description": "데이터 및 번역 출처: https://github.com/zzorba/arkham-cards-data\nURL(업데이트 시 사용): https://raw.githubusercontent.com/lyraprivate/custompics/main/soakman.json",
+   "description": "데이터 및 번역 출처:<br>https://github.com/zzorba/arkham-cards-data<br><br>URL(업데이트 시 사용):<br>https://raw.githubusercontent.com/lyraprivate/custompics/main/soakman.json",
    "author": "lyra",
    "language": "ko",
    "external_link": "",
